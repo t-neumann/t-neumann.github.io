@@ -1,6 +1,5 @@
 ---
-layout: splash
+layout: page
 author_profile: true
-permalink: /about/
 ---
 Wurstwasser

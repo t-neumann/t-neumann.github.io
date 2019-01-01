@@ -2,8 +2,9 @@
 title: "Markup: Another Post with Images"
 excerpt: "Examples and code for displaying images in posts."
 header:
-  teaser: "http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg"
+  teaser: "docs/assets/images/mm-customizable-feature.png"
   alt: "Tjo"
+  image_caption: "This is some lame picture."
   btn_label: "Hey ho let's go"
 tags:
   - sample post

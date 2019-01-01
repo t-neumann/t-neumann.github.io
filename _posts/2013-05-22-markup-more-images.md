@@ -2,7 +2,7 @@
 title: "Markup: Another Post with Images"
 excerpt: "Examples and code for displaying images in posts."
 header:
-  teaser: "docs/assets/images/mm-customizable-feature.png"
+  teaser: "assets/images/mm-customizable-feature.png"
   alt: "Tjo"
   image_caption: "This is some lame picture."
   btn_label: "Hey ho let's go"

@@ -8,7 +8,7 @@ header:
     - label: "<i class='fas fa-download'></i> Install now"
       url: "/docs/quick-start-guide/"
 excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
+  SLA flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.1">Latest release v4.14.1</a></small>
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
@@ -34,4 +34,50 @@ feature_row:
     btn_label: "Learn more"      
 ---
 
-{% include feature_row %}
+<div class="feature__wrapper">
+
+  {% for post in site.posts %}
+
+    {% if post.url contains "://" %}
+      {% capture f_url %}{{ post.url }}{% endcapture %}
+    {% else %}
+      {% capture f_url %}{{ post.url | relative_url }}{% endcapture %}
+    {% endif %}
+
+    <div class="feature__item">
+      <div class="archive__item">
+        {% if post.image_path %}
+          <div class="archive__item-teaser">
+            <img src=
+              {% if post.image_path contains "://" %}
+                "{{ post.image_path }}"
+              {% else %}
+                "{{ post.image_path | relative_url }}"
+              {% endif %}
+            alt="{% if post.alt %}{{ post.alt }}{% endif %}">
+            {% if post.image_caption %}
+              <span class="archive__item-caption">{{ post.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        <div class="archive__item-body">
+          {% if post.title %}
+            <h2 class="archive__item-title">{{ post.title }}</h2>
+          {% endif %}
+
+          {% if post.excerpt %}
+            <div class="archive__item-excerpt">
+              {{ post.excerpt | markdownify }}
+            </div>
+          {% endif %}
+
+          {% if post.url %}
+            <p><a href="{{ f_url }}" class="btn {{ post.btn_class }}">{{ post.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

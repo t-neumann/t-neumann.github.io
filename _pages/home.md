@@ -49,10 +49,14 @@ feature_row:
         {% if post.header.teaser %}
           <div class="archive__item-teaser">
             <img src=
-              {% if post.header.teaser contains "://" %}
-                "{{ post.header.teaser }}"
+              {% if post.header.teaser %}
+                {% if post.header.teaser contains "://" %}
+                  "{{ post.header.teaser }}"
+                {% else %}
+                  "{{ post.header.teaser | relative_url }}"
+                {% endif %}
               {% else %}
-                "{{ post.header.teaser | relative_url }}"
+                "assets/images/mm-customizable-feature.png"
               {% endif %}
             alt="{% if post.header.alt %}{{ post.header.alt }}{% endif %}">
             {% if post.header.image_caption %}

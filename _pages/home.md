@@ -46,7 +46,7 @@ feature_row:
 
     <div class="feature__item">
       <div class="archive__item">
-        {% if post.image_path %}
+        {% if post.header.teaser %}
           <div class="archive__item-teaser">
             <img src=
               {% if post.header.teaser contains "://" %}

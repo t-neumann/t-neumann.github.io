@@ -46,24 +46,22 @@ feature_row:
 
     <div class="feature__item">
       <div class="archive__item">
-        {% if post.header.teaser %}
-          <div class="archive__item-teaser">
-            <img src=
-              {% if post.header.teaser %}
-                {% if post.header.teaser contains "://" %}
-                  "{{ post.header.teaser }}"
-                {% else %}
-                  "{{ post.header.teaser | relative_url }}"
-                {% endif %}
+        <div class="archive__item-teaser">
+          <img src=
+            {% if post.header.teaser %}
+              {% if post.header.teaser contains "://" %}
+                "{{ post.header.teaser }}"
               {% else %}
-                "assets/images/mm-customizable-feature.png"
+                "{{ post.header.teaser | relative_url }}"
               {% endif %}
-            alt="{% if post.header.alt %}{{ post.header.alt }}{% endif %}">
-            {% if post.header.image_caption %}
-              <span class="archive__item-caption">{{ post.header.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            {% else %}
+              "assets/images/mm-customizable-feature.png"
             {% endif %}
-          </div>
-        {% endif %}
+          alt="{% if post.header.alt %}{{ post.header.alt }}{% endif %}">
+          {% if post.header.image_caption %}
+            <span class="archive__item-caption">{{ post.header.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+          {% endif %}
+        </div>
 
         <div class="archive__item-body">
           {% if post.title %}

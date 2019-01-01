@@ -49,14 +49,14 @@ feature_row:
         {% if post.image_path %}
           <div class="archive__item-teaser">
             <img src=
-              {% if post.image_path contains "://" %}
-                "{{ post.image_path }}"
+              {% if post.header.teaser contains "://" %}
+                "{{ post.header.teaser }}"
               {% else %}
-                "{{ post.image_path | relative_url }}"
+                "{{ post.header.teaser | relative_url }}"
               {% endif %}
-            alt="{% if post.alt %}{{ post.alt }}{% endif %}">
-            {% if post.image_caption %}
-              <span class="archive__item-caption">{{ post.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            alt="{% if post.header.alt %}{{ post.header.alt }}{% endif %}">
+            {% if post.header.image_caption %}
+              <span class="archive__item-caption">{{ post.header.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
             {% endif %}
           </div>
         {% endif %}
@@ -73,7 +73,7 @@ feature_row:
           {% endif %}
 
           {% if post.url %}
-            <p><a href="{{ f_url }}" class="btn {{ post.btn_class }}">{{ post.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+            <p><a href="{{ f_url }}" class="btn {{ post.header.btn_class | default: btn--primary }}">{{ post.header.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
           {% endif %}
         </div>
       </div>

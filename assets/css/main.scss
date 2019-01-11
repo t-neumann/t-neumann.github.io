@@ -6,3 +6,10 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+@import "variables";
+
+@import "academicons.min";
+@import "bootstrap/bootstrap";
+@import "custom";
+@import "prism";
+@import "syntax-monokai-sublime";

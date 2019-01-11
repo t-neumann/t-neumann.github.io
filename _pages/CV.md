@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 author_profile: true
 permalink: /CV/
 ---

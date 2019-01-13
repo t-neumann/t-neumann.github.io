@@ -34,10 +34,32 @@ order: 1
     <div class="container">
       <div class="row">
         <div class="col-md-2">
+          <i class="fa fa-calendar" aria-hidden="true"></i> From 2017
+        </div>
+        <div class="col">
+          Contractor for <a href="https://www.lexogen.com/" target="blank">Lexogen GmbH</a>
+          <div style="line-height:150%;">
+            <br>
+          </div>
+          <ul>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead development of the <a href="https://www.lexogen.com/store/slamdunk-data-analysis-pipeline">SLAMdunk</a> product backend.</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Optimizing and porting established variant-callers for nucleotide-conversion detection.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Containerization of so ware packages using Docker.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Deployment of Docker containers on the <a href="https://www.bluebee.com/">Bluebee</a> private cloud platform <i class="fas fa-cloud" aria-hidden="true"></i>.</li>
+          <li><span><i class="mdi mdi-server"></i></span>License assessment and resource benchmarking <i class="fas fa-balance-scale" aria-hidden="true"></i>.</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-2">
           <i class="fa fa-calendar" aria-hidden="true"></i> From 2014
         </div>
         <div class="col">
           Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a>
+          <div style="line-height:150%;">
+            <br>
+          </div>
           <ul>
           <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining public datasets in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
           <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead bioinformatics method and algorithm development for the <a href="https://www.nature.com/articles/nmeth.4435">SLAM-seq</a> sequencing technology.</li>

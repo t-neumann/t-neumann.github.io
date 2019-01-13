@@ -3,7 +3,6 @@ layout: single
 author_profile: true
 permalink: /CV/
 order: 1
-title: CV
 ---
 <div class="card-columns only-one-column">
 

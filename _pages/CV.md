@@ -38,17 +38,12 @@ order: 1
         </div>
         <div class="col">
           Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a>
-          <ul class="fa-ul">
-            <li><span class="fa-li" ><i class="fab fa-aws"></i></span>Data mining public datasets in the cloud</li>
-            <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
-            <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
-            <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
-          </ul>
           <ul>
-          <li><span><i class="fab fa-aws" aria-hidden="true"></i></span>Data mining public datasets in the cloud</li>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>A thin, rigid board with a clip at the top for holding paper in place.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>A graphical representation of data, in which the data is represented by symbols, such as bars in a bar chart, lines in a line chart, or slices in a pie chart.</li>
-          <li><span><i class="mdi mdi-server"></i></span>A system that responds to requests across a computer network worldwide to provide, or help to provide, a network or data service.</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining public datasets in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead bioinformatics method and algorithm development for the <a href="https://www.nature.com/articles/nmeth.4435">SLAM-seq</a> sequencing technology.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Design of genome-wide shRNA and sgRNA libraries for pooled RNAi /CRISPR screens in human and mouse and screen analysis.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Project lead on database and front-end development for integrating, visualizing and querying screening and NGS data and metadata utilizing the on-campus sequencing facility API</li>
+          <li><span><i class="mdi mdi-server"></i></span>Establishment of <a href="https://nanoporetech.com">Oxford Nanopore Sequencing (ONT)</a> protocols in the lab (first lab at IMP).</li>
           </ul>
         </div>
       </div>

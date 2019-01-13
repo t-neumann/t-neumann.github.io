@@ -80,21 +80,30 @@ order: 1
             <br>
           </div>
           <ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead development, maintenance and optimization of a targeted gene sequencing and exome-sequencing pipeline building system forming the bioinformatics backend of the Sophia DDM &reg; SaaS platform.</li>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Tailoring pipelines for diagnostic gene panel kits on various sequencing platforms (Roche 454 / ionTorrentPGM / Illumina MiSeq) for major hospitals and labs in Switzerland and across Europe.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Design of genome-wide shRNA and sgRNA libraries for pooled RNAi /CRISPR screens in human and mouse and screen analysis.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Project lead on database and front-end development for integrating, visualizing and querying screening and NGS data and metadata utilizing the on-campus sequencing facility API</li>
-          <li><span><i class="mdi mdi-server"></i></span>Establishment of <a href="https://nanoporetech.com">Oxford Nanopore Sequencing (ONT)</a> protocols in the lab (first lab at IMP).</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead development, maintenance and optimization of a targeted gene sequencing and exome-sequencing pipeline building system forming the bioinformatics backend of the Sophia DDM &reg; SaaS platform <i class="fas fa-diagnoses" aria-hidden="true"></i>.</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Tailoring pipelines for diagnostic gene panel kits on various sequencing platforms (Roche 454 / ionTorrentPGM / Illumina MiSeq) for major hospitals and labs in Switzerland and across Europe <i class="fas fa-hospital" aria-hidden="true"></i>.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Conducting genetic test kit validation studies with key diagnostic kit developer sat European level <i class="fas fa-globe-europe" aria-hidden="true"></i>.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Product presentations for prospective and established customers and on conferences <i class="fab fa-slideshare" aria-hidden="true"></i>.</li>
           </ul>
         </div>
       </div>
       <hr>
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2009-2013
+          <i class="fa fa-calendar" aria-hidden="true"></i> 2012
         </div>
         <div class="col">
-          PhD Candidate at <a href="http://crcm.marseille.inserm.fr/" target="_blank">Cancer Research Center of Marseille</a>
+          Bioinformatician at the <a href="https://www.mfpl.ac.at" target="_blank">Max F. Perutz Laboratories</a>
+          <div style="line-height:100%;">
+            <br>
+          </div>
+          <ul>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>De-novo genome assembly of <i>Clunio marinus</i> hosted at <a href="http://cluniobase.cibiv.univie.ac.at/">ClunioBase</a> and published in <i>Nature</i>:</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Sca old N50 of 1.9Mb, 98 &percnt; completeness.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Better assembly quality than honeybee, <i>Tribolium</i> or the monarch butterly.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Served as basis to unravel the genomic basis of circadian and circalunar timing adaptations.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Served as basis to unravel the genomic basis of circadian and circalunar timing adaptations.</li>
+          </ul>
         </div>
       </div>
     </div>

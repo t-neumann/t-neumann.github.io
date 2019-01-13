@@ -39,7 +39,7 @@ order: 1
         <div class="col">
           Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a>
           <ul class="fa-ul">
-            <li><span class="fa-li" ><i class="fas fa-aws"></i></span>Data mining public datasets in the cloud</li>
+            <li><span class="fa-li" ><i class="fab fa-aws"></i></span>Data mining public datasets in the cloud</li>
             <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
             <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
             <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>

@@ -34,14 +34,16 @@ order: 1
     <div class="container">
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> From 2016
+          <i class="fa fa-calendar" aria-hidden="true"></i> From 2014
         </div>
         <div class="col">
-            Bioinformatician for <a href="http://ki.se/forskning/barntumorbanken-0" target="blank">The Swedish Childhood Tumor Biobank (Barntumörbanken)</a>
-            <br>
-            Development of a WGS germline and somatic analysis workflow in collaboration between two <a href ="https://www.scilifelab.se/">SciLifeLab</a> infrastructures: <a href="https://www.scilifelab.se/facilities/ngi-stockholm/" target="blank">NGI</a> and <a href="https://www.nbis.se/" target="blank">NBIS</a>;
-            <br>
-            <i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/SciLifeLab/Sarek">https://github.com/SciLifeLab/Sarek</a>
+          Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a>
+          <ul>
+          <li><span><i class="fab fa-aws" aria-hidden="true"></i></span>Data mining public datasets in the cloud</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>A thin, rigid board with a clip at the top for holding paper in place.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>A graphical representation of data, in which the data is represented by symbols, such as bars in a bar chart, lines in a line chart, or slices in a pie chart.</li>
+          <li><span><i class="mdi mdi-server"></i></span>A system that responds to requests across a computer network worldwide to provide, or help to provide, a network or data service.</li>
+          </ul>
         </div>
       </div>
       <hr>

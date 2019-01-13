@@ -38,7 +38,7 @@ order: 1
         </div>
         <div class="col">
           Contractor for <a href="https://www.lexogen.com/" target="blank">Lexogen GmbH</a>
-          <div style="line-height:150%;">
+          <div style="line-height:100%;">
             <br>
           </div>
           <ul>
@@ -57,7 +57,7 @@ order: 1
         </div>
         <div class="col">
           Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a>
-          <div style="line-height:150%;">
+          <div style="line-height:100%;">
             <br>
           </div>
           <ul>
@@ -72,10 +72,20 @@ order: 1
       <hr>
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2013-2014
+          <i class="fa fa-calendar" aria-hidden="true"></i> 2012-2014
         </div>
         <div class="col">
-          Research Associate at <a href="http://www.nus.edu.sg/" target="_blank">National University of Singapore</a>, <a href="https://www.csi.nus.edu.sg/" target="_blank">Cancer Science Institute of Singapore</a>
+          Bioinformatician at <a href="https://www.sophiagenetics.com" target="_blank">Sophia Genetics SA</a>
+          <div style="line-height:100%;">
+            <br>
+          </div>
+          <ul>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead development, maintenance and optimization of a targeted gene sequencing and exome-sequencing pipeline building system forming the bioinformatics backend of the Sophia DDM &reg; SaaS platform.</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Tailoring pipelines for diagnostic gene panel kits on various sequencing platforms (Roche 454 / ionTorrentPGM / Illumina MiSeq) for major hospitals and labs in Switzerland and across Europe.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Design of genome-wide shRNA and sgRNA libraries for pooled RNAi /CRISPR screens in human and mouse and screen analysis.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Project lead on database and front-end development for integrating, visualizing and querying screening and NGS data and metadata utilizing the on-campus sequencing facility API</li>
+          <li><span><i class="mdi mdi-server"></i></span>Establishment of <a href="https://nanoporetech.com">Oxford Nanopore Sequencing (ONT)</a> protocols in the lab (first lab at IMP).</li>
+          </ul>
         </div>
       </div>
       <hr>

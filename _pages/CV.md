@@ -251,7 +251,7 @@ order: 1
 
   <div class="card">
     <a name="languages"></a>
-    <div class="card-header">
+    <div class="card-header h4">
       <i class="fa fa-comment" aria-hidden="true"></i> Languages
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>

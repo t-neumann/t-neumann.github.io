@@ -24,7 +24,7 @@ order: 1
 
   <div class="card">
     <a name="experience"></a>
-    <div class="card-header h3">
+    <div class="card-header h2">
       <i class="fa fa-building" aria-hidden="true"></i> Experience
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
@@ -145,7 +145,7 @@ order: 1
 
   <div class="card">
     <a name="education"></a>
-    <div class="card-header h3">
+    <div class="card-header h2">
       <i class="fa fa-university" aria-hidden="true"></i> Education
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
@@ -251,7 +251,7 @@ order: 1
 
   <div class="card">
     <a name="languages"></a>
-    <div class="card-header h2">
+    <div class="card-header">
       <i class="fa fa-comment" aria-hidden="true"></i> Languages
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
@@ -281,7 +281,7 @@ order: 1
 
   <div class="card">
     <a name="interests"></a>
-    <div class="card-header h3">
+    <div class="card-header">
       <i class="fa fa-info-circle" aria-hidden="true"></i> Interests
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>

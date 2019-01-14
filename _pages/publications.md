@@ -11,7 +11,7 @@ order: 2
       <a href="#articles">Articles</a> •
       <a href="#talks">Talks</a> •
       <a href="#posters">Posters</a> •
-    </h6>
+    </div>
   </div>
 
   <div class="card">

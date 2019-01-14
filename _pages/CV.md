@@ -7,13 +7,13 @@ order: 1
 <div class="card-columns only-one-column">
 
   <div class="card">
-    <h6 class="card-text text-muted alert alert-dark">
+    <h4 class="card-text text-muted alert alert-dark">
       <a href="#experience">Experience</a> •
       <a href="#education">Education</a> •
       <a href="#skills">Computer skills</a> •
       <a href="#languages">Languages</a> •
       <a href="#interests">Interests</a>
-    </h6>
+    </h4>
   </div>
 
   <div class="card">
@@ -24,7 +24,7 @@ order: 1
 
   <div class="card">
     <a name="experience"></a>
-    <div class="card-header h2">
+    <div class="card-header h4">
       <i class="fa fa-building" aria-hidden="true"></i> Experience
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
@@ -145,7 +145,7 @@ order: 1
 
   <div class="card">
     <a name="education"></a>
-    <div class="card-header h2">
+    <div class="card-header h4">
       <i class="fa fa-university" aria-hidden="true"></i> Education
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
@@ -182,67 +182,67 @@ order: 1
 
   <div class="card">
     <a name="skills"></a>
-    <div class="card-header h2">
+    <div class="card-header h4">
       <i class="fa fa-laptop" aria-hidden="true"></i> Computers skills
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
           • Programming
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           C/C++, Java
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
           • Scripting
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           Python, R/Bioconductor, Bash, Perl
         </div>
       </div>
       <hr>
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
           • Versioning
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           Git, SVN
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
           • Containers
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           Docker, Singularity
         </div>
       </div>
       <hr>
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
           • Platforms
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           Linux, Mac OS X, AWS, Windows
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
           • Building
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           CMake, Maven
         </div>
       </div>
       <hr>
       <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
           • Frameworks
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           EJB / CDI, Hibernate / JPA, JSF + PrimeFaces
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
           • Parallelization
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           SSE/AVX, OpenCL, OpenMP, MPI
         </div>
       </div>
@@ -281,7 +281,7 @@ order: 1
 
   <div class="card">
     <a name="interests"></a>
-    <div class="card-header h1">
+    <div class="card-header h4">
       <i class="fa fa-info-circle" aria-hidden="true"></i> Interests
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>

@@ -7,13 +7,13 @@ order: 1
 <div class="card-columns only-one-column">
 
   <div class="card">
-    <h4 class="card-text text-muted alert alert-dark">
+    <h8 class="card-text text-muted alert alert-dark">
       <a href="#experience">Experience</a> •
       <a href="#education">Education</a> •
       <a href="#skills">Computer skills</a> •
       <a href="#languages">Languages</a> •
       <a href="#interests">Interests</a>
-    </h4>
+    </h8>
   </div>
 
   <div class="card">
@@ -108,6 +108,7 @@ order: 1
           </ul>
         </div>
       </div>
+      <hr>
       <div class="row">
         <div class="col-md-2">
           <i class="fa fa-calendar" aria-hidden="true"></i> 2010-2012
@@ -126,6 +127,7 @@ order: 1
           </ul>
         </div>
       </div>
+      <hr>
       <div class="row">
         <div class="col-md-2">
           <i class="fa fa-calendar" aria-hidden="true"></i> 2009
@@ -176,7 +178,6 @@ order: 1
           Bachelor’s Degree in Bioinformatics, <a href="https://www.fh-ooe.at/campus-hagenberg" target="_blank">University for Applied Sciences Hagenberg</a>
         </div>
       </div>
-      <hr>
     </div>
   </div>
 

@@ -7,13 +7,13 @@ order: 1
 <div class="card-columns only-one-column">
 
   <div class="card">
-    <h7 class="card-text text-muted alert alert-dark">
+    <h6 class="card-text text-muted alert alert-dark">
       <a href="#experience">Experience</a> •
       <a href="#education">Education</a> •
       <a href="#skills">Computer skills</a> •
       <a href="#languages">Languages</a> •
       <a href="#interests">Interests</a>
-    </h7>
+    </h6>
   </div>
 
   <div class="card">
@@ -189,40 +189,25 @@ order: 1
     <div class="container">
       <div class="row">
         <div class="col-md-2">
+          • Programming
+        </div>
+        <div class="col-md-4">
+          C/C++, Java
+        </div>
+        <div class="col-md-2">
           • Scripting
         </div>
         <div class="col-md-4">
-          Groovy, Bash, Perl
-        </div>
-        <div class="col-md-2">
-          • Pipeline
-        </div>
-        <div class="col-md-4">
-          Nextflow, Make
+          Python, R/Bioconductor, Bash, Perl
         </div>
       </div>
       <hr>
       <div class="row">
         <div class="col-md-2">
-          • Web
+          • Versioning
         </div>
         <div class="col-md-4">
-          Jekyll, Wordpress
-        </div>
-        <div class="col-md-2">
-          • Communication
-        </div>
-        <div class="col-md-4">
-          Slack, LaTeX, Beamer, Inkscape
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          • Project Management
-        </div>
-        <div class="col-md-4">
-          Github, Trello
+          Git, SVN
         </div>
         <div class="col-md-2">
           • Containers
@@ -234,16 +219,31 @@ order: 1
       <hr>
       <div class="row">
         <div class="col-md-2">
-          • Web languages
+          • Platforms
         </div>
         <div class="col-md-4">
-          HTML5, CSS3, SASS, JS
+          Linux, Mac OS X, AWS, Windows
         </div>
         <div class="col-md-2">
-          • Other
+          • Building
         </div>
         <div class="col-md-4">
-          Linux, clusters, Git, R
+          CMake, Maven
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-2">
+          • Frameworks
+        </div>
+        <div class="col-md-4">
+          EJB / CDI, Hibernate / JPA, JSF + PrimeFaces
+        </div>
+        <div class="col-md-2">
+          • Parallelization
+        </div>
+        <div class="col-md-4">
+          SSE/AVX, OpenCL, OpenMP, MPI
         </div>
       </div>
     </div>
@@ -258,166 +258,22 @@ order: 1
     <div class="container">
       <div class="row">
         <div class="col-md-2">
-          • French
+          • German
         </div>
         <div class="col-md-2">
-          Mother tongue
+          Native
         </div>
         <div class="col-md-2">
           • English
         </div>
         <div class="col-md-2">
-          Fluent
+          Full professional proficiency
         </div>
         <div class="col-md-2">
-          • Swedish
+          • Spanish
         </div>
         <div class="col-md-2">
-          Notions
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <a name="societies"></a>
-    <div class="card-header h2">
-      <i class="fa fa-flask" aria-hidden="true"></i> Scientific Societies
-      <div class="float-right"><a href="#top">&uarr;</a></div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          • Member of the International Society of Computational Biology (<a href="https://www.iscb.org/" target="_blank">ISCB</a>)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col">
-          • Member of the French Society of Bioinformatics (Société Française de BioInformatique: <a href="https://www.sfbi.fr/" target="_blank">SFBI</a>)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col">
-          • Member of the French Community of PhDs (La Communauté Française des Docteurs: <a href="https://andes.asso.free.fr/communaute-docteurs/" target="_blank">CFD</a>)
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <a name="associations"></a>
-    <div class="card-header h2">
-      <i class="fa fa-users" aria-hidden="true"></i> Associations
-      <div class="float-right"><a href="#top">&uarr;</a></div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i>  From 2012
-        </div>
-        <div class="col">
-          Contributor to <a href="https://bioinfo-fr.net/" target="_blank">Bioinfo-fr.net</a> (French-speaking blog on Bioinformatics)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i>  2012-2014
-        </div>
-        <div class="col">
-          Vice-president of <a href="https://jebif.fr/" target="_blank">JeBiF</a> - <a href="http://www.iscbsc.org/rsg/rsg-france">RSG-France</a> (Association of French Young Bioinformaticians)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i>  2010-2011
-        </div>
-        <div class="col">
-          President of <a href="https://www.hippothese.asso.fr/" target="_blank">Hippo'Thèse</a> (Association of young researchers in Biology at Aix-Marseille University)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i>  2010-2011
-        </div>
-        <div class="col">
-          Vice-president and webmaster of <a href="http://www.reseau-biotechno.com/" target="_blank">BIOTechno Network</a> (French Network of Associations organizing forums about careers in Biotechnology)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i>  2009-2010
-        </div>
-        <div class="col">
-          Webmaster of <a href="http://www.hippothese.asso.fr/" target="_blank">Hippo'Thèse</a> (Association of young researchers in Biology at Aix-Marseille University)
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <a name="events"></a>
-    <div class="card-header h2">
-      <i class="fa fa-list" aria-hidden="true"></i> Organization and Events
-      <div class="float-right"><a href="#top">&uarr;</a></div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2015
-        </div>
-        <div class="col">
-          Journées nationales de la Communauté Française des Docteurs (Webmaster, Member of organization committee and logistic support)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2012
-        </div>
-        <div class="col">
-          Doctoriales en Provence (Member of organization committee and logistic support)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2011
-        </div>
-        <div class="col">
-          Marché de la Chimie @ Fête de la Science (Conception and animation of a stand for Cancéropôle-PACA)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2011
-        </div>
-        <div class="col">
-          7th BIOTechno forum in Marseille (Head of organization committee)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2009-2012
-        </div>
-        <div class="col">
-          Annual meeting of doctoral school in Biology and Health Sciences from Aix-Marseille University (Member of organization committee, abstract selection, jury member, logistic support)
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2007-2011
-        </div>
-        <div class="col">
-          Logistic support in organization of Plan de Cuques French Comics Festival
+          Elementary proficiency
         </div>
       </div>
     </div>
@@ -425,16 +281,37 @@ order: 1
 
   <div class="card">
     <a name="interests"></a>
-    <div class="card-header h2">
+    <div class="card-header h3">
       <i class="fa fa-info-circle" aria-hidden="true"></i> Interests
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col">
-          • Yoga, Cinema, Poker, Gardening, Ice-Skating
-        </div>
+    <div class="row">
+      <div class="col-md-2">
+        Sports
       </div>
+      <div class="col">
+        Beachvolleyball, Cycling, Bouldering, Slacklining, Badminton
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-2">
+        Music
+      </div>
+      <div class="col">
+        Piano, Guitar, Drums
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-2">
+        Other
+      </div>
+      <div class="col">
+        Reading news, languages, travelling
+      </div>
+    </div>
     </div>
   </div>
 

@@ -7,27 +7,24 @@ order: 1
 <div class="card-columns only-one-column">
 
   <div class="card">
-    <h6 class="card-text text-muted alert alert-dark">
+    <h7 class="card-text text-muted alert alert-dark">
       <a href="#experience">Experience</a> •
       <a href="#education">Education</a> •
       <a href="#skills">Computer skills</a> •
       <a href="#languages">Languages</a> •
-      <a href="#societies">Scientifics societies</a> •
-      <a href="#associations">Associations</a> •
-      <a href="#events">Organization and events</a> •
       <a href="#interests">Interests</a>
-    </h6>
+    </h7>
   </div>
 
   <div class="card">
-    <h6 class="card-text text-muted alert alert-dark">
-      <i class="fa fa-download" aria-hidden="true"></i> <a href="/assets/mycv/CV-MGarcia-latest.pdf" target="_blank">Download a pdf version</a>
-    </h6>
+    <h7 class="card-text text-muted alert alert-dark">
+      <i class="fa fa-download" aria-hidden="true"></i> <a href="/assets/mycv/TobiasNeumann_CV_latest.pdf" target="_blank">Download a pdf version</a>
+    </h7>
   </div>
 
   <div class="card">
     <a name="experience"></a>
-    <div class="card-header h2">
+    <div class="card-header h3">
       <i class="fa fa-building" aria-hidden="true"></i> Experience
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
@@ -148,7 +145,7 @@ order: 1
 
   <div class="card">
     <a name="education"></a>
-    <div class="card-header h2">
+    <div class="card-header h3">
       <i class="fa fa-university" aria-hidden="true"></i> Education
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
@@ -158,16 +155,7 @@ order: 1
           <i class="fa fa-calendar" aria-hidden="true"></i> 2009
         </div>
         <div class="col">
-          PhD in Bioinformatics and Genomics at <a href="http://www.univ-amu.fr/" target="_blank">Aix-Marseille Université</a>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2007-2009
-        </div>
-        <div class="col">
-          Master’s Degree in <a href="http://biologie.univ-mrs.fr/masterBBSG/" target="_blank">Bioinformatics and Genomics</a>, <a href="http://biologie.univ-mrs.fr/" target="_blank">Faculté des Sciences de Luminy</a>, Marseille
+          Master’s Degree in Bioinformatics, <a href="https://www.meduniwien.ac.at" target="_blank">Medical University Vienna</a>
         </div>
       </div>
       <hr>
@@ -176,18 +164,19 @@ order: 1
           <i class="fa fa-calendar" aria-hidden="true"></i> 2007
         </div>
         <div class="col">
-          Erasmus Semester in <a href="https://www.uea.ac.uk/biological-sciences" target="_blank">School of Biological Sciences</a>, <a href="https://www.uea.ac.uk/" target="_blank">University of East Anglia</a>, Norwich
+          Erasmus Semester at the <a href="http://www.sbc.su.se" target="_blank">Stockholm Bioinformatics Center</a>, Stockholm, Sweden
         </div>
       </div>
       <hr>
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i>   2003-2007
+          <i class="fa fa-calendar" aria-hidden="true"></i> 2007-2009
         </div>
         <div class="col">
-          Bachelor’s Degree in Biology and Biochemistry, <a href="http://biologie.univ-mrs.fr/" target="_blank">Faculté des Sciences de Luminy</a>, Marseille
+          Bachelor’s Degree in Bioinformatics, <a href="https://www.fh-ooe.at/campus-hagenberg" target="_blank">University for Applied Sciences Hagenberg</a>
         </div>
       </div>
+      <hr>
     </div>
   </div>
 

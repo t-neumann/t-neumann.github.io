@@ -17,9 +17,9 @@ order: 1
   </div>
 
   <div class="card">
-    <h7 class="card-text text-muted alert alert-dark">
+    <div class="card-text text-muted alert alert-dark">
       <i class="fa fa-download" aria-hidden="true"></i> <a href="/assets/mycv/TobiasNeumann_CV_latest.pdf" target="_blank">Download a pdf version</a>
-    </h7>
+    </div>
   </div>
 
   <div class="card">

@@ -281,7 +281,7 @@ order: 1
 
   <div class="card">
     <a name="interests"></a>
-    <div class="card-header">
+    <div class="card-header h1">
       <i class="fa fa-info-circle" aria-hidden="true"></i> Interests
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>

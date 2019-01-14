@@ -7,13 +7,13 @@ order: 1
 <div class="card-columns only-one-column">
 
   <div class="card">
-    <h8 class="card-text text-muted alert alert-dark">
+    <div class="card-text text-muted alert alert-dark">
       <a href="#experience">Experience</a> •
       <a href="#education">Education</a> •
       <a href="#skills">Computer skills</a> •
       <a href="#languages">Languages</a> •
       <a href="#interests">Interests</a>
-    </h8>
+    </div>
   </div>
 
   <div class="card">

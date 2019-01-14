@@ -121,7 +121,7 @@ order: 1
             <br>
           </div>
           <ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Massive parallelization of sequence  alignments on the CPU and cluster
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Massive parallelization of sequence  alignments on the CPU and cluster <br/>
           <i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/t-neumann/versalignLib">https://github.com/t-neumann/versalignLib</a>
           </li>
           <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Software development of an evaluation framework for reference-mapping software.</li>

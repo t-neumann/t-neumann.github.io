@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Tobias Neumann"
   avatar           : "/assets/images/smallAvatar.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Bioinformatician / Data Analyst / Space exploration enthusiast"
   location         : "Vienna, Austria"
   email            :
   links:
@@ -115,7 +115,7 @@ author:
       url: mailto:tobias.neumann.at@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://t-neumann.github.io"
+      url:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/fh_fingolfin"

@@ -11,7 +11,7 @@ tags:
 
 # Hello world!
 
-I was repeatedly gently pushed towards writing a couple of blogs posts of all the obstacles I bothered people on various <a href=""https://gitter.im>Gitter channels</a> with, so I finally made it happen.
+I was repeatedly gently pushed towards writing a couple of blogs posts of all the obstacles I bothered people on various [Gitter channels <i class="fab fa-gitter" aria-hidden="true"></i>](https://gitter.im) with, so I finally made it happen.
 
 Since I hate anything related to web development, HTML, CSS, JS - you name it - hosting Jekyll on GitHub is the most I can reasonably do. I'm actually quite happy that it requires little CSS and HTML and can be mostly put together via Markdown.
 

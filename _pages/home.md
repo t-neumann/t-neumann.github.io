@@ -6,10 +6,12 @@ header:
   overlay_image: /assets/images/mm-home-page-feature.jpg
   actions:
     - label: "<i class='fas fa-download'></i> Install now"
-      url: "/docs/quick-start-guide/"
+      url: "/slamdunk/"
 excerpt: >
-  SLA flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.1">Latest release v4.14.1</a></small>
+Streamlining SLAMseq analysis with ultra-high sensitivity
+SlamDunk is a novel, fully automated software tool for automated, robust, scalable and reproducible SLAMseq data analysis.
+Diagnostic plotting features and our MultiQC plugin will make your SLAMseq data ready for immediate QA and interpretation.<br />
+  <small><a href="https://github.com/t-neumann/slamdunk/releases/latest">Latest release v0.3.3</a></small>
 ---
 
 <div class="card-columns">

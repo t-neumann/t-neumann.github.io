@@ -1,8 +1,9 @@
 ---
 title: AWS architecture
 description: Outlining the AWS architecture
-header:
-  teaser: /assets/images/categories/aws.svg
+date: 2019-00-17 22:00
+image:
+  path: /assets/images/categories/aws.svg
 categories:
   - Pipelines
 tags:

@@ -1,7 +1,7 @@
 ---
 title: AWS architecture
 description: Outlining the AWS architecture
-date: 2019-00-17 22:00
+date: 2019-01-17 22:00
 image:
   path: /assets/images/categories/aws.svg
 categories:

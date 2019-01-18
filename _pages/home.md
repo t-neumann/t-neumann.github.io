@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: Streamlining SLAMseq analysis with ultra-high sensitivity
+title: Slamdunk
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
@@ -9,8 +9,8 @@ header:
     - label: "<i class='fas fa-download'></i> Install now"
       url: "/docs/quick-start-guide/"
 excerpt: >
-  SlamDunk is a novel, fully automated software tool for automated, robust, scalable and reproducible SLAMseq data analysis..<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.14.1">Latest release v0.3.0</a></small>
+  Slamdunk is a widely used tool I developed for automated, robust, scalable and reproducible SLAM-seq data analysis .<br />
+  <small><a href="https://github.com/t-neumann/slamdunk/archive/v0.3.3.tar.gz">Latest release v0.3.0</a></small>
 ---
 
 <div class="card-columns">

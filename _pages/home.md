@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/images/mm-home-page-feature.jpg
   actions:
     - label: "<i class='fas fa-download'></i> Install now"
-      url: "https://t-neumann.github.io/slamdunk"
+      url: "https://github.com/t-neumann/slamdunk"
 excerpt: >
 Streamlining SLAMseq analysis with ultra-high sensitivity
 SlamDunk is a novel, fully automated software tool for automated, robust, scalable and reproducible SLAMseq data analysis.

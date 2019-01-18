@@ -1,6 +1,6 @@
 ---
-title: AWS architecture
-description: Outlining the AWS architecture
+title: AWS architecture outline
+description: Resources to consider for engineering pipelines on AWS
 date: 2019-01-17 22:00
 image:
   path: /assets/images/categories/aws.svg

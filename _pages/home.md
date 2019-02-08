@@ -5,7 +5,8 @@ title: Fly high
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/laythe.png
-excerpt:
+excerpt: >
+Check your reference not to fall
 ---
 
 <div class="card-columns">

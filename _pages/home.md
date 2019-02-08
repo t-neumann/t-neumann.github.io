@@ -1,16 +1,11 @@
 ---
 layout: splash
 permalink: /
-title: Slamdunk
+title: Fly high
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/laythe.png
-  actions:
-    - label: "<i class='fas fa-download'></i> Install now"
-      url: "/docs/quick-start-guide/"
-excerpt: >
-  Slamdunk is a widely used tool I developed for automated, robust, scalable and reproducible SLAM-seq data analysis .<br />
-  <small><a href="https://github.com/t-neumann/slamdunk/archive/v0.3.3.tar.gz">Latest release v0.3.0</a></small>
+excerpt:
 ---
 
 <div class="card-columns">

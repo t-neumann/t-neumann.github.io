@@ -6,7 +6,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/laythe.png
 excerpt: >
-Check your reference not to fall
+   Check your reference not to fall
 ---
 
 <div class="card-columns">

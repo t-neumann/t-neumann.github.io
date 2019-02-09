@@ -3,12 +3,8 @@ layout: splash
 permalink: /
 title: Fly high
 header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/laythe.png
-excerpt: >
-   Check your reference not to fall
-   Go with the flow
-   Do whatever
+  image: /assets/images/laythe.png
+excerpt:
 ---
 
 <div class="card-columns">

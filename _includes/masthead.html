@@ -1,6 +1,37 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+        <a class="navbar-brand" href="/"><img class="brand-image logo brandicon" src="/assets/img/avatar/owl.svg" alt="Logo"/>
+          <strong>{{ site.title }}</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            {%- for link in site.data.navigation.main -%}
+              {%- if link.url contains '://' -%}
+                {%- assign url = link.url -%}
+              {%- else -%}
+                {%- assign url = link.url | relative_url -%}
+              {%- endif -%}
+              {% if page.url == item.url %}
+              <li class="nav-item active">
+                <a href="{{ url }}" class="nav-item nav-link active">{% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                <a href="{{ url }}" class="nav-item nav-link">{% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              </li>
+              {% endif %}
+              <li class="masthead__menu-item">
+                <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+              </li>
+            {%- endfor -%}
+            </ul>
+        </div>
+      <!-- </nav>
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
         <ul class="visible-links">
@@ -27,7 +58,7 @@
           <div class="navicon"></div>
         </button>
         <ul class="hidden-links hidden"></ul>
-      </nav>
+      </nav> -->
     </div>
   </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: Fly high
+title: t-neumann.github.io
 header:
   image: /assets/images/laythe.png
 excerpt:

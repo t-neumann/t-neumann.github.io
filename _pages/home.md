@@ -7,6 +7,8 @@ header:
   overlay_image: /assets/images/laythe.png
 excerpt: >
    Check your reference not to fall
+   Go with the flow
+   Do whatever
 ---
 
 <div class="card-columns">

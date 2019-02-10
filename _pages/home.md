@@ -7,6 +7,8 @@ header:
 excerpt:
 ---
 
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/laythe.png" alt="AWS Services">
+
 <div class="card-columns">
 {% for post in site.posts %}
   <div class="card">

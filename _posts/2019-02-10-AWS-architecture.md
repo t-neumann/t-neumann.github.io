@@ -27,7 +27,7 @@ The good news for us bioinformaticians is - and probably all cloud computing pro
 
 If you are familiar with cluster computing environments, you should not have a hard time to find the same architecture principal when building your own custom cluster computing environment in the cloud with AWS. I will elaborate on those pieces I encountered when building up a basic processing pipeline:
 
-<figure style="width: 300px" class="align-right">
+<figure style="width: 500px" class="align-right">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-architecture/AWSArchitecture.png" alt="AWS Architecture">
 </figure>
 

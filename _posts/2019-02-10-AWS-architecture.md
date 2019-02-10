@@ -80,6 +80,8 @@ The `AMI` is basically Amazon's version of an image similar to Virtual Machine i
 
 ## EC2 - Elastic Compute Cloud
 
+`EC2` is the part where you bring the computing heat: These are the instances upon which you launch your `AMI`s, attach your `EBS` volumes and then do some heavy computation. 
+
 ## ECS - Elastic Container Service
 
 ## AWS Batch

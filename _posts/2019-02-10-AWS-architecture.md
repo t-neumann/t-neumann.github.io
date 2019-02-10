@@ -38,6 +38,8 @@ If you are familiar with cluster computing environments, you should not have a h
 - `ECS` to create your "software" from Docker containers to run on your instances
 - `AWS Batch` that handles everything from submission to scaling and proper finalization of your individual jobs
 
+In the limited number of pipeline I have set up to run in AWS (they can also run on any other compute environment, but that's a different later story) I have never used any services beyond that. For anything that involves reading e.g. raw read files, processing them and retreiving the output one should be able to make do with a combination of those. This can probably be optimized or done more elegantly with different services, but I had some discussions on this with various people and we have not come across a solution that could do it at a lower cost.
+
 ## S3 - Simple Storage Service
 
 ## EBS - Elastic Block Store

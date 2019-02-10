@@ -76,6 +76,8 @@ Estimating `EBS` volume sizes gave me a hard time initially and I did a lot of b
 
 ## AMI - Amazon Machine Image
 
+The `AMI` is basically Amazon's version of an image similar to Virtual Machine images. They offer quite a variety of OS base versions in their store (Linux, Windows etc.), but what you would usually want to go for is extending any of those base images yourself with all the software you need during your pipeline run. These days with [Docker <i class="fab fa-docker" aria-hidden="true"></i>](https://www.docker.com), usually there is very little effort to setup your software environment, but even then you will in most cases have to install at least the [AWS Command Line Interface](https://aws.amazon.com/cli) to copy files from and to `S3`.
+
 ## EC2 - Elastic Compute Cloud
 
 ## ECS - Elastic Container Service

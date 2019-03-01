@@ -112,8 +112,12 @@ The separation of `AWS Batch` from `ECS` was most blurry to me. Essentially, `AW
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-architecture/AWSArchitecture.png" alt="AWS Architecture">
 </figure>
 
-So how do all the AWS buildling blocks we just discussed fit together to process jobs? Let's walk through it and conclude this post:
+So how do all the AWS building blocks we just discussed fit together to process jobs? Let's walk through it and conclude this post:
 
-All jobs we want to be processed are sent to `AWS Batch`, which will assess the resources needed and fire up `ECS` instances accordingly. `ECS` will take care of pulling the Docker images needed from a container registry (usually Docker hub) and fire up containers on the `EC2` instances using the pre-installed Docker daemon. These `EC2` instances have been initialized with custom `AMIs` on startup, having all `ECS` prerequisites and additional customized resources such as e.g. the `AWS CLI` and additional `EBS` volume space. All data required for this job is fetched from their long-term storage in `S3` to the local `EBS` storage of the respective `EC2` instance.
+* All jobs we want to be processed are sent to `AWS Batch`, which will assess the resources needed and fire up `ECS` instances accordingly.
+* `ECS` will take care of pulling the Docker images needed from a container registry (usually Docker hub) and fire up containers on the `EC2` instances using the pre-installed Docker daemon.
+* These `EC2` instances have been initialized with custom `AMIs` on startup, having all `ECS` prerequisites and additional customized resources such as e.g. the `AWS CLI` and additional `EBS` volume space.
+* All data required for this job is fetched from their long-term storage in `S3` to the local `EBS` storage of the respective `EC2` instance.
 
 Now the job has everything it needs to run and will be processed.
+After reading this post, you should have a basic understanding what AWS building blocks an AWS batch scheduling system comprises. The next step is to then actually build the architecture for such a pipeline for which I will dedicate another comprehensive post.

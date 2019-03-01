@@ -101,4 +101,13 @@ Several `ECS` container instances can be combined into an `ECS` cluster: Amazon 
 
 ## AWS Batch
 
+The separation of `AWS Batch` from `ECS` was most blurry to me. Essentially, `AWS Batch` is build on top of regular `ECS` and comes with additional features such as:
+
+* Managed compute environment: AWS handles cluster scaling in response to workload.
+* Heterogenous instance types: useful when having outlier jobs taking up large amounts of resources
+* Spot instances: Save money compared to on-demand instances
+* Easy integration with `Cloudwatch` logs (`stdout` and `stderr` captured automatically). This can also lead to insane cost, so **watch out**. More on that later.
+
+`AWS Batch` will effectively take care of firing up instances to handle your workload and then let `ECS` handle the Docker orchestration and job execution.
+
 # Putting it all together

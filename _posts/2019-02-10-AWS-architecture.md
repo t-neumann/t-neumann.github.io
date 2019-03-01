@@ -80,9 +80,24 @@ The `AMI` is basically Amazon's version of an image similar to Virtual Machine i
 
 ## EC2 - Elastic Compute Cloud
 
-`EC2` is the part where you bring the computing heat: These are the instances upon which you launch your `AMI`s, attach your `EBS` volumes and then do some heavy computation. 
+`EC2` is the part where you bring the computing heat: These are the instances upon which you launch your `AMI`s, attach your `EBS` volumes and then do some heavy computation. `EC2` instances come in all form and shapes - depending on your demands. Below is an excerpt of compute optimized instance types, but depending on the application you might go for memory optimized, storage optimized GPUs, you name it.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-architecture/EC2Instances.png" alt="EC2 instances">
+
+The cool thing about them - probably you noticed already if you did the Math - is in terms of cost, it does not matter whether you pick a smaller or a larger instance. The price will scale exactly linearly, meaning you don't need to squeeze in two jobs in a 2-timers bigger instance necessarily - which will be important at a later point.
 
 ## ECS - Elastic Container Service
+
+This definition and especially it's distinction from `AWS Batch` was the hardest for me - I found the most helpful explanation [here](https://medium.freecodecamp.org/amazon-ecs-terms-and-architecture-807d8c4960fd) and summarized it below.
+
+According to Amazon,
+> Amazon Elastic Container Service (Amazon ECS) is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS.
+
+With `ECS` you can run Docker containers on `EC2` instances with `AMIs` pre-installed with Docker. `ECS` handles the installation of containers and the scaling, monitoring and management of the `EC2` instances through an API or the AWS Management console. An `ECS` instance has Docker and an `ECS` Container Agent running on it. A Container Instance can run many Tasks. The Agent takes care of the communication between ECS and the instance, providing the status of running containers and managing running new ones.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-architecture/ECS.png" alt="ECS">
+
+Several `ECS` container instances can be combined into an `ECS` cluster: Amazon ECS handles the logic of scheduling, maintaining, and handling scaling requests to these instances. It also takes away the work of finding the optimal placement of each Task based on your CPU and memory needs.
 
 ## AWS Batch
 

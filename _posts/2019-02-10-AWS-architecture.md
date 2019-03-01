@@ -25,10 +25,6 @@ The good news for us bioinformaticians is - and probably all cloud computing pro
 
 # AWS building blocks
 
-<figure style="width: 500px" class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-architecture/AWSArchitecture.png" alt="AWS Architecture">
-</figure>
-
 If you are familiar with cluster computing environments, you should not have a hard time to find the same architecture principal when building your own custom cluster computing environment in the cloud with AWS. I will elaborate on those pieces I encountered when building up a basic processing pipeline:
 
 - `S3` for storage of input and auxiliary (e.g. index) files
@@ -38,7 +34,7 @@ If you are familiar with cluster computing environments, you should not have a h
 - `ECS` to create your "software" from Docker containers to run on your instances
 - `AWS Batch` that handles everything from submission to scaling and proper finalization of your individual jobs
 
-In the limited number of pipeline I have set up to run in AWS (they can also run on any other compute environment, but that's a different later story) I have never used any services beyond that. For anything that involves reading e.g. raw read files, processing them and retreiving the output one should be able to make do with a combination of those. This can probably be optimized or done more elegantly with different services, but I had some discussions on this with various people and we have not come across a solution that could do it at a lower cost.
+In the limited number of pipelines I have set up to run in AWS (they can also run on any other compute environment, but that's a different later story) I have never used any services beyond that. For anything that involves reading e.g. raw read files, processing them and retreiving the output one should be able to make do with a combination of those. This can probably be optimized or done more elegantly with different services, but I had some discussions on this with various people and we have not come across a solution that could do it at a lower cost.
 
 ## S3 - Simple Storage Service
 
@@ -111,3 +107,7 @@ The separation of `AWS Batch` from `ECS` was most blurry to me. Essentially, `AW
 `AWS Batch` will effectively take care of firing up instances to handle your workload and then let `ECS` handle the Docker orchestration and job execution.
 
 # Putting it all together
+
+<figure style="width: 500px" class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-architecture/AWSArchitecture.png" alt="AWS Architecture">
+</figure>

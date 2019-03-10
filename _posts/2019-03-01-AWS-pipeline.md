@@ -93,6 +93,84 @@ Before firing up your instance, you need to configure the associated security gr
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/AMI-Security-Group.png" alt="Security Group">
 
+### SSH connect to instance
+
+Now right click and hit *Connect* to get your `ssh` connect command to your instance. You might have to change the default `root` user to `ec2-user`.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/AMI-SSH.png" alt="AMI SSH connect">
+
+### Adjust Docker container size to EBS
+
+The first thing we want to check once we connected to our instance is that the Docker configuration reflects the amount of added EBS storage.
+
+```bash
+[ec2-user@ip-172-31-40-128 ~]$ docker info | grep -i data
+ Data Space Used: 309.3MB
+ Data Space Total: 42.42GB
+ Data Space Available: 42.11GB
+ Metadata Space Used: 4.833MB
+ Metadata Space Total: 46.14MB
+ Metadata Space Available: 41.3MB
+```
+
+In the above example we see that indeed Docker is configure for the specified 40 GB EBS data volume.
+
+As per default, the maximum storage size of a single Docker container is 10 GB - independent of the data space available - we have to adjust this.
+
+```bash
+[ec2-user@ip-172-31-40-128 ~]$ docker info | grep -i base
+ Base Device Size: 10.74GB
+```
+
+To this end, we have to extend the file in `/etc/sysconfig/docker-storage` to contain the following parameter `--storage-opt dm.basesize=40GB` and restart the Docker service.
+
+```bash
+sudo vi /etc/sysconfig/docker-storage
+```
+```bash
+DOCKER_STORAGE_OPTIONS="--storage-driver devicemapper --storage-opt dm.thinpooldev=/dev/mapper/docker-docker--pool --storage-opt dm.use_deferred_removal=true --storage-opt dm.use_deferred_deletion=true --storage-opt dm.fs=ext4 --storage-opt dm.use_deferred_deletion=true --storage-opt dm.basesize=40GB"
+```
+```bash
+[ec2-user@ip-172-31-40-128 ~]$ sudo service docker restart
+Stopping docker:                                           [  OK  ]
+Starting docker:       	.                                  [  OK  ]
+```
+```bash
+[ec2-user@ip-172-31-40-128 ~]$ docker info | grep -i base
+ Base Device Size: 42.95GB
+```
+
+### Install AWS CLI
+
+`Nextflow` requires the `AWS CLI` to copy files such as input files and indices from and output files to `S3`.
+
+Use the following lines to add it to your `AMI`:
+
+```bash
+sudo yum install -y bzip2 wget
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh -b -f -p $HOME/miniconda
+$HOME/miniconda/bin/conda install -c conda-forge -y awscli
+rm Miniconda3-latest-Linux-x86_64.sh
+```
+
+Give it a quick spin to see whether everything is ok.
+
+```bash
+[ec2-user@ip-172-31-40-128 ~]$ ./miniconda/bin/aws --version
+aws-cli/1.16.121 Python/3.7.1 Linux/4.14.94-73.73.amzn1.x86_64 botocore/1.12.111
+```
+
+### Save your AMI
+
+Now you can go back to your `EC2` instance dashboard and save your `AMI` by right clicking and going for `Image->Create Image`.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/AMI-Create-AMI.png" alt="Create AMI">
+
+**Congratulations** you have created your first `AMI`!
+
+Don't forget to terminate your running `EC2` instance from which you created the `AMI` to get prevent any running `EBS` and `EC2` costs.
+
 ## Step 2: Creating compute environments and job queues
 
 ## Step 3: Creating job definitions

@@ -46,7 +46,48 @@ We would like to create a simple pipeline utilizing [Salmon](https://combine-lab
 
 ### AWS context
 
-## Step 1: Creating a suitable AMI
+## Step 1: Estimate resource requirements
+
+Appropriate resource allocation is crucial for setting up AWS workflow that are both cost-efficient and high-throughput. Therefore, I strongly advise you to take a big enough test-dataset, run it on in a limitless test environment - hopefully many of you have some kind of in-house HPC cluster - and take the resulting measurements of resource consumption to find optimal storage, memory and CPU sizes.
+
+Conveniently, Nextflow workflows can be easily executed both on `AWS` but also in your local HPC environment by simply defining additional [profiles](https://www.nextflow.io/docs/latest/config.html#config-profiles) for the scheduler of your choice.
+
+Here is one example of a simple `SLURM` profile:
+
+```java
+singularity {
+	enabled = true
+}
+
+docker {
+	enabled = false
+}
+
+process {
+
+	executor = 'slurm'
+    clusterOptions = '--qos=short'
+    cpus = '12'
+    memory = { 8.GB * task.attempt }
+}
+
+params {
+
+   salmonIndex = '/groups/Software/indices/hg38/salmon/gencode.v28.IMPACT'
+
+}
+
+```
+
+As you can see, usually `HPC` environments do not allow Docker containers to run, but support [Singularity](https://singularity.lbl.gov/) containers which can be [easily built from Docker containers](https://singularity.lbl.gov/docs-build-container#downloading-a-existing-container-from-docker-hub).
+
+The `process` section basically defines the scheduler, resources and the job queue in which the processes should run. Finally, the index files are usually stored in some globally accessible directory, similar to the `s3` storage on `AWS`.
+
+Now that we are set, Nextflow has this neat option flag `-with-report` that gives you a very [comprehensive overview](https://www.nextflow.io/docs/latest/tracing.html#execution-report) of the resources your processes consumed during execution.
+
+Below is an example report from when I ran my Nextflow workflow on 1,222 breast cancer datasets from [TCGA](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga):
+
+## Step 2: Creating a suitable AMI
 
 I found the setup and configuration of suitable `AMIs` to be the most demanding step when creating an environment to run a pipeline on `AWS`. Several things have to be considered:
 
@@ -171,10 +212,10 @@ Now you can go back to your `EC2` instance dashboard and save your `AMI` by righ
 
 Don't forget to terminate your running `EC2` instance from which you created the `AMI` to get prevent any running `EBS` and `EC2` costs.
 
-## Step 2: Creating compute environments and job queues
+## Step 3: Creating compute environments and job queues
 
-## Step 3: Creating job definitions
+## Step 4: Creating job definitions
 
-## Step 4: Adjusting resources
+## Step 5: Adjusting resources
 
-## Step 5: Running jobs with AWS Batch
+## Step 6: Running jobs with AWS Batch

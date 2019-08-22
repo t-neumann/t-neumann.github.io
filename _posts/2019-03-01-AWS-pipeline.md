@@ -65,7 +65,7 @@ docker {
 
 process {
 
-	executor = 'slurm'
+    executor = 'slurm'
     clusterOptions = '--qos=short'
     cpus = '12'
     memory = { 8.GB * task.attempt }
@@ -85,7 +85,14 @@ The `process` section basically defines the scheduler, resources and the job que
 
 Now that we are set, Nextflow has this neat option flag `-with-report` that gives you a very [comprehensive overview](https://www.nextflow.io/docs/latest/tracing.html#execution-report) of the resources your processes consumed during execution.
 
-Below is an example report from when I ran my Nextflow workflow on 1,222 breast cancer datasets from [TCGA](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga):
+Below are the most important excerpts of an example report from when I ran my Nextflow workflow on 1,222 breast cancer datasets from [TCGA](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga):
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/nextflowreport_CPU.png" alt="Nextflow CPU consumption">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/nextflowreport_memory.png" alt="Nextflow memory consumption">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/nextflowreport_time.png" alt="Nextflow time duration">
+
+On average a single task ran on 6 threads, consumed 8 GB of memory and ran 2:30 minutes - these is the rough framework of resources we will have to consider when setting up resource constraints and choosing appropriate `EC2` instances.
 
 ## Step 2: Creating a suitable AMI
 

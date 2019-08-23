@@ -76,7 +76,6 @@ params {
    salmonIndex = '/groups/Software/indices/hg38/salmon/gencode.v28.IMPACT'
 
 }
-
 ```
 
 As you can see, usually `HPC` environments do not allow Docker containers to run, but support [Singularity](https://singularity.lbl.gov/) containers which can be [easily built from Docker containers](https://singularity.lbl.gov/docs-build-container#downloading-a-existing-container-from-docker-hub).
@@ -317,5 +316,31 @@ This should leave you know with the following compute environments and job queue
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/TwoQueue_jobqueues.png" alt="Two queue job queues">
 
 ## Step 5: Adjusting resources
+
+Ok so now that we have set all the compute environments with associated instance types as well as job queues up on the `AWS` end, we know what resources we have available and how much of those will be consumed by our tasks.
+
+So naïvely we can directly enter the specifications of our `EC2` instance type of choice in the `awsbatch.config` file of our Nextflow workflow, since we know the `salmonWorkload` queue consists of `c5.2xlarge` instances with 16 GB memroy and 8 vCPUs each and our `salmonExcess` queue of `c5.4xlarge` instances with 32 GB memory and 16 vCPUs each.
+
+```java
+aws.region = 'eu-central-1'
+aws.client.storageEncryption = 'AES256'
+executor.name = 'awsbatch'
+executor.awscli = '/home/ec2-user/miniconda/bin/aws'
+
+process {
+
+queue = {
+	task.attempt > 1 ? 'salmonExcess' : 'salmonWorkload' }
+	memory = { task.attempt > 1 ? 32.GB : 16.GB }
+	cpus = { task.attempt > 1 ? 16 : 8 }
+}
+
+params {
+
+   salmonIndex = 's3://obenauflab/indices/salmon/gencode.v28.IMPACT'
+
+}
+```
+
 
 ## Step 6: Running jobs with AWS Batch

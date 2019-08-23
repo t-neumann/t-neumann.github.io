@@ -288,9 +288,33 @@ Everything else you can leave empty and click `Create`.
 
 Congratulations, you have created your first compute environment!
 
-### Instance types and vCPU limits
-
 ## Step 4: Creating job definitions
+
+Now we need to create a job queue and associated this with our compute environment. This step is actually pretty easy and straightforward.
+
+First go to `Job queues` and click `Create Queue`.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/JobQueue_Overview.png" alt="Job queue overview">
+
+Now you can pick a name for your job queue - in our simple case I give it the same name as our compute environment `salmonWorkload`. You can in principal assign multiple job queues to one compute environment and set priorities via the `Priority` field, but we can simply put `1` in there.
+
+Finally, associated the job queue with our `salmonWorkload` compute environment. Note again here, you can in principal assign multiple compute environments to a given job queue.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/JobQueue_Create.png" alt="Job queue creation">
+
+That's it - click `Create job queue` and you have successfully created your first job queue!
+
+### Excess queue
+
+Now that we have our workload compute environment and job queues, we want to do the same with for our excess compute environment and job queues to handle any datasets with overshooting resource requirements.
+
+Therefore, we repeat the steps starting from Step 3 to create a `salmonExcess` compute environment and job queue based on `c5.4xlarge` instances with double the resources compared to our `salmonWorkload` queue.
+
+This should leave you know with the following compute environments and job queues and finally ready to specify our final resource constraints before submitting our first jobs.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/TwoQueue_environments.png" alt="Two queue environments">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/TwoQueue_jobqueues.png" alt="Two queue job queues">
 
 ## Step 5: Adjusting resources
 

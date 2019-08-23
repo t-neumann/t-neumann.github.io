@@ -245,23 +245,23 @@ First of all, I hope you did a good enough job in Step 1 of estimating your reso
 
 These are the punchlines you have to consider now for fixing instance types and vCPU limits for your compute environment:
 
-* Fit only **1** task in **1** instance!
+#### Fit only **1** task in **1** instance!
 
 If you look at the instance pricing table, you will see that prices linearly scaling with instance types - meaning doubling resources results in double prices. You will not save anything by running more jobs on a single larger instance, but you will pay for it since from experience the Docker daemon on the instance sometimes gets confused and hung-up when there's multiple tasks run on the instance.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-architecture/EC2Instances.png" alt="EC2 instances">
 
-* vCPUs refers to the total number of vCPUs of your environments
+#### vCPUs refers to the total number of vCPUs of your environments
 
 This got me confused also when trying to figure out, how many instances will be fired up in total. Essentially you have to divide this number by the number of vCPUs provided by your instance type of choice and then you will get the number of instances that will be launched at peak times.
 
 So let's say you chose `c5.2xlarge` as your instance type with 8 vCPUs and your specified `Maximum vCPUs` is 100, then 100 / 8 = 12 instances will be launched in total if the entire compute environment is utilized.
 
-* Keep some spare memory for instance services
+#### Keep some spare memory for instance services
 
 I will address this in detail later, but keep in mind that not the entire memory listed in the instance type specification can be used, since some of it will be occupied with running basic instance services.
 
-* Keep homogeneous compute environments
+#### Keep homogeneous compute environments
 
 Since we did a careful resource requirement estimation, I find it easiest for keeping track of cost and also ensuring that the tasks will actually finish, to have homogeneous compute environments - meaning one environment will only allow for one specific instance type.
 

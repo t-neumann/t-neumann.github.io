@@ -342,5 +342,16 @@ params {
 }
 ```
 
+Now just let's quickly fast-forward and look what happens if we submit our jobs like this:
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Resources_Overflow.png" alt="Resource overflow">
+
+You will notice that we have one runnable job for each task, yet no instances will fire up.
+
+If we check one of the jobs, we will see that the environment requirements have been exactly set up as we specified in our Nextflow config which is also matched by the instance types of our job queue - so why does this not work?
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Resources_OverflowJob.png" alt="Job overflow">
+
+
 
 ## Step 6: Running jobs with AWS Batch

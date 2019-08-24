@@ -407,6 +407,6 @@ params {
 }
 ```
 
-One step left now to run our pipeline on AWS - we need to define the jobs we are actually running in our job queues.
+Finally, we are ready to testdrive our Nextflow pipeline on our AWS job queue!
 
 ## Step 6: Running jobs with AWS Batch

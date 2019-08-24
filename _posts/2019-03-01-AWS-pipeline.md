@@ -319,6 +319,8 @@ This should leave you know with the following compute environments and job queue
 
 Ok so now that we have set all the compute environments with associated instance types as well as job queues up on the `AWS` end, we know what resources we have available and how much of those will be consumed by our tasks.
 
+### Resource definition
+
 So naïvely we can directly enter the specifications of our `EC2` instance type of choice in the `awsbatch.config` file of our Nextflow workflow, since we know the `salmonWorkload` queue consists of `c5.2xlarge` instances with 16 GB memroy and 8 vCPUs each and our `salmonExcess` queue of `c5.4xlarge` instances with 32 GB memory and 16 vCPUs each.
 
 ```java
@@ -342,16 +344,69 @@ params {
 }
 ```
 
-Now just let's quickly fast-forward and look what happens if we submit our jobs like this:
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Resources_Overflow.png" alt="Resource overflow">
+Now just let's quickly fast-forward and look what happens if we submit our jobs like this.
 
 You will notice that we have one runnable job for each task, yet no instances will fire up.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Resources_Overflow.png" alt="Resource overflow">
 
 If we check one of the jobs, we will see that the environment requirements have been exactly set up as we specified in our Nextflow config which is also matched by the instance types of our job queue - so why does this not work?
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Resources_OverflowJob.png" alt="Job overflow">
 
+### ECS overhead extraction
 
+The solution for this is the fact, that there are **overhead container services** running in your instance which consume some chunk of your total available memory. So when you ask for X GB memory on an instance with X GB total memory, you have to be aware that there is Y GB memory preoccupied with service tasks, so your effective available memory will be X-Y.
+
+To get your jobs running on such instances, you cannot request X GB memory then, but rather the X-Y chunk. How do we determine Y now?
+
+Let's first fire up an instance of our compute environment by simply selecting our compute environment and clicking on `Edit`.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Resources_edit.png" alt="Edit compute environment">
+
+Now we select 1 minimum and desired vCPU to fire up one instance of the compute environment and `Save`.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Resources_vCPUs.png" alt="Select 1 vCPU">
+
+Wait a couple of minutes to let the `EC2` instance fire up, then again click on your compute environment. Follow the link given in `ECS Cluster name`.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Resources_ECS.png" alt="Follow ECS">
+
+This will bring you to the cluster overview page, where you need to click on `ECS instances`.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Resources_Cluster.png" alt="ECS overview">
+
+Now finally we get what we want - the actual amount of memory available on a given instance on this `ECS` cluster.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Resources_ActualMemory.png" alt="Factual available memory">
+
+According to the ECS tab, we have **15,434 MB** memory available on our `salmonWorkload` queue - repeat the same procedure to get the numbers for our `salmonExcess` queue.
+
+### Updated resource definition
+
+Having obtained the mysterious actual available memory X-Y on our `EC2` instances of our compute environment, we can finally enter the final numbers in our `awsbatch.config` definition of our Nextflow pipeline.
+
+```java
+aws.region = 'eu-central-1'
+aws.client.storageEncryption = 'AES256'
+executor.name = 'awsbatch'
+executor.awscli = '/home/ec2-user/miniconda/bin/aws'
+
+process {
+
+queue = {
+	task.attempt > 1 ? 'salmonExcess' : 'salmonWorkload' }
+	memory = { task.attempt > 1 ? 31100.MB : 15400.MB }
+	cpus = { task.attempt > 1 ? 16 : 8 }
+}
+
+params {
+
+   salmonIndex = 's3://obenauflab/indices/salmon/gencode.v28.IMPACT'
+
+}
+```
+
+One step left now to run our pipeline on AWS - we need to define the jobs we are actually running in our job queues.
 
 ## Step 6: Running jobs with AWS Batch

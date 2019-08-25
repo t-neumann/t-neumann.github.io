@@ -17,7 +17,7 @@ toc_sticky: true
 author_profile: false
 ---
 
-The prerequisite for this post is that you know all the essential AWS building blocks and basic architecture of an AWS based batch scheduler as I presented in my [previous post](https://t-neumann.github.io/pipelines/AWS-architecture/). In this post, I will show you what environment and resources you have to actually set up on AWS to make an example pipeline run and then how to actually run jobs on the setup AWS Batch queue with [Nextflow](https://www.nextflow.io/).
+The prerequisite for this post is that you have a sound understanding of Nextflow and made yourself familiar with the `salmon-nf` workflow created in [this post](https://t-neumann.github.io/pipelines/Nextflow-pipeline/). Furthermore, you should know all the essential AWS building blocks and basic architecture of an AWS based batch scheduler as I presented in my [previous post](https://t-neumann.github.io/pipelines/AWS-architecture/). In this post, I will show you what environment and resources you have to actually set up on AWS to make the [`salmon-nf`](https://github.com/t-neumann/salmon-nf) example pipeline run and then how to actually run jobs on the setup AWS Batch queue with [Nextflow](https://www.nextflow.io/).
 
 ## Credits
 
@@ -37,14 +37,6 @@ There are a couple of tutorials that helped a lot:
 ### Accounts, users, roles, permissions
 
 Some things have to be setup prior to starting setting up the actual AWS compute environment such as obvious things as an `AWS account` and other things like setting up an `IAM user` or `Service roles` which all has to be done only once and is exhaustively covered already in several blog posts such as [this one](https://apeltzer.github.io/post/01-aws-nfcore/) by Alex Peltzer and Tobias Koch. Therefore, I will not spend any time on this and suggest you just follow the instructions in the blog post until it is time to set up your `AMI` which is where I will start off.
-
-## Salmon pipeline
-
-### Overview
-
-We would like to create a simple pipeline utilizing [Salmon](https://combine-lab.github.io/salmon/) applying a *quasi-mapping* approach to directly quantify transcripts from raw reads in fastq-files. *Salmon* requires an index **once** to be built which can then be used for any subsequent analysis of fastq-files and we are interested in the transcript quantification output (a plain text table) as well as pseudo-BAM files containing reads aligning to a given gene set of interest.
-
-### AWS context
 
 ## Step 1: Estimate resource requirements
 
@@ -321,7 +313,7 @@ Ok so now that we have set all the compute environments with associated instance
 
 ### Resource definition
 
-So naïvely we can directly enter the specifications of our `EC2` instance type of choice in the `awsbatch.config` file of our Nextflow workflow, since we know the `salmonWorkload` queue consists of `c5.2xlarge` instances with 16 GB memroy and 8 vCPUs each and our `salmonExcess` queue of `c5.4xlarge` instances with 32 GB memory and 16 vCPUs each.
+So naïvely we can directly enter the specifications of our `EC2` instance type of choice in the `awsbatch.config` file of our `salmon-nf` Nextflow workflow, since we know the `salmonWorkload` queue consists of `c5.2xlarge` instances with 16 GB memroy and 8 vCPUs each and our `salmonExcess` queue of `c5.4xlarge` instances with 32 GB memory and 16 vCPUs each.
 
 ```java
 aws.region = 'eu-central-1'
@@ -384,7 +376,7 @@ According to the ECS tab, we have **15,434 MB** memory available on our `salmonW
 
 ### Updated resource definition
 
-Having obtained the mysterious actual available memory X-Y on our `EC2` instances of our compute environment, we can finally enter the final numbers in our `awsbatch.config` definition of our Nextflow pipeline.
+Having obtained the mysterious actual available memory X-Y on our `EC2` instances of our compute environment, we can finally enter the final numbers in our `awsbatch.config` definition of our `salmon-nf` Nextflow pipeline.
 
 ```java
 aws.region = 'eu-central-1'
@@ -407,15 +399,15 @@ params {
 }
 ```
 
-Finally, we are ready to testdrive our Nextflow pipeline on our AWS job queue!
+Finally, we are ready to testdrive our `salmon-nf` Nextflow pipeline on our AWS job queue!
 
 ## Step 6: Running jobs with AWS Batch
 
-Allright, now things are getting serious, just a little more preparation needed to finally run our Nextflow pipeline on `AWS`:
+Allright, now things are getting serious, just a little more preparation needed to finally run our `salmon-nf` Nextflow pipeline on `AWS`:
 
 * Upload our index file to `s3`
 * Upload our input `fastq` files to `s3`
-* Launch a submission `EC2` instance for running our Nextflow pipeline
+* Launch a submission `EC2` instance for running our `salmon-nf` Nextflow pipeline
 * Enter credentials
 * Go!
 
@@ -451,7 +443,7 @@ Now we can upload our fastq files to our target destination in our `s3` bucket, 
 aws s3 cp . s3://obenauflab/fastq --recursive --include "*.fq.gz"
 ```
 
-Repeat the same with your index files to your `s3` bucket destination and you now all files we need for running our Nextflow pipeline are ready. You can view them via numerous clients, I used [Cyberduck](https://cyberduck.io/) for Mac. Below you will see that my 40 testsamples and index files have been uploaded in the appropriate locations in my `s3` bucket.
+Repeat the same with your index files to your `s3` bucket destination and you now all files we need for running `salmon-nf` are ready. You can view them via numerous clients, I used [Cyberduck](https://cyberduck.io/) for Mac. Below you will see that my 40 testsamples and index files have been uploaded in the appropriate locations in my `s3` bucket.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/S3_fastqs.png" alt="S3 fastq file location">
 
@@ -481,11 +473,11 @@ Finally, make sure to launch it with a keypair that you also have downloaded, ot
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Launch_KeyPair.png" alt="Nextflow keypair">
 
-Finally, give some name to your master instance, since many more will be launched once we fire up our Nextflow pipeline on our `AWS Batch` compute environment.
+Finally, give some name to your master instance, since many more will be launched once we fire up our `salmon-nf`Nextflow pipeline on our `AWS Batch` compute environment.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Launch_Name.png" alt="Nextflow EC2 naming">
 
-Finally, connect to the instance as already shown in Step 2 for example. Now we can pull our Nextflow pipeline.
+Finally, connect to the instance as already shown in Step 2 for example. Now we can pull our `salmon-nf` Nextflow pipeline.
 
 ```bash
 [ec2-user@ip-172-31-38-222 ~]$ nextflow pull t-neumann/salmon-nf
@@ -502,7 +494,7 @@ Next up, don't forget again to export your `AWS` credentials.
 [ec2-user@ip-172-31-38-222 ~]$ export AWS_SECRET_ACCESS_KEY=<YOUR S3 SECRET KEY>
 ```
 
-Now there is only **1 last crucial** step before we can actually launch our jobs on the `AWS Batch` queue: We have to create [job definitions](https://docs.aws.amazon.com/batch/latest/userguide/job_definitions.html). Luckily for us, Nextflow will [automatically create job definitions](https://www.nextflow.io/docs/latest/awscloud.html#custom-job-definition) for us upon the first lunch of a pipeline.
+Now there is only **1 last crucial** step before we can actually launch our jobs on the `AWS Batch` queue: We have to create [job definitions](https://docs.aws.amazon.com/batch/latest/userguide/job_definitions.html). Luckily for us, Nextflow will [automatically create job definitions](https://www.nextflow.io/docs/latest/awscloud.html#custom-job-definition) for us upon the first launch of a pipeline.
 
 However, what I found is, that job definitions will only be properly created if the initial run contains only very few samples. So **always have your initial run on a SINGLE SAMPLE!!**. What happens if you don't, is that your Nextflow submission will be stuck at the following step:
 
@@ -524,7 +516,7 @@ From there on, you wait forever and wonder what's going on, as it happened to me
 
 ### Start your Nextflow run on AWS batch
 
-Now the last and most rewarding step of all - you are finally ready to laucnh your Nextflow pipeline on `AWS`!
+Now the last and most rewarding step of all - you are finally ready to launch the `salmon-nf` Nextflow pipeline on `AWS`!
 
 ```bash
 [ec2-user@ip-172-31-38-222 ~]$ nextflow run t-neumann/salmon-nf --inputDir s3://obenauflab/fastq --outputDir s3://obenauflab/salmon -profile awsbatch -w s3://obenauflab/work/salmon

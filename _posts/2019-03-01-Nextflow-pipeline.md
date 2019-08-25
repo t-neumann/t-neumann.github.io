@@ -348,7 +348,7 @@ process {
 
 
 cloud {
-	imageId = 'ami-0f99d00928be3a282'
+    imageId = 'ami-0f99d00928be3a282'
     instanceType = 't2.micro'
     userName = 'ec2-user'
     keyName = 'awsbatch'
@@ -384,3 +384,34 @@ process {
     }
 }
 ```
+##### slurm.config
+
+This configuration file defines a profile for the [SLURM](https://slurm.schedmd.com/documentation.html) scheduler which is run on our HPC system. Our cluster only supports Singularity, so we disable Docker and enable Singuarity in return, as well as define basic resource constraints and queues on our HPC system where to run our tasks - and finally also supply the location of the `salmonIndex` on our file system.
+
+```java
+singularity {
+	enabled = true
+}
+
+docker {
+	enabled = false
+}
+
+process {
+
+    executor = 'slurm'
+    clusterOptions = '--qos=short'
+    cpus = '12'
+    memory = { 8.GB * task.attempt }
+}
+
+params {
+
+   salmonIndex = '/groups/Software/indices/hg38/salmon/gencode.v28.IMPACT'
+
+}
+```
+
+##### awsbatch.config
+
+This configuration file will be explained in detail in a later post - but in brief it enables execution of tasks in the cloud using [AWS Batch](https://aws.amazon.com/batch/), yet it still requires extensive configuration before it is usable.

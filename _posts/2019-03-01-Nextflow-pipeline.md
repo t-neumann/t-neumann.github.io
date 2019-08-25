@@ -205,6 +205,51 @@ The resulting Docker image was pushed to [Docker Hub](https://hub.docker.com/) a
 
 ### main.nf
 
+Now we are ready to create the central `main.nf` file which contains all processes as well as channels. As mentioned before, you will find the entire code on [GitHub]((https://github.com/t-neumann/salmon-nf)), so here is an excerpt of the important sections.
+
+* `fastqChannel`
+
+```java
+pairedEndRegex = params.inputDir + "/*_{1,2}.fq.gz"
+SERegex = params.inputDir + "/*[!12].fq.gz"
+
+pairFiles = Channel.fromFilePairs(pairedEndRegex)
+singleFiles = Channel.fromFilePairs(SERegex, size: 1){ file -> file.baseName.replaceAll(/.fq/,"") }
+
+singleFiles.mix(pairFiles)
+.set { fastqChannel }
+```
+
+This elaborate chunk of code is needed to enable the `fastqChannel` input channel to our `salmon` process to handle both single- and paired-end `fastq` files. As you can see, we created a `pairFiles` channel with a paired-end regex basically assuming that our read-pairs are named `*_1.fq.gz` and `*_2.fq.gz`. In addition, we have a `singleFiles` channel that takes all `fastq` files not following the `_1` and `_2` naming convention and assuming it is single-end read files.
+
+The `fromFilePairs` method creates a channel emitting the file pairs matching the regex we provided. The matching files are emitted as tuples in which the first element is the grouping key of the matching pair and the second element is the list of files (sorted in lexicographical order). For example:
+
+```java
+[0399ad16-816f-4824-ae28-7b82e006e7b7_gdc_realn_rehead, [0399ad16-816f-4824-ae28-7b82e006e7b7_gdc_realn_rehead_1.fq.gz, 0399ad16-816f-4824-ae28-7b82e006e7b7_gdc_realn_rehead_2.fq.gz]]
+[0ac6634e-00b0-4107-a5d6-db8ffc602645_gdc_realn_rehead, [0ac6634e-00b0-4107-a5d6-db8ffc602645_gdc_realn_rehead_1.fq.gz, 0ac6634e-00b0-4107-a5d6-db8ffc602645_gdc_realn_rehead_2.fq.gz]]
+```
+
+As you can see, for the single-end reads channel `singleFiles`, the method is slightly extended:
+
+First, we set an additional parameter `size: 1` to set the number of files each emitted item is expected to hold to 1. In additional, we manually provide the a custom grouping strategy in the closure, which based on the current file as parameter, returns the grouping key. In our case, we simply strip anything from the file name after `.fq` and use this as our grouping key. For example:
+
+```java
+[0fdb3d0e-e405-4e8d-8897-4a90ea4fe00c_gdc_realn_rehead, [0fdb3d0e-e405-4e8d-8897-4a90ea4fe00c_gdc_realn_rehead.fq.gz]]
+[1916abcd-61c0-4f23-96ac-be70aacb8dc1_gdc_realn_rehead, [1916abcd-61c0-4f23-96ac-be70aacb8dc1_gdc_realn_rehead.fq.gz]]
+```
+
+Finally, we combined both channels via a `mix` operator into our final `fastqChannel` input channel to our `salmon` process.
+
+* `indexChannel`
+
+```java
+indexChannel = Channel
+	.fromPath(params.salmonIndex)
+	.ifEmpty { exit 1, "Salmon index not found: ${params.salmonIndex}" }
+```
+
+This input channel is pretty straightforward set up. Only thing we need to do is to precreate our Salmon index (read how to do this [here](https://salmon.readthedocs.io/en/latest/salmon.html#preparing-transcriptome-indices-mapping-based-mode)) and supply it via the `salmonIndex` parameter - how this is done will follow later.
+
 ### nextflow.config
 
 ### Profiles

@@ -142,12 +142,69 @@ If you want to read more on Salmon, [here is the paper](https://www.nature.com/a
 
 ## salmon-nf
 
+So the Nextflow pipeline we will create during this exercise I will call `salmon-nf` and it can be found on my [GitHub page](https://github.com/t-neumann/salmon-nf) as a fully functional repository.
+
+Any standalone Nextflow pipeline will need 2 files to be executable out of the box and also directly [from GitHub](https://www.nextflow.io/docs/latest/sharing.html#running-a-pipeline):
+
+* `main.nf` - This file contains the individual processes and channels
+* `nextflow.config` - The configuration file for parameters, profiles etc. For more info read [here](https://www.nextflow.io/docs/latest/config.html#configuration-file)
+
 ### Workflow layout
+
+First, we need to get an idea about what the data flow will be and what software and scripts will be run on it. I have outline the basic workflow of `salmon-nf` below:
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Salmon-pipeline/salmon-nf.png" alt="salmon-nf">
+
+We will only have one single process `salmon` which will use the input `fastq` files and the respective transcriptome `index` file to produce our expression estimates and the pseudo-bam files of aligning reads.
+
+So for our `salmon` process we will have 2 input channels:
+
+* `fastqChannel` - feeding in our raw reads in `fastq` format
+* `indexChannel` - providing our transcriptome `index` to which we align the reads to
+
+Our `salmon` process will produce several output files of which we choose to feed 2 file types into output processes as our final results:
+
+* `quant.sf` files via the `salmonChannel` output channel
+* `pseudo.bam` files via the `pseudoBamChannel` output channel
+
+Now let's have a look how we can actually realize and implement this on the coding end.
+
+### Docker container
+
+Before we can run anything, we need to provide the software environment containing **all** dependencies and software packages our `salmon` process will run. These days, this is usually done via a [Docker](https://www.docker.com/) container, or a [Singularity](https://singularity.lbl.gov/) container on HPC environments.
+
+Many software packages - including Salmon in our case - usually provide already read-to-use Docker containers (`combinelab/salmon`). But even if they don't, do not despair and brainlessly jump into creating your own containers. If the packages was provided via [BioConda](https://bioconda.github.io/), you will find a Docker container on [BioContainers](https://quay.io/organization/biocontainers). I found this last resort to work in many cases.
+
+Either way, since I wanted to convert the raw `SAM` output from `salmon` into a compressed `BAM` file, I chose to extend their Docker image with adding `samtools` as shown in the [Dockerfile](https://docs.docker.com/engine/reference/builder/) below.
+
+```bash
+# Copyright (c) 2019 Tobias Neumann.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+FROM combinelab/salmon:0.12.0
+
+MAINTAINER Tobias Neumann <tobias.neumann.at@gmail.com>
+
+RUN buildDeps='wget ca-certificates make g++' \
+    runDeps='zlib1g-dev libncurses5-dev unzip gcc' \
+    && set -x \
+    && apt-get install -y $buildDeps $runDeps --no-install-recommends \
+    && rm -rf /var/lib/apt/lists/* \
+    && wget https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2 \
+    && tar xvfj samtools-1.9.tar.bz2 \
+    && cd samtools-1.9 \
+    && ./configure --prefix=/usr/local/ \
+    && make \
+    && make install \
+    && apt-get purge -y --auto-remove $buildDeps
+```
+
+The resulting Docker image was pushed to [Docker Hub](https://hub.docker.com/) and can be pulled via `docker pull obenauflab/salmon:latest`.
 
 ### main.nf
 
 ### nextflow.config
-
-### Dockerfile
 
 ### Profiles

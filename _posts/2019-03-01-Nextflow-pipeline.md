@@ -30,6 +30,10 @@ However, with some fiddling around and especially a lot of low-latency community
 
 Once you lost your fear of Groovy, the advantages of Nextflow are quite convincing.
 
+If you want to read more about Nextflow, [here is the documentation](https://www.nextflow.io/docs/latest/index.html) and [here is the original paper](https://www.nature.com/articles/nbt.3820).
+
+<embed src="https://www.nature.com/articles/nbt.3820.pdf" width="100%" height="700" type='application/pdf'>
+
 #### Fast prototyping
 
 Nextflow allows you to write a computational pipeline by making it simpler to put together many different tasks.
@@ -102,6 +106,24 @@ Nextflow supports [Docker](https://www.docker.com/) and [Singularity](https://si
 This, along with the integration of the GitHub code sharing platform, allows you to write self-contained pipelines, manage versions and to rapidly reproduce any former configuration.
 
 This is an especially nice feature, since it also allows to run Nextflow workflows on cloud based platforms such as [Amazon Web Services](https://aws.amazon.com/) which strictly require all software environments supplied in a public [Docker registry](https://www.nextflow.io/docs/latest/awscloud.html#awscloud-batch-config) reachable by ECS batch.
+
+#### Unified parallelism
+
+Nextflow is based on the dataflow programming model which greatly simplifies writing complex distributed pipelines.
+
+Parallelisation is implicitly defined by the processes input and output declarations. The resulting applications are inherently parallel and can scale-up or scale-out, transparently, without having to adapt to a specific platform architecture.
+
+#### Continuous checkpoints
+
+All the intermediate results produced during the pipeline execution are automatically tracked.
+
+This allows you to resume its execution, from the last successfully executed step, no matter what the reason was for it stopping.
+
+#### Stream oriented
+
+Nextflow extends the Unix pipes model with a fluent DSL, allowing you to handle complex stream interactions easily.
+
+It promotes a programming approach, based on functional composition, that results in resilient and easily reproducible pipelines.
 
 ## Credits
 

@@ -458,3 +458,25 @@ Repeat the same with your index files to your `s3` bucket destination and you no
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/S3_index.png" alt="S3 index file location">
 
 ### Launch and prepare your submission instance
+
+Finally, we need some machine where we run our Nextflow master process that submits jobs to the `AWS Batch` queues. You can of course to this locally on your machine or have a long running job in our HPC environment.
+
+But for heavy, long-running workloads it definitely makes sense to have a dedicated instance to run the Nextflow process on to not run into troubles.
+
+Fortunately, we only need a very minimal `EC2` instance for this, which is available from `AWS` under the so-called `Free Tier` - meaning it's free, yay!
+
+So this is what we will do - first go to your `EC2` dashboard and select `Launch Instance`.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Launch_EC2Dashboard.png" alt="EC2 Dashboard">
+
+Next up, we have to select the `AMI` we want to run on our instance. I have already precreated a `Nextflow AMI` which is simply an `AMI` created as in Step 2, where I in addition installed [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) and [Nextflow](https://www.nextflow.io/docs/latest/getstarted.html#installation).
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Launch_NextflowAMI.png" alt="Nextflow AMI">
+
+For the instance type, make sure to select something labeled as `Free Tier eligible` to not run into any costs for this instance, e.g. `t2.micro` in the example below. Then just hit `Review and Launch` and then `Launch` the instance.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Launch_EC2Instance.png" alt="Nextflow EC2 instance">
+
+Finally, make sure to launch it with a keypair that you also have downloaded, otherwise you will be unable to connect to the instance.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Launch_KeyPair.png" alt="Nextflow keypair">

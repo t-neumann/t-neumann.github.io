@@ -410,3 +410,37 @@ params {
 Finally, we are ready to testdrive our Nextflow pipeline on our AWS job queue!
 
 ## Step 6: Running jobs with AWS Batch
+
+Allright, now things are getting serious, just a little more preparation needed to finally run our Nextflow pipeline on `AWS`:
+
+* Upload our index file to `s3`
+* Upload our input `fastq` files to `s3`
+* Launch a submission `EC2` instance for running our Nextflow pipeline
+* Enter credentials
+* Go!
+
+### Upload files to `s3`
+
+To upload files to `s3`, I recommend you to use the [AWS CLI](https://aws.amazon.com/cli/).
+
+For installation just follow the instructions. Important afterwards it to expose your `AWS credentials` which you obtained when creating your `IAM` user to Nextflow which can be done in [2 ways](https://www.nextflow.io/docs/latest/awscloud.html#aws-credentials):
+
+1. Exporting the default `AWS` environment variables
+
+```bash
+export AWS_DEFAULT_REGION=<REGION IDENTIFIER>
+export AWS_ACCESS_KEY_ID=<YOUR S3 ACCESS KEY>
+export AWS_SECRET_ACCESS_KEY=<YOUR S3 SECRET KEY>
+```
+
+2. Specify your credentials in the Nextflow configuration file
+
+```java
+aws {
+    region = '<REGION IDENTIFIER>'
+    accessKey = '<YOUR S3 ACCESS KEY>'
+    secretKey = '<YOUR S3 SECRET KEY>'
+}
+```
+
+I personally prefer option 1 to not accidentally commit and push any of my credentials to my Nextflow Github repo.

@@ -480,3 +480,118 @@ For the instance type, make sure to select something labeled as `Free Tier eligi
 Finally, make sure to launch it with a keypair that you also have downloaded, otherwise you will be unable to connect to the instance.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Launch_KeyPair.png" alt="Nextflow keypair">
+
+Finally, give some name to your master instance, since many more will be launched once we fire up our Nextflow pipeline on our `AWS Batch` compute environment.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/Launch_Name.png" alt="Nextflow EC2 naming">
+
+Finally, connect to the instance as already shown in Step 2 for example. Now we can pull our Nextflow pipeline.
+
+```bash
+[ec2-user@ip-172-31-38-222 ~]$ nextflow pull t-neumann/salmon-nf
+Checking t-neumann/salmon-nf ...
+ downloaded from https://github.com/t-neumann/salmon-nf.git - revision: 6ac6e6a15a [master]
+[ec2-user@ip-172-31-38-222 ~]$
+```
+
+Next up, don't forget again to export your `AWS` credentials.
+
+```bash
+[ec2-user@ip-172-31-38-222 ~]$ export AWS_DEFAULT_REGION=<REGION IDENTIFIER>
+[ec2-user@ip-172-31-38-222 ~]$ export AWS_ACCESS_KEY_ID=<YOUR S3 ACCESS KEY>
+[ec2-user@ip-172-31-38-222 ~]$ export AWS_SECRET_ACCESS_KEY=<YOUR S3 SECRET KEY>
+```
+
+Now there is only **1 last crucial** step before we can actually launch our jobs on the `AWS Batch` queue: We have to create [job definitions](https://docs.aws.amazon.com/batch/latest/userguide/job_definitions.html). Luckily for us, Nextflow will [automatically create job definitions](https://www.nextflow.io/docs/latest/awscloud.html#custom-job-definition) for us upon the first lunch of a pipeline.
+
+However, what I found is, that job definitions will only be properly created if the initial run contains only very few samples. So **always have your initial run on a SINGLE SAMPLE!!**. What happens if you don't, is that your Nextflow submission will be stuck at the following step:
+
+```bash
+[ec2-user@ip-172-31-38-222 ~]$ nextflow run t-neumann/salmon-nf --inputDir s3://obenauflab/fastq --outputDir s3://obenauflab/salmon -profile awsbatch -w s3://obenauflab/work/salmon
+N E X T F L O W  ~  version 18.10.1
+Launching `t-neumann/salmon-nf` [silly_mccarthy] - revision: 6ac6e6a15a [master]
+
+ parameters
+ ======================
+ input directory          : s3://obenauflab/fastq
+ output directory         : s3://obenauflab/salmon
+ ======================
+
+[warm up] executor > awsbatch
+```
+
+From there on, you wait forever and wonder what's going on, as it happened to me.
+
+### Start your Nextflow run on AWS batch
+
+Now the last and most rewarding step of all - you are finally ready to laucnh your Nextflow pipeline on `AWS`!
+
+```bash
+[ec2-user@ip-172-31-38-222 ~]$ nextflow run t-neumann/salmon-nf --inputDir s3://obenauflab/fastq --outputDir s3://obenauflab/salmon -profile awsbatch -w s3://obenauflab/work/salmon
+```
+
+Notice, how both the `inputDir` and `outputDir` point to an `s3` directory and how we also have to supply a `work directory` with `-w` on `s3`. Now hit `Enter` and watch the beauty unfold on `AWS`.
+
+```bash
+[ec2-user@ip-172-31-38-222 ~]$ nextflow run t-neumann/salmon-nf --inputDir s3://obenauflab/fastq --outputDir s3://obenauflab/salmon -profile awsbatch -w s3://obenauflab/work/salmon
+N E X T F L O W  ~  version 18.10.1
+Launching `t-neumann/salmon-nf` [silly_mccarthy] - revision: 6ac6e6a15a [master]
+
+ parameters
+ ======================
+ input directory          : s3://obenauflab/fastq
+ output directory         : s3://obenauflab/salmon
+ ======================
+
+[warm up] executor > awsbatch
+[4a/72c0f7] Submitted process > salmon (d1ada222-b67f-47c0-b380-091eaab093b4_gdc_realn_rehead)
+[f2/f8d97a] Submitted process > salmon (e46e4f3a-62f8-4bd1-a143-f384e219d6af_gdc_realn_rehead)
+[90/35eb4d] Submitted process > salmon (1672de07-77db-4817-9c7f-f201c25e8132_gdc_realn_rehead)
+[81/c47fe3] Submitted process > salmon (741fbacf-3694-46ef-b16f-66bac6ee0452_gdc_realn_rehead)
+[f1/bc3afc] Submitted process > salmon (db18dd75-3b48-4c21-aa68-58b1cf37c8c2_gdc_realn_rehead)
+[a8/88095d] Submitted process > salmon (0ac6634e-00b0-4107-a5d6-db8ffc602645_gdc_realn_rehead)
+[a6/36e366] Submitted process > salmon (9fa785f2-1dcb-4966-a5fa-fe75d327cb81_gdc_realn_rehead)
+[7d/5ae2b0] Submitted process > salmon (5b3c329a-aa14-4965-8d13-f508f4390eaf_gdc_realn_rehead)
+[d9/3ec3fc] Submitted process > salmon (6cf08e2b-7e59-4537-b1c3-1c5b3838ab95_gdc_realn_rehead)
+[19/d7d441] Submitted process > salmon (9c714c63-ee50-4385-9e25-09f940f5f902_gdc_realn_rehead)
+[71/ff40cf] Submitted process > salmon (17686cd5-271a-4e24-9746-f93334fb86b5_gdc_realn_rehead)
+[66/aaa185] Submitted process > salmon (0399ad16-816f-4824-ae28-7b82e006e7b7_gdc_realn_rehead)
+[67/ccd647] Submitted process > salmon (1916abcd-61c0-4f23-96ac-be70aacb8dc1_gdc_realn_rehead)
+[7d/0a090b] Submitted process > salmon (e1a4167d-b4ca-405c-8550-cc32bb1b1d09_gdc_realn_rehead)
+[3b/a9972e] Submitted process > salmon (876a9725-34c1-4a23-a3fe-58a860d0f0c5_gdc_realn_rehead)
+```
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/AWSBatch_Dashboard.png" alt="AWS Batch dashboard">
+
+Note how `AWS Batch` automatically upscales the number of desired vCPUs of your compute environment once the jobs are submitted.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/AWSBatch_MultiInstances.png" alt="AWS Batch EC2 instances">
+
+Watch in awe how `AWS Batch` fires up multiple `EC2` instances automatically in your `EC2` dashboard.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/AWSBatch_JobTransition.png" alt="AWS Batch Job transition">
+
+Watch how jobs transition from `Runnable` to `Starting` to `Runnable` to `Succeeded` state until all your samples have been processed.
+
+```bash
+[47/c580b5] Submitted process > salmon (2864cbe8-4d77-4477-ac84-791004e42237_gdc_realn_rehead)
+[8c/84bc14] Submitted process > salmon (0fdb3d0e-e405-4e8d-8897-4a90ea4fe00c_gdc_realn_rehead)
+[1d/3f6ec6] Submitted process > salmon (7ed99d57-f199-4dac-87a8-62393f5e0aea_gdc_realn_rehead)
+[a9/330e5d] Submitted process > salmon (825daddc-a89a-483b-947e-74cc12ba013c_gdc_realn_rehead)
+[98/33bed5] Submitted process > salmon (c3588f96-95c6-4008-bda2-502ceb963adb_gdc_realn_rehead)
+
+t-neumann/salmon-nf has finished.
+Status:   SUCCESS
+Time:     Sun Aug 25 11:20:13 UTC 2019
+Duration: 10m 22s
+
+[ec2-user@ip-172-31-38-222 ~]$
+```
+
+Now let's check whether the results were produced in the correct `s3` output directory.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/AWSBatch_Success.png" alt="AWS Batch Job success">
+
+Congratulations! You did it! It took a long time, was quite a tedious setup and frustrating for me at numerous steps, but with amazing help from the community, Boehringer-Ingelheim and also quite some trial-and-error I got it to work and hopefully so did you with much less hassle!
+
+Happy pipeline building and number crunching with `AWS` and Nextflow!

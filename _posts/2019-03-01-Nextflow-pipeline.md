@@ -32,8 +32,6 @@ Once you lost your fear of Groovy, the advantages of Nextflow are quite convinci
 
 If you want to read more about Nextflow, [here is the documentation](https://www.nextflow.io/docs/latest/index.html) and [here is the original paper](https://www.nature.com/articles/nbt.3820).
 
-<embed src="https://www.nature.com/articles/nbt.3820.pdf" width="100%" height="700" type='application/pdf'>
-
 #### Fast prototyping
 
 Nextflow allows you to write a computational pipeline by making it simpler to put together many different tasks.

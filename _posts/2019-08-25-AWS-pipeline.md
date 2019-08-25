@@ -1,7 +1,7 @@
 ---
 title: Pipelines on AWS
 description: Setting up and running a pipeline on AWS
-date: 2019-03-03 21:51
+date: 2019-08-25 21:51
 image:
   path: /assets/images/categories/aws.svg
 categories:

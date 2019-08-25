@@ -207,7 +207,7 @@ The resulting Docker image was pushed to [Docker Hub](https://hub.docker.com/) a
 
 Now we are ready to create the central `main.nf` file which contains all processes as well as channels. As mentioned before, you will find the entire code on [GitHub]((https://github.com/t-neumann/salmon-nf)), so here is an excerpt of the important sections.
 
-* `fastqChannel`
+##### `fastqChannel`
 
 ```java
 pairedEndRegex = params.inputDir + "/*_{1,2}.fq.gz"
@@ -240,13 +240,58 @@ First, we set an additional parameter `size: 1` to set the number of files each 
 
 Finally, we combined both channels via a `mix` operator into our final `fastqChannel` input channel to our `salmon` process.
 
-* `indexChannel`
+##### `indexChannel`
 
 ```java
 indexChannel = Channel
 	.fromPath(params.salmonIndex)
 	.ifEmpty { exit 1, "Salmon index not found: ${params.salmonIndex}" }
 ```
+
+This input channel is pretty straightforward set up. Only thing we need to do is to precreate our Salmon index (read how to do this [here](https://salmon.readthedocs.io/en/latest/salmon.html#preparing-transcriptome-indices-mapping-based-mode)) and supply it via the `salmonIndex` parameter - how this is done will follow later.
+
+##### Process `salmon`
+
+```java
+process salmon {
+
+	tag { lane }
+
+    input:
+    set val(lane), file(reads) from fastqChannel
+    file index from indexChannel.first()
+
+    output:
+    file ("${lane}_salmon/quant.sf") into salmonChannel
+    file ("${lane}_pseudo.bam") into pseudoBamChannel
+
+    shell:
+
+    def single = reads instanceof Path
+
+    if (!single)
+
+      '''
+      salmon quant -i !{index} -l A -1 !{reads[0]} -2 !{reads[1]} -o !{lane}_salmon -p !{task.cpus} --validateMappings --no-version-check -z | samtools view -Sb -F 256 - > !{lane}_pseudo.bam
+	    '''
+    else
+      '''
+      salmon quant -i !{index} -l A -r !{reads} -o !{lane}_salmon -p !{task.cpus} --validateMappings --no-version-check -z | samtools view -Sb -F 256 - > !{lane}_pseudo.bam
+	    '''
+
+}
+```
+
+Our only process for the `salmon-nf` workflow is the `salmon` process.
+
+You will notice that it has the 2 input channels we previously defined - `fastqChannel` and `indexChannel`. Note, how we have to use the `.first()` method on the `indexChannel` since it is a folder.
+
+In addition, we have defined 2 output channels - `salmonChannel` outputting all `quant.sf` files and `pseudoBamChannel` outputting the corresponding `pseudo.bam` files.
+
+The actual script that is run, is a plain conditional bash script. We have an initial condition that asks whether we have single read files coming in from the `fastqChannel` or paired-end reads - and based on this evaluation will run one or the other script branch.
+
+The bash script itself is then basically only a `salmon` call on the respective input files.
+
 
 This input channel is pretty straightforward set up. Only thing we need to do is to precreate our Salmon index (read how to do this [here](https://salmon.readthedocs.io/en/latest/salmon.html#preparing-transcriptome-indices-mapping-based-mode)) and supply it via the `salmonIndex` parameter - how this is done will follow later.
 

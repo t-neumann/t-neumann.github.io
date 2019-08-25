@@ -336,7 +336,7 @@ params {
 process {
 
 	publishDir = [
-    	[path: params.outputDir, mode: 'copy', overwrite: 'true', pattern: "*/quant.sf"],
+      [path: params.outputDir, mode: 'copy', overwrite: 'true', pattern: "*/quant.sf"],
       [path: params.outputDir, mode: 'copy', overwrite: 'true', pattern: "*pseudo.bam"]
   	]
 
@@ -415,3 +415,66 @@ params {
 ##### awsbatch.config
 
 This configuration file will be explained in detail in a later post - but in brief it enables execution of tasks in the cloud using [AWS Batch](https://aws.amazon.com/batch/), yet it still requires extensive configuration before it is usable.
+
+## Running the `salmon-nf` Nextflow workflow
+
+Now that we have written our code and committed everything to GitHub, we can finally testdrive our workflow on some actual data.
+
+First, let's pull in our workflow:
+
+```bash
+tobias.neumann@login-01 [BIO] $ nextflow pull t-neumann/salmon-nf
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/tmp
+Checking t-neumann/salmon-nf ...
+ downloaded from https://github.com/t-neumann/salmon-nf.git - revision: 4fbaea7165 [master]
+tobias.neumann@login-01 [BIO] $
+```
+
+Now we are ready to run our workflow. Make sure to select the profile you desire - for this example I will run it on our in-house cluster with SLURM:
+
+```bash
+tobias.neumann@login-01 [BIO] $ nextflow run t-neumann/salmon-nf --inputDir /tmp/data --outputDir results -profile slurm -resume
+Picked up _JAVA_OPTIONS: -Djava.io.tmpdir=/tmp
+N E X T F L O W  ~  version 19.01.0
+Launching `t-neumann/salmon-nf` [maniac_poisson] - revision: 4fbaea7165 [master]
+
+ parameters
+ ======================
+ input directory          : /tmp/data
+ output directory         : results
+ ======================
+
+[warm up] executor > slurm
+[fb/20d1dc] Submitted process > salmon (8cec7235-3572-460c-b1d7-efe7961988e1_gdc_realn_rehead)
+[e9/6f6404] Submitted process > salmon (5e18b02d-7e56-4f0d-b892-e7798eee5205_gdc_realn_rehead)
+[f9/509312] Submitted process > salmon (d1ada222-b67f-47c0-b380-091eaab093b4_gdc_realn_rehead)
+[6d/30354f] Submitted process > salmon (3783843f-c4fa-4aab-8f5b-e0749763164e_gdc_realn_rehead)
+[9b/2a81e9] Submitted process > salmon (0fdb3d0e-e405-4e8d-8897-4a90ea4fe00c_gdc_realn_rehead)
+[de/418130] Submitted process > salmon (383e3574-d22c-4dd6-842f-656ee2ab3b32_gdc_realn_rehead)
+[c1/e00c04] Submitted process > salmon (1916abcd-61c0-4f23-96ac-be70aacb8dc1_gdc_realn_rehead)
+[63/6a2e93] Submitted process > salmon (30fe4005-f4f2-41ce-bb1a-4830f3959ab7_gdc_realn_rehead)
+```
+
+Now we just have to wait till our workflow has successfully finished processing all our samples.
+
+```bash
+[76/67754e] Submitted process > salmon (0399ad16-816f-4824-ae28-7b82e006e7b7_gdc_realn_rehead)
+
+t-neumann/salmon-nf has finished.
+Status:   SUCCESS
+Time:     Sun Aug 25 23:35:49 CEST 2019
+Duration: 2m
+
+tobias.neumann@login-01 [BIO] $
+```
+
+If we now check our results and execution folder, we will find all the files we asked for in there - Nextflow is awesome!
+
+```bash
+tobias.neumann@login-01 [BIO] $ ls
+report.html  results  timeline.html
+tobias.neumann@login-01 [BIO] $ ls results
+0399ad16-816f-4824-ae28-7b82e006e7b7_gdc_realn_rehead_pseudo.bam  0399ad16-816f-4824-ae28-7b82e006e7b7_gdc_realn_rehead_salmon
+```
+
+Have fun building workflows on your own - it pays off, especially for larger samples and heterogeneous computing environments!

@@ -433,7 +433,7 @@ export AWS_ACCESS_KEY_ID=<YOUR S3 ACCESS KEY>
 export AWS_SECRET_ACCESS_KEY=<YOUR S3 SECRET KEY>
 ```
 
-2. Specify your credentials in the Nextflow configuration file
+1. Specify your credentials in the Nextflow configuration file
 
 ```java
 aws {
@@ -444,3 +444,17 @@ aws {
 ```
 
 I personally prefer option 1 to not accidentally commit and push any of my credentials to my Nextflow Github repo.
+
+Now we can upload our fastq files to our target destination in our `s3` bucket, assuming you are in the directory where your `fastq` files are stored:
+
+```bash
+aws s3 cp . s3://obenauflab/fastq --recursive --include "*.fq.gz"
+```
+
+Repeat the same with your index files to your `s3` bucket destination and you now all files we need for running our Nextflow pipeline are ready. You can view them via numerous clients, I used [Cyberduck](https://cyberduck.io/) for Mac. Below you will see that my 40 testsamples and index files have been uploaded in the appropriate locations in my `s3` bucket.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/S3_fastqs.png" alt="S3 fastq file location">
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/AWS-pipeline/S3_index.png" alt="S3 index file location">
+
+### Launch and prepare your submission instance

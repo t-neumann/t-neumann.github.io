@@ -297,4 +297,90 @@ This input channel is pretty straightforward set up. Only thing we need to do is
 
 ### nextflow.config
 
-### Profiles
+The Nextflow configuration files contain directives for for parameter definitions, profile definitions and many others.
+
+In our particular example of `salmon-nf`, we will have a master `nextflow.config` that is tidied up and include additional configs for each section.
+
+```java
+includeConfig 'config/general.config'
+includeConfig 'config/docker.config'
+
+profiles {
+    standard {
+        process.executor = 'local'
+        process.maxForks = 3
+    }
+
+    slurm {
+    	includeConfig 'config/slurm.config'
+    }
+
+    awsbatch {
+        includeConfig 'config/awsbatch.config'
+    }
+}
+```
+
+As you can see, we have simply included some more config files and some barebone definition of profiles. Let's look at the sub-config files.
+
+##### general.config
+
+This holds general configurations, parameters and definitions that are applicable to any of our run profiles.
+
+```java
+params {
+
+   outputDir = './results'
+}
+
+process {
+
+	publishDir = [
+    	[path: params.outputDir, mode: 'copy', overwrite: 'true', pattern: "*/quant.sf"],
+      [path: params.outputDir, mode: 'copy', overwrite: 'true', pattern: "*pseudo.bam"]
+  	]
+
+	errorStrategy = 'retry'
+	maxRetries = 3
+	maxForks = 100
+
+}
+
+
+cloud {
+	imageId = 'ami-0f99d00928be3a282'
+    instanceType = 't2.micro'
+    userName = 'ec2-user'
+    keyName = 'awsbatch'
+    // Type: SSH, Protocol: TCP, Port: 22, Source IP: 0.0.0.0/0
+    securityGroup = 'sg-0307dbec406526c14'
+}
+
+
+timeline {
+	enabled = true
+}
+
+report {
+	enabled = true
+}
+```
+
+We set a default output directory in the `params` section, copy the `quant.sf` and `pseudo.bam` files to a dedicated publish directory, set our error strategy, a basic cloud profile for starting up instances on [AWS](https://aws.amazon.com) and enable [timeline](https://www.nextflow.io/docs/latest/tracing.html#timeline-report) and [execution](https://www.nextflow.io/docs/latest/tracing.html#execution-report) reports per default.
+
+##### docker.config
+
+With this configuration file, we enable Docker support per default and supply the Docker image to use with our `salmon` process.
+
+```java
+docker {
+    enabled = true
+}
+
+process {
+    // Process-specific docker containers
+    withName:salmon {
+        container = 'obenauflab/salmon:latest'
+    }
+}
+```

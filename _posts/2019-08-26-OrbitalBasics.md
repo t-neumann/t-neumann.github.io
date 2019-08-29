@@ -14,26 +14,16 @@ toc: true
 toc_sticky: true
 author_profile: false
 gallery:
-  - url: /assets/images/posts/Orbits/Newtonsmountainv=0.gif
-    image_path: /assets/images/posts/Orbits/Newtonsmountainv=0.gif
+  - image_path: /assets/images/posts/Orbits/Newtonsmountainv=0.gif
     alt: "Newton's cannon v=0"
-    title: "Speed of cannonball at 0 m/s launched horizontally from Newton's cannon."
-  - url: /assets/images/posts/Orbits/Newtonsmountainv=6000.gif
-    image_path: /assets/images/posts/Orbits/Newtonsmountainv=6000.gif
+  - image_path: /assets/images/posts/Orbits/Newtonsmountainv=6000.gif
     alt: "Newton's cannon v=6000"
-    title: "Speed of cannonball at 6,000 m/s launched horizontally from Newton's cannon."
-  - url: /assets/images/posts/Orbits/Newtonsmountainv=7300.gif
-    image_path: /assets/images/posts/Orbits/Newtonsmountainv=7300.gif
+  - image_path: /assets/images/posts/Orbits/Newtonsmountainv=7300.gif
     alt: "Newton's cannon v=7300"
-    title: "Speed of cannonball at 7,300 m/s launched horizontally from Newton's cannon."
-  - url: /assets/images/posts/Orbits/Newtonsmountainv=8000.gif
-    image_path: /assets/images/posts/Orbits/Newtonsmountainv=8000.gif
+  - image_path: /assets/images/posts/Orbits/Newtonsmountainv=8000.gif
     alt: "Newton's cannon v=8000"
-    title: "Speed of cannonball at 8,000 m/s launched horizontally from Newton's cannon."
-  - url: /assets/images/posts/Orbits/Newtonsmountainv=10000.gif
-    image_path: /assets/images/posts/Orbits/Newtonsmountainv=10000.gif
+  - image_path: /assets/images/posts/Orbits/Newtonsmountainv=10000.gif
     alt: "Newton's cannon v=10000"
-    title: "Speed of cannonball at 10,000 m/s launched horizontally from Newton's cannon."
 ---
 
 I was always fascinated by rockets, space in general and zero-gravity environments, however the Math's involved always deemed too complex for me. However, through the playful and still complex approach of [Kerbal Space Program](https://www.kerbalspaceprogram.com/) (KSP) - it is an awesome game I totally recommend to anybody remotely interested in space exploration - I picked up interest lately again and started reading into orbital mechanics, propulsion systems and related stuff in more detail.

@@ -118,23 +118,23 @@ As the firing speed is increased beyond this, non-interrupted elliptic orbits ar
 
 At a specific horizontal firing speed called escape velocity, dependent on the mass of the planet, an open orbit **(E)** is achieved that has a parabolic path. At even greater speeds the object will follow a range of hyperbolic trajectories. In a practical sense, both of these trajectory types mean the object is "breaking free" of the planet's gravity, and "going off into space" never to return. This involves any horizontal speed > 10,000 m/s for Earth.
 
-{% include gallery caption="Various firing speeds of Newton's cannon and the resulting trajectory." %}
+{% include gallery caption="Various firing speeds of Newton's cannon and the resulting trajectory." layout="half" %}
 
-This leads to four practivcale classes of moving objects:
+This leads to four practical classes of moving objects:
 
 1. No orbit
 
 1. Suborbital trajectories
 
-* Range of interupted elliptical paths
+  * Range of interupted elliptical paths
 
 1. Orbital trajectories
 
-* Range of elliptical paths with closes point opposite firing point
-* Circular path
-* Range of elliptical paths with closes point at firing point
+  * Range of elliptical paths with closes point opposite firing point
+  * Circular path
+  * Range of elliptical paths with closes point at firing point
 
 1. Open (escape) trajectories
 
-* Parabolic paths
-* Hyperbolic paths
+  * Parabolic paths
+  * Hyperbolic paths

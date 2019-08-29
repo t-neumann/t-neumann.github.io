@@ -25,7 +25,7 @@ So this very first post of this series will cover my basic understanding of the 
 
 ## Ellipse
 
-Let's start of with refreshing our memory what an ellipse is - because that is what most relevant orbits for this blog series will look like. In mathematical terms, an ellipse is a plane curve surrounding two focal points (F1 and F2), such that for all points on the curve, the sum of the two distances dF1 + dF2 is constant.
+Let's start of with refreshing our memory what an ellipse is - because that is what most relevant orbits for this blog series will look like. In mathematical terms, an ellipse is a plane curve surrounding two focal points ($$F_1$$ and $$F_2$$), such that for all points on the curve, the sum of the two distances $$d(F_1) + d(F_2)$$ is constant.
 
 <p align="center"">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/Ellipse-definition.png" alt="Ellipse definition" width = "50%">
@@ -48,3 +48,20 @@ $$a$$ is referred to as the semi-major axis, i.e. $$a \geq b > 0$$.
 ###### Linear eccentricity $$c$$
 
 This is the distance from the center to any of the two foci: $$c  = \sqrt{a^2 - b^2}$$.
+
+###### Eccentricity $$e$$
+
+The eccentricity is expressed as:
+
+$$e = \frac{c}{a} = \sqrt{1 - (\frac{b}{a})^{2}}$$
+
+assuming $$a > b$$. An ellipse with equal axes $$(a = b)$$ has zero eccentricity and is a circle.
+
+###### Semi-latus rectum $$l$$
+
+The length of the chord through one of the foci, perpendicular to the major axis, is called the latus rectum. One half of it is the semi-latus rectum $$l$$. A calculation shows:
+
+$$l = \frac{b^2}{a} = a(1-e^2)$$
+
+
+The semi-latus rectum $$l$$ is equal to the radius of curvature of the osculating circles at the vertices.

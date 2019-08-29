@@ -58,9 +58,7 @@ It is a generalization of a circle, where the two focal points are the same. Yes
 
 There are a few important parameters describing an ellipse which will be referred throughout this blog series, so make sure you memorize and understand them, because they will keep popping up again and again.
 
-<p align="center"">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/Ellipse-param.png" alt="Ellipse parameters" width = "50%">
-</p>
 
 ###### Semi-major and semi-minor axes $$a \geq b$$
 
@@ -104,24 +102,39 @@ There are two factors involved for understanding orbits:
 * Gravity pulling an object from its straight path into a curved path
 * The velocity at which this object is trying to travel along its path
 
-<p align="center"">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/tangentialvelocity.jpg" alt="Tangential velocity vs gravity" width = "50%">
-</p>
 
 This principal is illustrated by the illustration above, where gravity from a massive body in the center (green) pulls a object travelling on a straight path (pink object, black arrows), effectively bending the path with its constant pull (red) around the center body.
 
 Another way how to illustrate how orbits develop is the though experiment of [Newton's cannonball](https://en.wikipedia.org/wiki/Newton%27s_cannonball). Here, we visualize a cannon on top of a very high mountain which can fire at any imaginable speed.
 
-<p align="center"">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/Newton_Cannon.png" alt="Newton cannon" width = "50%">
-</p>
 
-If the cannon fires its ball with a low initial speed, the trajectory of the ball curves downward and hits the ground (A). As the firing speed is increased, the cannonball hits the ground farther (B) away from the cannon, because while the ball is still falling towards the ground, the ground is increasingly curving away from it (see first point, above). All these motions are actually "orbits" in a technical sense – they are describing a portion of an elliptical path around the center of gravity – but the orbits are interrupted by striking the Earth. The horizontal speed for both (A) and (b) is 0 - 7,000 m/s for Earth.
+If the cannon fires its ball with a low initial speed, the trajectory of the ball curves downward and hits the ground **(A)**. As the firing speed is increased, the cannonball hits the ground farther **(B)** away from the cannon, because while the ball is still falling towards the ground, the ground is increasingly curving away from it (see first point, above). All these motions are actually "orbits" in a technical sense – they are describing a portion of an elliptical path around the center of gravity – but the orbits are interrupted by striking the Earth. The horizontal speed for both **(A)** and **(B)** is 0 - 7,000 m/s for Earth.
 
-If the cannonball is fired with sufficient speed, the ground curves away from the ball at least as much as the ball falls – so the ball never strikes the ground. It is now in what could be called a non-interrupted, or circumnavigating, orbit. For any specific combination of height above the center of gravity and mass of the planet, there is one specific firing speed (unaffected by the mass of the ball, which is assumed to be very small relative to the Earth's mass) that produces a circular orbit, as shown in (C).
+If the cannonball is fired with sufficient speed, the ground curves away from the ball at least as much as the ball falls – so the ball never strikes the ground. It is now in what could be called a non-interrupted, or circumnavigating, orbit. For any specific combination of height above the center of gravity and mass of the planet, there is one specific firing speed (unaffected by the mass of the ball, which is assumed to be very small relative to the Earth's mass) that produces a circular orbit, as shown in **(C)**.
 
-As the firing speed is increased beyond this, non-interrupted elliptic orbits are produced; one is shown in (D). If the initial firing is above the surface of the Earth as shown, there will also be non-interrupted elliptical orbits at slower firing speed; these will come closest to the Earth at the point half an orbit beyond, and directly opposite the firing point, below the circular orbit. The horizontal speed for both (C) and (D) ranges from 7,300 to 10,000 m/s for Earth.
+As the firing speed is increased beyond this, non-interrupted elliptic orbits are produced; one is shown in **(D)**. If the initial firing is above the surface of the Earth as shown, there will also be non-interrupted elliptical orbits at slower firing speed; these will come closest to the Earth at the point half an orbit beyond, and directly opposite the firing point, below the circular orbit. The horizontal speed for both **(C)** and **(D)** ranges from 7,300 to 10,000 m/s for Earth.
 
-At a specific horizontal firing speed called escape velocity, dependent on the mass of the planet, an open orbit (E) is achieved that has a parabolic path. At even greater speeds the object will follow a range of hyperbolic trajectories. In a practical sense, both of these trajectory types mean the object is "breaking free" of the planet's gravity, and "going off into space" never to return. This involves any horizontal speed > 10,000 m/s for Earth.
+At a specific horizontal firing speed called escape velocity, dependent on the mass of the planet, an open orbit **(E)** is achieved that has a parabolic path. At even greater speeds the object will follow a range of hyperbolic trajectories. In a practical sense, both of these trajectory types mean the object is "breaking free" of the planet's gravity, and "going off into space" never to return. This involves any horizontal speed > 10,000 m/s for Earth.
 
 {% include gallery caption="Various firing speeds of Newton's cannon and the resulting trajectory." %}
+
+This leads to four practivcale classes of moving objects:
+
+1. No orbit
+
+1. Suborbital trajectories
+
+* Range of interupted elliptical paths
+
+1. Orbital trajectories
+
+* Range of elliptical paths with closes point opposite firing point
+* Circular path
+* Range of elliptical paths with closes point at firing point
+
+1. Open (escape) trajectories
+
+* Parabolic paths
+* Hyperbolic paths

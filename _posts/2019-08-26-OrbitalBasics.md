@@ -13,6 +13,27 @@ tags:
 toc: true
 toc_sticky: true
 author_profile: false
+gallery:
+  - url: /assets/images/posts/Orbits/Newtonsmountainv=0.gif
+    image_path: /assets/images/posts/Orbits/Newtonsmountainv=0.gif
+    alt: "Newton's cannon v=0"
+    title: "Speed of cannonball at 0 m/s launched horizontally from Newton's cannon."
+  - url: /assets/images/posts/Orbits/Newtonsmountainv=6000.gif
+    image_path: /assets/images/posts/Orbits/Newtonsmountainv=6000.gif
+    alt: "Newton's cannon v=6000"
+    title: "Speed of cannonball at 6,000 m/s launched horizontally from Newton's cannon."
+  - url: /assets/images/posts/Orbits/Newtonsmountainv=7300.gif
+    image_path: /assets/images/posts/Orbits/Newtonsmountainv=7300.gif
+    alt: "Newton's cannon v=7300"
+    title: "Speed of cannonball at 7,300 m/s launched horizontally from Newton's cannon."
+  - url: /assets/images/posts/Orbits/Newtonsmountainv=8000.gif
+    image_path: /assets/images/posts/Orbits/Newtonsmountainv=8000.gif
+    alt: "Newton's cannon v=8000"
+    title: "Speed of cannonball at 8,000 m/s launched horizontally from Newton's cannon."
+  - url: /assets/images/posts/Orbits/Newtonsmountainv=10000.gif
+    image_path: /assets/images/posts/Orbits/Newtonsmountainv=10000.gif
+    alt: "Newton's cannon v=10000"
+    title: "Speed of cannonball at 10,000 m/s launched horizontally from Newton's cannon."
 ---
 
 I was always fascinated by rockets, space in general and zero-gravity environments, however the Math's involved always deemed too complex for me. However, through the playful and still complex approach of [Kerbal Space Program](https://www.kerbalspaceprogram.com/) (KSP) - it is an awesome game I totally recommend to anybody remotely interested in space exploration - I picked up interest lately again and started reading into orbital mechanics, propulsion systems and related stuff in more detail.
@@ -65,3 +86,42 @@ $$l = \frac{b^2}{a} = a(1-e^2)$$
 
 
 The semi-latus rectum $$l$$ is equal to the radius of curvature of the osculating circles at the vertices.
+
+## Orbit
+
+Now probably everybody has some idea what an orbit is, but before going into details, let's first summarise the definitions I found on the web.
+
+#### Definition
+
+In physics, an orbit is the gravitationally curved trajectory of an object, like the the trajectory of any plane around a star or a satellite around earth. Unless mentioned differently, in this blogpost orbit refers to a regularly repeating trajectory, but there are also non-repeating trajectories. To a close approximation, planets and satellites follow elliptic orbits, with the central mass being orbited at on of the two focal points of the ellipse, as described by [Kepler's laws of planetary motion](https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion).
+
+The post will stick to the classical Newtonian mechanics paradigm of describing orbital motion, which is an adequate approximation for most situations. However, Einstein's generaly theory of relativity, which accounts for gravity as due to curvature of spacetime and orbits following geodesics, provides a more accurate calculation and understanding of the exact mechanics of orbital motion, which is needed in near very massive bodies (e.g. Mercury's orbit around the sun) or for extreme precision (as for GPS satellites).
+
+#### Understanding orbits
+
+There are two factors involved for understanding orbits:
+
+* Gravity pulling an object from its straight path into a curved path
+* The velocity at which this object is trying to travel along its path
+
+<p align="center"">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/tangentialvelocity.jpg" alt="Tangential velocity vs gravity" width = "50%">
+</p>
+
+This principal is illustrated by the illustration above, where gravity from a massive body in the center (green) pulls a object travelling on a straight path (pink object, black arrows), effectively bending the path with its constant pull (red) around the center body.
+
+Another way how to illustrate how orbits develop is the though experiment of [Newton's cannonball](https://en.wikipedia.org/wiki/Newton%27s_cannonball). Here, we visualize a cannon on top of a very high mountain which can fire at any imaginable speed.
+
+<p align="center"">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/Newton_Cannon.png" alt="Newton cannon" width = "50%">
+</p>
+
+If the cannon fires its ball with a low initial speed, the trajectory of the ball curves downward and hits the ground (A). As the firing speed is increased, the cannonball hits the ground farther (B) away from the cannon, because while the ball is still falling towards the ground, the ground is increasingly curving away from it (see first point, above). All these motions are actually "orbits" in a technical sense – they are describing a portion of an elliptical path around the center of gravity – but the orbits are interrupted by striking the Earth. The horizontal speed for both (A) and (b) is 0 - 7,000 m/s for Earth.
+
+If the cannonball is fired with sufficient speed, the ground curves away from the ball at least as much as the ball falls – so the ball never strikes the ground. It is now in what could be called a non-interrupted, or circumnavigating, orbit. For any specific combination of height above the center of gravity and mass of the planet, there is one specific firing speed (unaffected by the mass of the ball, which is assumed to be very small relative to the Earth's mass) that produces a circular orbit, as shown in (C).
+
+As the firing speed is increased beyond this, non-interrupted elliptic orbits are produced; one is shown in (D). If the initial firing is above the surface of the Earth as shown, there will also be non-interrupted elliptical orbits at slower firing speed; these will come closest to the Earth at the point half an orbit beyond, and directly opposite the firing point, below the circular orbit. The horizontal speed for both (C) and (D) ranges from 7,300 to 10,000 m/s for Earth.
+
+At a specific horizontal firing speed called escape velocity, dependent on the mass of the planet, an open orbit (E) is achieved that has a parabolic path. At even greater speeds the object will follow a range of hyperbolic trajectories. In a practical sense, both of these trajectory types mean the object is "breaking free" of the planet's gravity, and "going off into space" never to return. This involves any horizontal speed > 10,000 m/s for Earth.
+
+{% include gallery caption="Various firing speeds of Newton's cannon and the resulting trajectory." %}

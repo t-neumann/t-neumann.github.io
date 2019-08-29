@@ -27,7 +27,7 @@ So this very first post of this series will cover my basic understanding of the 
 
 Let's start of with refreshing our memory what an ellipse is - because that is what most relevant orbits for this blog series will look like. In mathematical terms, an ellipse is a plane curve surrounding two focal points (F1 and F2), such that for all points on the curve, the sum of the two distances dF1 + dF2 is constant.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/Ellipse-definition.png" alt="Ellipse definition">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/Ellipse-definition.png" alt="Ellipse definition" width = "50%">
 
 It is a generalization of a circle, where the two focal points are the same. Yes, also circular orbits exist.
 
@@ -35,7 +35,7 @@ It is a generalization of a circle, where the two focal points are the same. Yes
 
 There are a few important parameters describing an ellipse which will be referred throughout this blog series, so make sure you memorize and understand them, because they will keep popping up again and again.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/Ellipse-param.png" alt="Ellipse parameters">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/Ellipse-param.png" alt="Ellipse parameters" width = "50%">
 
 ###### Semi-major and semi-minor axes $$a \geq b$$
 

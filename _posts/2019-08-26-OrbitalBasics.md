@@ -38,9 +38,7 @@ So this very first post of this series will cover my basic understanding of the 
 
 Let's start of with refreshing our memory what an ellipse is - because that is what most relevant orbits for this blog series will look like. In mathematical terms, an ellipse is a plane curve surrounding two focal points ($$F_1$$ and $$F_2$$), such that for all points on the curve, the sum of the two distances $$d(F_1) + d(F_2)$$ is constant.
 
-<p align="center"">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/Ellipse-definition.png" alt="Ellipse definition" width = "50%">
-</p>
 
 It is a generalization of a circle, where the two focal points are the same. Yes, also circular orbits exist.
 
@@ -118,13 +116,32 @@ This leads to four practical classes of moving objects:
 
   * Range of interupted elliptical paths
 
-1. Orbital trajectories
+2. Orbital trajectories
 
   * Range of elliptical paths with closes point opposite firing point
   * Circular path
   * Range of elliptical paths with closes point at firing point
 
-1. Open (escape) trajectories
+3. Open (escape) trajectories
 
   * Parabolic paths
   * Hyperbolic paths
+
+#### Orbital elements
+
+Orbital elements are the parameters required to uniquely identify a specific orbits. In celestial mechanices, usually a Kepler orbit is used. A real orbit changes over time due to gravitational perturbations by other objects and relativistic effects, so a Keplerian orbit is merely an idealized, mathematical approximation at a particular time.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/orbitalelements.png" alt="Orbital elements" width = "50%">
+
+ An orbit is generally defined by six elements (known as Keplerian elements) that can be computed from position and velocity:
+
+ Two define the size and shape of the trajectory (compare with [ellipse parameters](###Ellipse)):
+
+ * Semimajor axis $$a$$
+ * Eccentricity $$e$$
+
+ Two elements define the orientation of the orbital plane in which the ellipse is embedded:
+
+ * Inclination $$i$$ - vertical tilt of the ellipse with respect to the reference plane (for the earth e.g. the equatorial plane), measured at the ascending node. The ascending node is where the orbit passes upwards through the reference plane). The tilt angle is measured perpendicular to the line of intersection between the orbital plane and the reference plane.
+
+ * Longitude of the ascending node $$\Omega$$ - horizontally orients the ascending node of the ellipse with respect to the reference frame's vernal point.

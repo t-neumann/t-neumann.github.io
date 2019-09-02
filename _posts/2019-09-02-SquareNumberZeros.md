@@ -73,7 +73,7 @@ Allrighty, let's formalize it.
 
 (1) Let $$k$$ be an integer $$k \in \mathbb{Z}$$ with $$k \geq 0 $$.
 
-(2) Let $$n$$ be any number ending in $$0$$ $$n = (10k + 0)$$.
+(2) Let $$n$$ be any number ending in $$0$$: $$n = (10k + 0)$$.
 
 (3) The perfect square of $$n$$ equals to $$n^2 = (10k + 0)^2 = 100k^2$$
 
@@ -89,7 +89,7 @@ Simplest example:
 
 $$m = 1111111111111110$$
 
-$$\sqrt{m} = \sqrt(1111111111111110) = 33333333.33333331\dot 6 $$
+$$\sqrt{m} = \sqrt{1111111111111110} = 33333333.33333331\dot 6 $$
 
 Therefore it follows, that the question
 

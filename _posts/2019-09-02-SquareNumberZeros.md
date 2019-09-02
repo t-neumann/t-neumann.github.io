@@ -79,7 +79,7 @@ Allrighty, let's formalize it.
 
 From (3) directly follows that any square number with ending zeros, strictly ends with zeros of a multiple of 2 - therefore an even number - of zeros.
 
-we have proofed the theorem and therefore can use it to probe for counter-examples given the properties in our initial question.
+We have proofed the theorem and therefore can use it to probe for counter-examples given the properties in our initial question.
 
 ## Disprove statement by counterexample
 

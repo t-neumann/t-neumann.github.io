@@ -88,12 +88,13 @@ It is trivial to find a number $$m$$ with an odd number of ending zeros and 15 a
 Simplest example:
 
 $$m = 1111111111111110$$
+
 $$\sqrt{m} = \sqrt(1111111111111110) = 33333333.33333331\dot 6 $$
 
 Therefore it follows, that the question
 
 > Is any of the integer numbers, A, consisting of exactly 15 ones and 15 zeros a square-number, that is an integer B exists, such that B*B=A?
 
-can be answered with $$No$$:
+can be answered with **No**:
 
 > Not any integer number A, consisting of exactly 15 ones and 15 zeros is a square-number, that is an integer B exists, such that B*B=A.

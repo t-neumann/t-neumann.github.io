@@ -59,10 +59,39 @@ $$(n + 1)^2 - n^2 = (n + 1) + n$$.
 1. For any natural number $$m$$ greater than 1,
 $$(2m, m^2 - 1, m^2 + 1)$$ is a Pythagorean triplet.
 
-So let's just quickly go through them - property 1 does not really help because we can only construct numbers ending at 0 and 1, both apparently valid digits for square numbers.
+So let's just quickly go through them:
 
-Property 2 - we already hit the jackpot. Since we can freely distribute 0s in our numbers, it is trivial to create one with an odd number of zeros at the end.
+**Property 1** does not really help because we can only construct numbers ending at 0 and 1, both apparently valid digits for square numbers.
+
+**Property 2** - we already hit the jackpot. Since we can freely distribute 0s in our numbers, it is trivial to create one with an odd number of zeros at the end.
 
 Allrighty, let's formalize it.
 
-## Proof: Square numbers end with an even number of zeros
+## Proof: Square numbers ending in zeros strictly end with an even number of zeros
+
+Theorem: Square numbers ending in zeros strictly end with an even number of zeros.
+
+(1) Let $$k$$ be an integer $$k \in \mathbb{Z}$$ with $$k \geq 0 $$.
+
+(2) Let $$n$$ be any number ending in $$0$$ $$n = (10k + 0).
+
+(3) The perfect square of $$n$$ equals to $$n^2 = (10k + 0)^2 = 100k^2
+
+From (3) directly follows that any square number with ending zeros, strictly ends with zeros of a multiple of 2 - therefore an even number - of zeros.
+
+## Disprove statement by counterexample
+
+It is trivial to find a number $$m$$ with an odd number of ending zeros and 15 additional 1s.
+
+Simplest example:
+
+$$m = 1111111111111110$$
+$$\sqrt{m} = \sqrt(1111111111111110) = 33333333.33333331\dot 6 $$
+
+Therefore it follows, that the question
+
+> Is any of the integer numbers, A, consisting of exactly 15 ones and 15 zeros a square-number, that is an integer B exists, such that B*B=A?
+
+can be answered with $$No$$:
+
+> Not any integer number A, consisting of exactly 15 ones and 15 zeros is a square-number, that is an integer B exists, such that B*B=A.

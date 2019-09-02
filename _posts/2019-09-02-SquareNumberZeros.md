@@ -69,15 +69,17 @@ Allrighty, let's formalize it.
 
 ## Proof: Square numbers ending in zeros strictly end with an even number of zeros
 
-Theorem: Square numbers ending in zeros strictly end with an even number of zeros.
+> Theorem: Square numbers ending in zeros strictly end with an even number of zeros.
 
 (1) Let $$k$$ be an integer $$k \in \mathbb{Z}$$ with $$k \geq 0 $$.
 
-(2) Let $$n$$ be any number ending in $$0$$ $$n = (10k + 0).
+(2) Let $$n$$ be any number ending in $$0$$ $$n = (10k + 0)$$.
 
-(3) The perfect square of $$n$$ equals to $$n^2 = (10k + 0)^2 = 100k^2
+(3) The perfect square of $$n$$ equals to $$n^2 = (10k + 0)^2 = 100k^2$$
 
 From (3) directly follows that any square number with ending zeros, strictly ends with zeros of a multiple of 2 - therefore an even number - of zeros.
+
+we have proofed the theorem and therefore can use it to probe for counter-examples given the properties in our initial question.
 
 ## Disprove statement by counterexample
 

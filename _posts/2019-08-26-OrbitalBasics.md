@@ -145,3 +145,13 @@ Orbital elements are the parameters required to uniquely identify a specific orb
  * Inclination $$i$$ - vertical tilt of the ellipse with respect to the reference plane (for the earth e.g. the equatorial plane), measured at the ascending node. The ascending node is where the orbit passes upwards through the reference plane). The tilt angle is measured perpendicular to the line of intersection between the orbital plane and the reference plane.
 
  * Longitude of the ascending node $$\Omega$$ - horizontally orients the ascending node of the ellipse with respect to the reference frame's vernal point :aries:.
+
+ I found it pretty hard at first to wrap my head around what the vernal point :aries: actually is - naturally it is some arbitrary reference point to fix the angle for the ascending node $$\Omega$$. So actually the vernal point :aries: is one of the equinoctes, namely the one occurring in spring in the northern hemisphere. It is regarded as the instant of time when the plane of the Earth's equator passes through the center of the sun. So at the equator, the sunrays will hit the earth perpendicular directly from the sky zenith. After passing the vernal point, the northern hemisphere will receive more light - summer is here - before the vernal point, the northern hemisphere received less light - winter was coming. Same is true vice versa for the southern hemisphere.
+
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/vernalpoint.png" alt="Vernal point" width = "50%">
+
+ The two remaining elements are as follows:
+
+ * Argument of periapsis $$\omega$$ defines the orientation of the ellipse in the orbital plane. It is measured as the angle from the ascending node to the periapsis.
+
+ * True anomaly ($$v$$, $$\theta$$, or $$f$$) at epoch ($$M_0$$) defnies the position of the orbiting body along the ellipse at a specific time ("epoch") 

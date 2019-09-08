@@ -127,6 +127,20 @@ This leads to four practical classes of moving objects:
   * Parabolic paths
   * Hyperbolic paths
 
+asdfadsf
+
+1.  Sample first item.
+
+    * sub-bullet one
+    * sub-bullet two
+
+2.  Continuing the list
+
+    1. sub-list numbered one
+    2. sub-list numbered two
+
+3.  Another list item.
+
 #### Apsis
 
 The first two terms I learned about in KSP were the two apsis - probably because a lot of orbital maneuvers happen at those and they are pretty simple to comprehend.

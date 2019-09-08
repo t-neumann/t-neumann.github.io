@@ -1,7 +1,7 @@
 ---
 title: Orbital maneuvers
 description: Changing orbital parameters using propulsion systems.
-date: 2019-08-26 15:29
+date: 2019-09-08 15:29
 image:
   path: /assets/images/categories/OOSS.jpg
 categories:

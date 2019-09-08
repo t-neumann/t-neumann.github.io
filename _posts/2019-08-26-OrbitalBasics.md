@@ -129,18 +129,21 @@ This leads to four practical classes of moving objects:
 
 asdfadsf
 
-1.  Sample first item.
-1.  Second item
+1.  No orbit
+2.  Suborbital trajectories
 
-    * sub-bullet one
-    * sub-bullet two
+    * Range of interrupted elliptical paths
 
-2.  Continuing the list
+3.  Orbital trajectories
 
-    1. sub-list numbered one
-    2. sub-list numbered two
+    * Range of elliptical paths with closes point opposite firing point
+    * Circular path
+    * Range of elliptical paths with closes point at firing point
 
-3.  Another list item.
+4.  Open (escape) trajectories
+
+    * Parabolic paths
+    * Hyperbolic paths
 
 #### Apsis
 

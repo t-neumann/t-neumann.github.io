@@ -116,13 +116,13 @@ This leads to four practical classes of moving objects:
 
 * Range of interrupted elliptical paths
 
-2. Orbital trajectories
+1. Orbital trajectories
 
 * Range of elliptical paths with closes point opposite firing point
 * Circular path
 * Range of elliptical paths with closes point at firing point
 
-3. Open (escape) trajectories
+1. Open (escape) trajectories
 
 * Parabolic paths
 * Hyperbolic paths
@@ -178,3 +178,24 @@ Now an arbitrary Julian epoch is therefore related to the Julian date by
 $$ J = 2000 + (Julian date − 2451545.0) ÷ 365.25$$
 
 So in a sense everybody has definitely a feeling for an Epoch because we also structure our lifes and set up meetings for certain "Epochs" everyday.
+
+#### Orbital period
+
+The orbital period is simply how long an orbiting body takes to complete one orbit.
+
+#### Ellipse vs orbits
+
+For elliptical orbits, some formulas from ellipses are directly related.
+
+Let $$e$$ be the eccentricity, $$r_a$$ the radius of the apoapsis, $$r_p$$ the radius of the periapsis and $$a$$ the length of the smi-major axis. Then:
+
+$$e = \frac{r_a - r_p}{r_a + r_p} = \frac{r_a - r_p}{2a}$$
+
+$$r_a = (1 + e)a$$
+$$r_p = (1 - e)a$$
+
+Interestingly, the semi-major axis $$a$$ is the arithmetic mean, the semi-minor axis $$b$$ is the geometric mean and the semi-latus rectum $$l$$ is the harmonic mean of $$r_a$$ and $$r_b$$:
+
+$$a = \frac{r_a + r_p}{2}$$
+$$b = \frac{2}{\sqrt{r_a * r_p}}$$
+$$l = \frac{2}{\frac{1}{r_a} + \frac{1}{r_p}} = \frac{2r_{a}r_{p}}{r_a + r_p}$$

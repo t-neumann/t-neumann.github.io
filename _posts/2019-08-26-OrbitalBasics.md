@@ -114,18 +114,18 @@ This leads to four practical classes of moving objects:
 
 1. Suborbital trajectories
 
-  * Range of interrupted elliptical paths
+* Range of interrupted elliptical paths
 
 2. Orbital trajectories
 
-  * Range of elliptical paths with closes point opposite firing point
-  * Circular path
-  * Range of elliptical paths with closes point at firing point
+* Range of elliptical paths with closes point opposite firing point
+* Circular path
+* Range of elliptical paths with closes point at firing point
 
 3. Open (escape) trajectories
 
-  * Parabolic paths
-  * Hyperbolic paths
+* Parabolic paths
+* Hyperbolic paths
 
 #### Apsis
 
@@ -143,26 +143,38 @@ Orbital elements are the parameters required to uniquely identify a specific orb
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/orbitalelements.png" alt="Orbital elements" width = "50%">
 
- An orbit is generally defined by six elements (known as Keplerian elements) that can be computed from position and velocity:
+An orbit is generally defined by six elements (known as Keplerian elements) that can be computed from position and velocity:
 
- Two define the size and shape of the trajectory (compare with [ellipse parameters](###Ellipse)):
+Two define the size and shape of the trajectory (compare with [ellipse parameters](###Ellipse)):
 
- * Semimajor axis $$a$$
+* Semimajor axis $$a$$
 
- * Eccentricity $$e$$
+* Eccentricity $$e$$
 
- Two elements define the orientation of the orbital plane in which the ellipse is embedded:
+Two elements define the orientation of the orbital plane in which the ellipse is embedded:
 
- * Inclination $$i$$ - vertical tilt of the ellipse with respect to the reference plane (for the earth e.g. the equatorial plane), measured at the ascending node. The ascending node is where the orbit passes upwards through the reference plane). The tilt angle is measured perpendicular to the line of intersection between the orbital plane and the reference plane.
+* Inclination $$i$$ - vertical tilt of the ellipse with respect to the reference plane (for the earth e.g. the equatorial plane), measured at the ascending node. The ascending node is where the orbit passes upwards through the reference plane). The tilt angle is measured perpendicular to the line of intersection between the orbital plane and the reference plane.
 
- * Longitude of the ascending node $$\Omega$$ - horizontally orients the ascending node of the ellipse with respect to the reference frame's vernal point :aries:.
+* Longitude of the ascending node $$\Omega$$ - horizontally orients the ascending node of the ellipse with respect to the reference frame's vernal point :aries:.
 
- I found it pretty hard at first to wrap my head around what the vernal point :aries: actually is - naturally it is some arbitrary reference point to fix the angle for the ascending node $$\Omega$$. So actually the vernal point :aries: is one of the equinoctes, namely the one occurring in spring in the northern hemisphere. It is regarded as the instant of time when the plane of the Earth's equator passes through the center of the sun. So at the equator, the sunrays will hit the earth perpendicular directly from the sky zenith. After passing the vernal point, the northern hemisphere will receive more light - summer is here - before the vernal point, the northern hemisphere received less light - winter was coming. Same is true vice versa for the southern hemisphere.
+I found it pretty hard at first to wrap my head around what the vernal point :aries: actually is - naturally it is some arbitrary reference point to fix the angle for the ascending node $$\Omega$$. So actually the vernal point :aries: is one of the equinoctes, namely the one occurring in spring in the northern hemisphere. It is regarded as the instant of time when the plane of the Earth's equator passes through the center of the sun. So at the equator, the sunrays will hit the earth perpendicular directly from the sky zenith. After passing the vernal point, the northern hemisphere will receive more light - summer is here - before the vernal point, the northern hemisphere received less light - winter was coming. Same is true vice versa for the southern hemisphere.
 
- <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/vernalpoint.png" alt="Vernal point" width = "100%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/vernalpoint.png" alt="Vernal point" width = "100%">
 
- The two remaining elements are as follows:
+The two remaining elements are as follows:
 
- * Argument of periapsis $$\omega$$ defines the orientation of the ellipse in the orbital plane. It is measured as the angle from the ascending node to the periapsis.
+* Argument of periapsis $$\omega$$ defines the orientation of the ellipse in the orbital plane. It is measured as the angle from the ascending node to the periapsis.
 
- * True anomaly ($$v$$, $$\theta$$, or $$f$$) at epoch ($$M_0$$) defines the position of the orbiting body along the ellipse at a specific time ("epoch")
+* True anomaly ($$v$$, $$\theta$$, or $$f$$) at epoch ($$M_0$$) defines the position of the orbiting body along the ellipse at a specific time ("epoch"). The true anomaly is an angular parameter defining the angle between the direction of the periapsis and the current position of the orbiting body.
+
+Epoch sounds pretty sophisticated, but basically just just a moment in time used as a reference point for some time-varying astronomical quantity, like the true anomaly. Still sounds complicated?
+
+Let's look at some unit indicating a specific epoch: J2000.
+
+The $$J$$ unit refers to Julian years, which are intervals with the length of a mean year in the Julian calendar, i.e. 365.25 days. This interval measure does not itself define any epoch: the Gregorian calendar is in general use for dating. Thus "J2000" refers to the instant of 12:00 TT (noon) on January 1, 2000.
+
+Now an arbitrary Julian epoch is therefore related to the Julian date by
+
+$$ J = 2000 + (Julian date − 2451545.0) ÷ 365.25$$
+
+So in a sense everybody has definitely a feeling for an Epoch because we also structure our lifes and set up meetings for certain "Epochs" everyday.

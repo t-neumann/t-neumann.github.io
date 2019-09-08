@@ -110,25 +110,6 @@ At a specific horizontal firing speed called escape velocity, dependent on the m
 
 This leads to four practical classes of moving objects:
 
-1. No orbit
-
-2. Suborbital trajectories
-
-  * Range of interrupted elliptical paths
-
-3. Orbital trajectories
-
-  * Range of elliptical paths with closes point opposite firing point
-  * Circular path
-  * Range of elliptical paths with closes point at firing point
-
-4. Open (escape) trajectories
-
-  * Parabolic paths
-  * Hyperbolic paths
-
-asdfadsf
-
 1.  No orbit
 2.  Suborbital trajectories
 

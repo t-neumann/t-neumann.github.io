@@ -1,6 +1,6 @@
 ---
 title: Orbital maneuvers
-description: sex
+description: Changing orbital parameters using propulsion systems.
 date: 2019-08-26 15:29
 image:
   path: /assets/images/categories/OOSS.jpg
@@ -24,7 +24,7 @@ Now let's pretend we have some well-funded space agency, can do anything we want
 
 ## Vessel
 
-We do not want to simply calculate orbits, we want some actual space ship with propulsion systems in the orbit so we can see the impact of our maneuvers live. For this purpose, I created already in endless hours a <i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/t-neumann/versalignLib">huge garage</a> of different more or less efficient vessels for exploring the KSP universe.
+We do not want to simply calculate orbits, we want some actual space ship with propulsion systems in the orbit so we can see the impact of our maneuvers live. For this purpose, I created already in endless hours a <i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/t-neumann/ksp-garage">huge garage</a> of different more or less efficient vessels for exploring the KSP universe.
 
 For this particular, I will be using my rather tiny [SSTO](https://en.wikipedia.org/wiki/Single-stage-to-orbit) *SlickOrbiter* consisting of 4 rapier engines which are hybrid engines with both air-breathing and liquid fuel modes. This I complement with an Atomic Rocket Motor engine for space maneuvers with far lower thrust but much higher efficiency ($$I_{SP}$$). I will definitely dedicate a couple of posts to propulsion systems, staging modes etc in a later time, for know just take it as it is.
 

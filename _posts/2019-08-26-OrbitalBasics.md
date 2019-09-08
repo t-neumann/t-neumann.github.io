@@ -114,7 +114,7 @@ This leads to four practical classes of moving objects:
 
 1. Suborbital trajectories
 
-  * Range of interupted elliptical paths
+  * Range of interrupted elliptical paths
 
 2. Orbital trajectories
 
@@ -127,6 +127,16 @@ This leads to four practical classes of moving objects:
   * Parabolic paths
   * Hyperbolic paths
 
+#### Apsis
+
+The first two terms I learned about in KSP were the two apsis - probably because a lot of orbital maneuvers happen at those and they are pretty simple to comprehend.
+
+Apsis denotes either of the two extreme points (i.e., the farthest or nearest point) in the orbit of a planetary body about its primary body.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/apsis.png" alt="Orbital elements" width = "50%">
+
+There are two apsides in any elliptic orbit. Each is named by selecting the appropriate prefix: apo- , or peri- and then joining it to the reference suffix of the "host" body being orbited. The general form is **apoapsis** (see figure above (1)) for the farthest point and **periapsis** (see top figure (2)) for the nearest point. Depending what central body is orbited it will become apogee and perigee for object orbiting earth, apohelion and perihelion for objects orbiting the sun etc.
+
 #### Orbital elements
 
 Orbital elements are the parameters required to uniquely identify a specific orbits. In celestial mechanices, usually a Kepler orbit is used. A real orbit changes over time due to gravitational perturbations by other objects and relativistic effects, so a Keplerian orbit is merely an idealized, mathematical approximation at a particular time.
@@ -138,6 +148,7 @@ Orbital elements are the parameters required to uniquely identify a specific orb
  Two define the size and shape of the trajectory (compare with [ellipse parameters](###Ellipse)):
 
  * Semimajor axis $$a$$
+
  * Eccentricity $$e$$
 
  Two elements define the orientation of the orbital plane in which the ellipse is embedded:
@@ -148,10 +159,10 @@ Orbital elements are the parameters required to uniquely identify a specific orb
 
  I found it pretty hard at first to wrap my head around what the vernal point :aries: actually is - naturally it is some arbitrary reference point to fix the angle for the ascending node $$\Omega$$. So actually the vernal point :aries: is one of the equinoctes, namely the one occurring in spring in the northern hemisphere. It is regarded as the instant of time when the plane of the Earth's equator passes through the center of the sun. So at the equator, the sunrays will hit the earth perpendicular directly from the sky zenith. After passing the vernal point, the northern hemisphere will receive more light - summer is here - before the vernal point, the northern hemisphere received less light - winter was coming. Same is true vice versa for the southern hemisphere.
 
- <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/vernalpoint.png" alt="Vernal point" width = "50%">
+ <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/vernalpoint.png" alt="Vernal point" width = "100%">
 
  The two remaining elements are as follows:
 
  * Argument of periapsis $$\omega$$ defines the orientation of the ellipse in the orbital plane. It is measured as the angle from the ascending node to the periapsis.
 
- * True anomaly ($$v$$, $$\theta$$, or $$f$$) at epoch ($$M_0$$) defnies the position of the orbiting body along the ellipse at a specific time ("epoch") 
+ * True anomaly ($$v$$, $$\theta$$, or $$f$$) at epoch ($$M_0$$) defines the position of the orbiting body along the ellipse at a specific time ("epoch")

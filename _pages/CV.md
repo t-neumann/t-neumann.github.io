@@ -58,7 +58,7 @@ order: 1
             <br>
           </div>
           <ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining public datasets in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining big data datasets such as [The Cancer Genome Atlas](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga) (11,000 samples, 100 TB data) in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
           <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead bioinformatics method and algorithm development for the <a href="https://www.nature.com/articles/nmeth.4435">SLAM-seq</a> sequencing technology.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Design of genome-wide shRNA and sgRNA libraries for pooled RNAi /CRISPR screens in human and mouse and screen analysis.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Project lead on database and front-end development for integrating, visualizing and querying screening and NGS data and metadata utilizing the on-campus sequencing facility API</li>
@@ -79,7 +79,7 @@ order: 1
           <ul>
           <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead development, maintenance and optimization of a targeted gene sequencing and exome-sequencing pipeline building system forming the bioinformatics backend of the Sophia DDM &reg; SaaS platform <i class="fas fa-diagnoses" aria-hidden="true"></i>.</li>
           <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Tailoring pipelines for diagnostic gene panel kits on various sequencing platforms (Roche 454 / ionTorrentPGM / Illumina MiSeq) for major hospitals and labs in Switzerland and across Europe <i class="fas fa-hospital" aria-hidden="true"></i>.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Conducting genetic test kit validation studies with key diagnostic kit developer sat European level <i class="fas fa-globe-europe" aria-hidden="true"></i>.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Conducting genetic test kit validation studies with key diagnostic kit developer sat European level <i class="fas fa-globe" aria-hidden="true"></i>.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Product presentations for prospective and established customers and on conferences <i class="fab fa-slideshare" aria-hidden="true"></i>.</li>
           </ul>
         </div>

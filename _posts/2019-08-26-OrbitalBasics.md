@@ -7,9 +7,9 @@ image:
 categories:
   - Space
 tags:
-- Orbital Mechanics
-- Orbital Maneuvers
-- Orbital Transfer
+- Orbits
+- Orbital mechanics
+- Orbital parameters
 toc: true
 toc_sticky: true
 author_profile: false

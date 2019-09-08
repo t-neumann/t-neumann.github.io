@@ -58,7 +58,7 @@ order: 1
             <br>
           </div>
           <ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining big data datasets such as [The Cancer Genome Atlas](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga) (11,000 samples, 100 TB data) in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining big data datasets such as <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">The Cancer Genome Atlas</a> (11,000 samples, 100 TB data) in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
           <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead bioinformatics method and algorithm development for the <a href="https://www.nature.com/articles/nmeth.4435">SLAM-seq</a> sequencing technology.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Design of genome-wide shRNA and sgRNA libraries for pooled RNAi /CRISPR screens in human and mouse and screen analysis.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Project lead on database and front-end development for integrating, visualizing and querying screening and NGS data and metadata utilizing the on-campus sequencing facility API</li>

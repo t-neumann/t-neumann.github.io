@@ -153,7 +153,7 @@ Any standalone Nextflow pipeline will need 2 files to be executable out of the b
 
 First, we need to get an idea about what the data flow will be and what software and scripts will be run on it. I have outline the basic workflow of `salmon-nf` below:
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Salmon-pipeline/salmon-nf.png" alt="salmon-nf">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Salmon-pipeline/salmon-nf.png" alt="salmon-nf" width = "50%">
 
 We will only have one single process `salmon` which will use the input `fastq` files and the respective transcriptome `index` file to produce our expression estimates and the pseudo-bam files of aligning reads.
 

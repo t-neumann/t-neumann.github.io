@@ -279,7 +279,7 @@ Everything else you can leave empty and click `Create`.
 
 Congratulations, you have created your first compute environment!
 
-## Step 4: Creating job definitions
+## Step 4: Creating job queues
 
 Now we need to create a job queue and associated this with our compute environment. This step is actually pretty easy and straightforward.
 

@@ -114,18 +114,18 @@ This leads to four practical classes of moving objects:
 
 1. Suborbital trajectories
 
-* Range of interrupted elliptical paths
+  * Range of interrupted elliptical paths
 
 1. Orbital trajectories
 
-* Range of elliptical paths with closes point opposite firing point
-* Circular path
-* Range of elliptical paths with closes point at firing point
+  * Range of elliptical paths with closes point opposite firing point
+  * Circular path
+  * Range of elliptical paths with closes point at firing point
 
 1. Open (escape) trajectories
 
-* Parabolic paths
-* Hyperbolic paths
+  * Parabolic paths
+  * Hyperbolic paths
 
 #### Apsis
 
@@ -133,7 +133,7 @@ The first two terms I learned about in KSP were the two apsis - probably because
 
 Apsis denotes either of the two extreme points (i.e., the farthest or nearest point) in the orbit of a planetary body about its primary body.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/apsis.png" alt="Orbital elements" width = "50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/apsis.png" alt="Apsis" width = "50%">
 
 There are two apsides in any elliptic orbit. Each is named by selecting the appropriate prefix: apo- , or peri- and then joining it to the reference suffix of the "host" body being orbited. The general form is **apoapsis** (see figure above (1)) for the farthest point and **periapsis** (see top figure (2)) for the nearest point. Depending what central body is orbited it will become apogee and perigee for object orbiting earth, apohelion and perihelion for objects orbiting the sun etc.
 
@@ -192,10 +192,23 @@ Let $$e$$ be the eccentricity, $$r_a$$ the radius of the apoapsis, $$r_p$$ the r
 $$e = \frac{r_a - r_p}{r_a + r_p} = \frac{r_a - r_p}{2a}$$
 
 $$r_a = (1 + e)a$$
+
 $$r_p = (1 - e)a$$
 
 Interestingly, the semi-major axis $$a$$ is the arithmetic mean, the semi-minor axis $$b$$ is the geometric mean and the semi-latus rectum $$l$$ is the harmonic mean of $$r_a$$ and $$r_b$$:
 
 $$a = \frac{r_a + r_p}{2}$$
+
 $$b = \frac{2}{\sqrt{r_a * r_p}}$$
+
 $$l = \frac{2}{\frac{1}{r_a} + \frac{1}{r_p}} = \frac{2r_{a}r_{p}}{r_a + r_p}$$
+
+#### Orbits in KSP
+
+Now this post should leave with a basic idea what an orbit is, how it is defined and what are important parameters to specify orbits and positioning moving object in a given orbit. As a little teaser for the next section where we will be talking about basic orbital maneuvers and mechanics, find a first sceenshot from KSP of a random orbit. What can you tell from it?
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Orbits/ksp-orbital-parameters.png" alt="KSP orbits" width = "100%">
+
+Given from what I have told you, you should be able to spot that it is a circular orbit (eccentricity = 0 or apoapsis $$\approx$$ periapsis) and it's orbital plane is perfectly aligned with the equatorial plane of the central body (inclination = 0).
+
+Now you should be equipped with the basic toolset for the next post where we will be modifying orbital parameters with maneuvers.

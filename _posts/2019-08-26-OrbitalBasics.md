@@ -112,17 +112,17 @@ This leads to four practical classes of moving objects:
 
 1. No orbit
 
-1. Suborbital trajectories
+2. Suborbital trajectories
 
   * Range of interrupted elliptical paths
 
-1. Orbital trajectories
+3. Orbital trajectories
 
   * Range of elliptical paths with closes point opposite firing point
   * Circular path
   * Range of elliptical paths with closes point at firing point
 
-1. Open (escape) trajectories
+4. Open (escape) trajectories
 
   * Parabolic paths
   * Hyperbolic paths

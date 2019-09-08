@@ -130,6 +130,7 @@ This leads to four practical classes of moving objects:
 asdfadsf
 
 1.  Sample first item.
+1.  Second item
 
     * sub-bullet one
     * sub-bullet two

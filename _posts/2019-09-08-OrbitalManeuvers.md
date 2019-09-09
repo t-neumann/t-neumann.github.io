@@ -57,4 +57,40 @@ These vectors are parallel to the orbital plane, and perpendicular to the progra
 
 Ok now it is time to make a couple of burns into these directions and see how it affects our orbital parameters. To this end we set up maneuver nodes with directional indicators as shown below.
 
-{% include gallery caption="Orbital directions and directional markers." %}
+{% include gallery layout="single" caption="Orbital directions and directional markers." %}
+
+#### Prograde and retrograde maneuvers
+
+So we are at the apoapsis of our nearly circular orbit perfectly aligned with the equatorial plane (0 degrees inclination). Let's see what happens if we burn into prograde direction.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/progradeburn.gif" alt="Prograde burn" width = "50%">
+
+As we can see, the apoapsis moves to the opposite end of our now elliptic orbit and we raised the orbit's altitude on the opposite side.
+
+What if we do a retrograde burn?
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/retrogradeburn.gif" alt="Retrograde burn" width = "50%">
+
+As we can see, the periapsis on the opposing side is lowered until we go suborbital, meaning the spacecraft will deorbit on its way to periapsis and either burn up in the atmosphere or crash on the planet (unless a proper landing procedure is initiated).
+
+In summary, burning prograde will increase orbital velocity, raising the altitude of the orbit on the other side, while burning retrograde will decrease velocity and reduce the orbit altitude on the other side.
+
+This is the most efficient way to change the orbital shape (specifically the most common case, raising or lowering apsides) so whenever possible these vectors should be used.
+
+#### Normal and anti-normal maneuvers
+
+Again we are at the apoapsis of our nearly circular orbit perfectly aligned with the equatorial plane (0 degrees inclination). Let's see what happens if we burn into normal direction.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/normalburn.gif" alt="Normal burn" width = "50%">
+
+We see that the orbital inclination (the angle between the orbital and equatorial plane) changes.
+
+These vectors are generally used to match the orbital inclination of another celestial body or craft, and the only time this is possible is when the current craft's orbit intersects the orbital plane of the target - at the ascending and descending nodes. We will get to this in a second.
+
+#### Radial in and radial out maneuvers
+
+One last time we are at the apoapsis of our nearly circular orbit perfectly aligned with the equatorial plane (0 degrees inclination). Let's see what happens if we burn into the radial out direction.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/radialoutburn.gif" alt="Radial out burn" width = "50%">
+
+We see that the orbit start rotating around the craft like spinning a hula hoop with a stick. Radial burns are usually not an efficient way of adjusting one's path - it is generally more effective to use prograde and retrograde burns.

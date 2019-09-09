@@ -59,6 +59,8 @@ Ok now it is time to make a couple of burns into these directions and see how it
 
 {% include gallery layout="single" caption="Orbital directions and directional markers." %}
 
+I will go into more detail and Math about energy efficiency for those individual maneuvers in a later post, this should now only give you a first glimpse and general understanding of how to move around in space.
+
 #### Prograde and retrograde maneuvers
 
 So we are at the apoapsis of our nearly circular orbit perfectly aligned with the equatorial plane (0 degrees inclination). Let's see what happens if we burn into prograde direction.
@@ -94,3 +96,45 @@ One last time we are at the apoapsis of our nearly circular orbit perfectly alig
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/radialoutburn.gif" alt="Radial out burn" width = "50%">
 
 We see that the orbit start rotating around the craft like spinning a hula hoop with a stick. Radial burns are usually not an efficient way of adjusting one's path - it is generally more effective to use prograde and retrograde burns.
+
+## Orbital insertion
+
+All the maneuvers we experimented with in the last section are generally described (if sufficient change of the orbital parameters is achieved) as **Orbit insertion** which is a general term for a maneuver that is more than a small correction. It may be used for a maneuver to change a transfer orbit or an ascent orbit into a stable one, but also to change a stable orbit into a descent. Also the term **orbit injection** is used - which I find even cooler -  especially for changing a stable orbit into a transfer orbit, e.g. trans-lunar injection (TLI), trans-Mars injection (TMI) and trans-Earth injection (TEI).
+
+Stable orbits have been described in the [previous post](https://t-neumann.github.io/space/OrbitalBasics/), but now we want to specifically look at transfer orbits which enable us to put satellites into orbits, travel to the moon and Mars and all the fancy wonderous places in our solar system and beyond.
+
+So what is a **transfer orbit**: In orbital mechanics a transfer orbit is an intermediate elliptical orbit that is used to move a satellite or other object from one circular, or largely circular, orbit to another.
+
+There are several types of transfer orbits, which vary in their energy efficiency and speed of transfer and I will quickly go over the most famous ones.
+
+Again, I will go into more detail and Math about energy efficiency for those transfer orbits in a later post, this should now only give you a first glimpse and general understanding of how these orbital insertions work.
+
+### Hohmann transfer
+
+In orbital mechanics, the Hohmann transfer orbit is an elliptical orbit used to transfer between two circular orbits of different radii around the same body in the same plane. The Hohmann transfer orbit uses the lowest possible amount of energy in traveling between these orbits.
+
+The term is also used to refer to transfer orbits between different bodies (planets, moons etc.).
+
+A Hohmann transfer requires that the starting and destination points be at particular locations in their orbits relative to each other. Space missions using a Hohmann transfer must wait for this required alignment to occur, which opens a so-called launch window. For a space mission between Earth and Mars, for example, these launch windows occur every 26 months. A Hohmann transfer orbit also determines a fixed time required to travel between the starting and destination points; for an Earth-Mars journey this travel time is about 9 months.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/Hohmann_transfer_orbit.svg" alt="Hohmann transfer" width = "50%">
+
+The image shows a Hohmann transfer orbit to bring a spacecraft from a lower circular orbit into a higher one. It is one half of an elliptic orbit that touches both the lower circular orbit the spacecraft wishes to leave (green and labeled 1 on diagram) and the higher circular orbit that it wishes to reach (red and labeled 3 on diagram). The transfer (yellow and labeled 2 on diagram) is initiated by firing the spacecraft's engine to accelerate prograde so that it will follow the elliptical orbit. This adds energy to the spacecraft's orbit. When the spacecraft has reached its destination orbit, its orbital speed (and hence its orbital energy) must be increased again to change the elliptic orbit to the larger circular one which is termed *circularization*.
+
+Now let's do this in KSP. To simplify everything, assume both our starting orbit and our target orbit are already circular. Let's say we want to reach some space station orbiting Laythe at 250k km and our *SlickOrbiter* is in a stable orbit at 100k km.
+
+The first thing we have to do is match orbit inclination which is best done by a normal burn at the ascending node.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/inclinationchange.gif" alt="Orbit inclination correction" width = "50%">
+
+Now that our orbital planes are synchronized, we can start with our first prograde burn of the Hohmann transfer maneuver which is raising our apoapsis to the target orbit height, effectively transforming our circular orbit into an elliptic orbit.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/HohmannBurn1.gif" alt="Hohmann transfer apoapsis change" width = "50%">
+
+Now once we have reached our transfer orbit's apoapsis, we can circularize and match our target orbit by another prograde burn.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/HohmannBurn2.gif" alt="Hohmann transfer circularization" width = "50%">
+
+There it is, we have performed our first Hohmann transfer.
+
+### Bi-elliptic transfer

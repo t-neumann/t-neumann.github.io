@@ -20,7 +20,7 @@ gallery:
     alt: "Directional markers"
 ---
 
-From my [last post](https://t-neumann.github.io/space/OrbitalBasics/) you should have read up on the basics of orbits and orbital paremeters. Now while this is interesting by itself, changing orbits and moving to different orbits in order to dock to space stations, escape to different celestial bodies or de-orbit onto a bodies surface - this is the stuff that is now why we are actually doing this. So that is why this post moves more into orbital mechanics and some basic maneuvers for modifying orbits.
+From my [last post](https://t-neumann.github.io/space/OrbitalBasics/) you should have read up on the basics of orbits and orbital parameters. Now while this is interesting by itself, changing orbits and moving to different orbits in order to dock to space stations, escape to different celestial bodies or de-orbit onto a bodies surface - this is the stuff that is now why we are actually doing this. So that is why this post moves more into orbital mechanics and some basic maneuvers for modifying orbits.
 
 Orbital mechanics is a core discipline within space-mission design and control.
 It focuses on spacecraft trajectories, including orbital maneuvers, orbital plane changes, and interplanetary transfers, and is used by mission planners to predict the results of propulsive maneuvers.
@@ -99,7 +99,8 @@ We see that the orbit start rotating around the craft like spinning a hula hoop 
 
 ## Orbital insertion
 
-All the maneuvers we experimented with in the last section are generally described (if sufficient change of the orbital parameters is achieved) as **Orbit insertion** which is a general term for a maneuver that is more than a small correction. It may be used for a maneuver to change a transfer orbit or an ascent orbit into a stable one, but also to change a stable orbit into a descent. Also the term **orbit injection** is used - which I find even cooler -  especially for changing a stable orbit into a transfer orbit, e.g. trans-lunar injection (TLI), trans-Mars injection (TMI) and trans-Earth injection (TEI).
+Now let's combine all those basic orbital maneuvers of the previous section: 
+All the maneuvers we experimented with in the last section are generally described (if sufficient change of the orbital parameters is achieved) as **orbit insertion** which is a general term for a maneuver that is more than a small correction. It may be used for a maneuver to change a transfer orbit or an ascent orbit into a stable one, but also to change a stable orbit into a descent. Also the term **orbit injection** is used - which I find even cooler -  especially for changing a stable orbit into a transfer orbit, e.g. trans-lunar injection (TLI), trans-Mars injection (TMI) and trans-Earth injection (TEI).
 
 Stable orbits have been described in the [previous post](https://t-neumann.github.io/space/OrbitalBasics/), but now we want to specifically look at transfer orbits which enable us to put satellites into orbits, travel to the moon and Mars and all the fancy wonderous places in our solar system and beyond.
 

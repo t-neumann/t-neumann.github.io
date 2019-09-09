@@ -49,7 +49,7 @@ These vectors run along the axis in which direction the spacecraft is moving alo
 
 The normal vectors are perpendicular to the orbital plane.
 
-#### Radial in and radial output
+#### Radial in and radial out
 
 These vectors are parallel to the orbital plane, and perpendicular to the prograde vector. The radial (or radial-in) vector points inside the orbit, towards the focus of the orbit, while the anti-radial (or radial-out) vector points outside the orbit, away from the body.
 
@@ -99,7 +99,7 @@ We see that the orbit start rotating around the craft like spinning a hula hoop 
 
 ## Orbital insertion
 
-Now let's combine all those basic orbital maneuvers of the previous section: 
+Now let's combine all those basic orbital maneuvers of the previous section:
 All the maneuvers we experimented with in the last section are generally described (if sufficient change of the orbital parameters is achieved) as **orbit insertion** which is a general term for a maneuver that is more than a small correction. It may be used for a maneuver to change a transfer orbit or an ascent orbit into a stable one, but also to change a stable orbit into a descent. Also the term **orbit injection** is used - which I find even cooler -  especially for changing a stable orbit into a transfer orbit, e.g. trans-lunar injection (TLI), trans-Mars injection (TMI) and trans-Earth injection (TEI).
 
 Stable orbits have been described in the [previous post](https://t-neumann.github.io/space/OrbitalBasics/), but now we want to specifically look at transfer orbits which enable us to put satellites into orbits, travel to the moon and Mars and all the fancy wonderous places in our solar system and beyond.
@@ -139,3 +139,27 @@ Now once we have reached our transfer orbit's apoapsis, we can circularize and m
 There it is, we have performed our first Hohmann transfer.
 
 ### Bi-elliptic transfer
+
+The bi-elliptic transfer consists of two half-elliptic orbits may, in certain situations, require less energy than a Hohmann transfer maneuver.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/Bi-elliptic_transfer.svg" alt="Bi-elliptic transfer" width = "50%">
+
+From the initial orbit, a first prograde burn (1) boosts the spacecraft into the first transfer orbit with an apoapsis at some point away from the central body. At this point a second prograde burn (2) sends the spacecraft into the second elliptical orbit with periapsis at the radius of the final desired orbit, where a third retrograde burn (3) is performed, injecting the spacecraft into the desired orbit.
+
+While they require one more engine burn than a Hohmann transfer and generally requires a greater travel time, some bi-elliptic transfers require a lower amount of energy than a Hohmann transfer when the ratio of final to initial semi-major axis is 11.94 or greater, depending on the intermediate semi-major axis chosen.
+
+Now let's do this in KSP. To simplify everything, assume both our starting orbit and our target orbit are already circular and our orbital inclinations are already matched. Again, we want to reach some space station orbiting Laythe at 250k km and our *SlickOrbiter* is in a stable orbit at 100k km.
+
+We will first raise our apoapsis above the target orbit to create an elliptic orbit with a long prograde burn.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/Bi-elliptic_burn1.gif" alt="Bi-elliptic transfer apoapsis raise" width = "50%">
+
+Now we wait until we have reached the new apoapsis for another prograde burn to raise our periapsis to the level of the target orbit.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/Bi-elliptic_burn1.gif" alt="Bi-elliptic transfer periapsis raise" width = "50%">
+
+Finally, we perform a retrograde burn at the new periapsis to lower our apoapsis for *circularizing* our target orbit.
+
+There it is, we have performed our first Bi-elliptic transfer.
+
+Now that you have a basic overview of spacecraft orientation, burns into those directions and their impact on the spacecrafts orbit, as well as how to combined those maneuvers into orbit insertions, we can have laid the foundation to dive deeper into energy efficiency of those maneuvers, the famous *delta-v* and the Rocket equation in a later post. Until then - godspeed.

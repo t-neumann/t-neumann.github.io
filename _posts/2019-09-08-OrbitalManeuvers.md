@@ -156,9 +156,11 @@ We will first raise our apoapsis above the target orbit to create an elliptic or
 
 Now we wait until we have reached the new apoapsis for another prograde burn to raise our periapsis to the level of the target orbit.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/Bi-elliptic_burn1.gif" alt="Bi-elliptic transfer periapsis raise" width = "50%">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/Bi-elliptic_burn2.gif" alt="Bi-elliptic transfer periapsis raise" width = "50%">
 
 Finally, we perform a retrograde burn at the new periapsis to lower our apoapsis for *circularizing* our target orbit.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/Bi-elliptic_burn3.gif" alt="Bi-elliptic transfer circularization" width = "50%">
 
 There it is, we have performed our first Bi-elliptic transfer.
 

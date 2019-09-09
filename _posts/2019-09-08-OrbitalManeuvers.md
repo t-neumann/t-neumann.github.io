@@ -13,6 +13,11 @@ tags:
 toc: true
 toc_sticky: true
 author_profile: false
+gallery:
+  - image_path: /assets/images/posts/Maneuvers/orbitorientation.png
+    alt: "Orbit orientation"
+  - image_path: /assets/images/posts/Maneuvers/directions.png
+    alt: "Directional markers"
 ---
 
 From my [last post](https://t-neumann.github.io/space/OrbitalBasics/) you should have read up on the basics of orbits and orbital paremeters. Now while this is interesting by itself, changing orbits and moving to different orbits in order to dock to space stations, escape to different celestial bodies or de-orbit onto a bodies surface - this is the stuff that is now why we are actually doing this. So that is why this post moves more into orbital mechanics and some basic maneuvers for modifying orbits.
@@ -29,3 +34,27 @@ We do not want to simply calculate orbits, we want some actual space ship with p
 For this particular, I will be using my rather tiny [SSTO](https://en.wikipedia.org/wiki/Single-stage-to-orbit) *SlickOrbiter* consisting of 4 rapier engines which are hybrid engines with both air-breathing and liquid fuel modes. This I complement with an Atomic Rocket Motor engine for space maneuvers with far lower thrust but much higher efficiency ($$I_{SP}$$). I will definitely dedicate a couple of posts to propulsion systems, staging modes etc in a later time, for know just take it as it is.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/slickorbiter.gif" alt="Slick orbiter" width = "100%">
+
+## Spacecraft orientation
+
+Now before we perform and orbit maneuvers or burns, we need to agree on the different directions we can point our spacecraft and perform these burns. Naturally, since we are in 3-dimensional space, we have 3 axis along which we can orient ourselves, each axis having 2 directions.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/Maneuvers/spacecraftorientation.png" alt="Spacecraft orientation" width = "100%">
+
+#### Prograde and retrograde
+
+These vectors run along the axis in which direction the spacecraft is moving along its orbit.
+
+#### Normal and anti-normal
+
+The normal vectors are perpendicular to the orbital plane.
+
+#### Radial in and radial output
+
+These vectors are parallel to the orbital plane, and perpendicular to the prograde vector. The radial (or radial-in) vector points inside the orbit, towards the focus of the orbit, while the anti-radial (or radial-out) vector points outside the orbit, away from the body.
+
+## Orbital maneuvers
+
+Ok now it is time to make a couple of burns into these directions and see how it affects our orbital parameters. To this end we set up maneuver nodes with directional indicators as shown below.
+
+{% include gallery caption="Orbital directions and directional markers." %}

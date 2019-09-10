@@ -22,7 +22,7 @@ order: 2
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
-      Neumann T, Herzog VA, Muhar M, von Haeseler A, Zuber J, Ameres SL &amp; Rescheneder P: <em>Quantification of experimentally induced nucleotide conversions in high-throughput sequencing datasets</em>. BMC Bioinformatics, 2019. 20(1), 258.
+        <ins>Neumann T</ins>, Herzog VA, Muhar M, von Haeseler A, Zuber J, Ameres SL &amp; Rescheneder P: <em>Quantification of experimentally induced nucleotide conversions in high-throughput sequencing datasets</em>. BMC Bioinformatics, 2019. 20(1), 258.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/31109287" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="http://doi.org/10.1186/s12859-019-2849-7" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>

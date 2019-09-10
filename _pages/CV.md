@@ -103,7 +103,6 @@ order: 1
           <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Scaffold N50 of 1.9Mb, 98 &percnt; completeness.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Better assembly quality than honeybee, <i>Tribolium</i> or the monarch butterly.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Served as basis to unravel the genomic basis of circadian and circalunar timing adaptations.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Served as basis to unravel the genomic basis of circadian and circalunar timing adaptations.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Hosted at <a href="http://cluniobase.cibiv.univie.ac.at/">ClunioBase</a> and published in <i>Nature</i>.</li>
           </ul>
         </div>

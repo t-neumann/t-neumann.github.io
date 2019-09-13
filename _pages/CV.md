@@ -153,7 +153,7 @@ order: 1
     <div class="container">
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2009
+          <i class="fa fa-calendar" aria-hidden="true"></i> 2009-2012
         </div>
         <div class="col">
           Master’s Degree in Bioinformatics, <a href="https://www.meduniwien.ac.at" target="_blank">Medical University Vienna</a>
@@ -162,7 +162,7 @@ order: 1
       <hr>
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2007
+          <i class="fa fa-calendar" aria-hidden="true"></i> 2009
         </div>
         <div class="col">
           Erasmus Semester at the <a href="http://www.sbc.su.se" target="_blank">Stockholm Bioinformatics Center</a>, Stockholm, Sweden
@@ -171,7 +171,7 @@ order: 1
       <hr>
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2007-2009
+          <i class="fa fa-calendar" aria-hidden="true"></i> 2006-2009
         </div>
         <div class="col">
           Bachelor’s Degree in Bioinformatics, <a href="https://www.fh-ooe.at/campus-hagenberg" target="_blank">University for Applied Sciences Hagenberg</a>

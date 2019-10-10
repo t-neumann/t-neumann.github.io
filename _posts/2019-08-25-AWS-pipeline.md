@@ -322,9 +322,7 @@ executor.name = 'awsbatch'
 executor.awscli = '/home/ec2-user/miniconda/bin/aws'
 
 process {
-
-queue = {
-	task.attempt > 1 ? 'salmonExcess' : 'salmonWorkload' }
+  queue = { task.attempt > 1 ? 'salmonExcess' : 'salmonWorkload' }
 	memory = { task.attempt > 1 ? 32.GB : 16.GB }
 	cpus = { task.attempt > 1 ? 16 : 8 }
 }

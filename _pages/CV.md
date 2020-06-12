@@ -31,7 +31,7 @@ order: 1
     <div class="container">
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> From 2017
+          <i class="fa fa-calendar" aria-hidden="true"></i> 2017-2019
         </div>
         <div class="col">
           Contractor for <a href="https://www.lexogen.com/" target="blank">Lexogen GmbH</a>
@@ -58,10 +58,16 @@ order: 1
             <br>
           </div>
           <ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining big data datasets such as <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">The Cancer Genome Atlas</a> (11,000 samples, 100 TB data) in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
           <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead bioinformatics method and algorithm development for the <a href="https://www.nature.com/articles/nmeth.4435">SLAM-seq</a> sequencing technology.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Design of genome-wide shRNA and sgRNA libraries for pooled RNAi /CRISPR screens in human and mouse and screen analysis.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Project lead on database and front-end development for integrating, visualizing and querying screening and NGS data and metadata utilizing the on-campus sequencing facility API</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining big data datasets such as <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">The Cancer Genome Atlas</a> (11,000 samples, 100 TB data) in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Design of the genome-wide Vienna sgRNA libraries for pooled CRISPR screens.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Co-development of the <a href="https://www.vbc-score.org" target="blank">VBC score</a> for selection of sgRNAs that effectively produce loss-of-function alleles.</li>
+          <li><span><i class="mdi mdi-finance"></i></span>Project supervision and mentoring of Bioinformatics Master students:
+          <ul>
+          <span><i class="mdi mdi-clipboard-check-outline"></i></span>CRISPRepo: database and front-end development for integrating, visualizing and querying CRISPR screening data and metadata.</li>
+          <span><i class="mdi mdi-clipboard-check-outline"></i></span>Characterization of replication origins: Method development for and integration of DNA replication origin mapping (SNS-seq), replication timing sequencing (RepliSeq), genome-wide chromatin contact mapping (HiC) and ChIP-Seq data.</li>
+          </ul>
+          </li>
           <li><span><i class="mdi mdi-server"></i></span>Establishment of <a href="https://nanoporetech.com">Oxford Nanopore Sequencing (ONT)</a> protocols in the lab (first lab at IMP).</li>
           </ul>
         </div>

@@ -62,12 +62,11 @@ order: 1
           <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining big data datasets such as <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">The Cancer Genome Atlas</a> (11,000 samples, 100 TB data) in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Design of the genome-wide Vienna sgRNA libraries for pooled CRISPR screens.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Co-development of the <a href="https://www.vbc-score.org" target="blank">VBC score</a> for selection of sgRNAs that effectively produce loss-of-function alleles.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Project supervision and mentoring of Bioinformatics Master students:
+          <li><span><i class="mdi mdi-finance"></i></span>Project supervision and mentoring of Bioinformatics Master students:          </li>
           <ul>
-          <span><i class="mdi mdi-clipboard-check-outline"></i></span>CRISPRepo: database and front-end development for integrating, visualizing and querying CRISPR screening data and metadata.</li>
-          <span><i class="mdi mdi-clipboard-check-outline"></i></span>Characterization of replication origins: Method development for and integration of DNA replication origin mapping (SNS-seq), replication timing sequencing (RepliSeq), genome-wide chromatin contact mapping (HiC) and ChIP-Seq data.</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>CRISPRepo: database and front-end development for integrating, visualizing and querying CRISPR screening data and metadata.</li>
+          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Characterization of replication origins: Method development for and integration of DNA replication origin mapping (SNS-seq), replication timing sequencing (RepliSeq), genome-wide chromatin contact mapping (HiC) and ChIP-Seq data.</li>
           </ul>
-          </li>
           <li><span><i class="mdi mdi-server"></i></span>Establishment of <a href="https://nanoporetech.com">Oxford Nanopore Sequencing (ONT)</a> protocols in the lab (first lab at IMP).</li>
           </ul>
         </div>

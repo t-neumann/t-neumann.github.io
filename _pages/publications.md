@@ -20,6 +20,7 @@ order: 2
       <i class="fa fa-file-alt" aria-hidden="true"></i> Articles
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
+    <div class="card-body">
     <h4 class="card-title">SLAM-seq technology</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
@@ -73,6 +74,7 @@ order: 2
         <a href="https://doi.org/10.1371/journal.pbio.1002005" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
     </ul>
+  </div>
   </div>
 
 

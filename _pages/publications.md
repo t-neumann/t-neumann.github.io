@@ -36,6 +36,8 @@ order: 2
         <a href="https://doi.org/10.1126/science.aao2793" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
     </ul>
+    </div>
+    <div class="card-body">
     <h4 class="card-title">CRISPR technology</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•

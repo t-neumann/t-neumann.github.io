@@ -20,6 +20,7 @@ order: 2
       <i class="fa fa-file-alt" aria-hidden="true"></i> Articles
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
+    <h4 class="card-title">SLAM-seq technology</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
         <ins>Neumann T</ins>, Herzog VA, Muhar M, von Haeseler A, Zuber J, Ameres SL &amp; Rescheneder P: <em>Quantification of experimentally induced nucleotide conversions in high-throughput sequencing datasets</em>. BMC Bioinformatics, 2019. 20(1), 258.
@@ -33,6 +34,9 @@ order: 2
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/29622725" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1126/science.aao2793" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
+    </ul>
+    <h4 class="card-title">CRISPR technology</h4>
+    <ul class="list-group list-group-flush">
       <li class="list-group-item">•
         Herzog VA, Reichholf B, <ins>Neumann T</ins>, Rescheneder P, Bhat P, Burkard TR, Wlotzka W, von Haeseler A, Zuber J &amp; Ameres SL: <em>Thiol-linked alkylation of RNA to assess expression dynamics</em>. Nature Methods, 2017. 14(12), 1198–1204.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/28945705" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>

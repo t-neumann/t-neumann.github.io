@@ -79,7 +79,7 @@ order: 2
         <a href="http://doi.org/10.1038/s41588-020-0605-6" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
-        Thiecke MJ, Wutz G, Muhar M, Tang W, Bevan S, Malysheva V, Stocsits R, Neumann T, Zuber J, Fraser P, Schoenfelder S, Peters J-M, &amp; Spivakov M.: <em>Cohesin-Dependent and -Independent Mechanisms Mediate Chromosomal Contacts between Promoters and Enhancers</em>. Cell Reports, 2020. 32(3), 107929.
+        Thiecke MJ, Wutz G, Muhar M, Tang W, Bevan S, Malysheva V, Stocsits R, <ins>Neumann T</ins>, Zuber J, Fraser P, Schoenfelder S, Peters J-M, &amp; Spivakov M.: <em>Cohesin-Dependent and -Independent Mechanisms Mediate Chromosomal Contacts between Promoters and Enhancers</em>. Cell Reports, 2020. 32(3), 107929.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/25423365" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1016/j.celrep.2020.107929" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>

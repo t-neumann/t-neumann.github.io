@@ -56,7 +56,8 @@ order: 2
     <h4 class="card-title">CRISPR technology</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
-        Michlits G*, Jude J*, Hinterndorfer M, de Almeida M, Vainorius G, Hubmann M, <ins>Neumann T</ins>, Schleiffer A, Burkard T, Fellner M, Gijsbertsen M, Traunbauer A, Zuber J &amp; Elling U: <em>Multilayered VBC-score predicts sgRNAs that efficiently generate loss-of-function alleles</em>. Nature Methods, 2020.
+        Michlits G*, Jude J*, Hinterndorfer M, de Almeida M, Vainorius G, Hubmann M, <ins>Neumann T</ins>, Schleiffer A, Burkard T, Fellner M, Gijsbertsen M, Traunbauer A, Zuber J &amp; Elling U: <em>Multilayered VBC-score predicts sgRNAs that efficiently generate loss-of-function alleles</em>. Nature Methods, 2020. 17(7), 708–716.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/32514112" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1038/s41592-020-0850-8" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
@@ -78,8 +79,12 @@ order: 2
         <a href="https://doi.org/10.15252/embj.201797965" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
-        Chipman AD, Ferrier DEK, Brena C, Qu J, Hughes DST [...], <ins>Neumann T</ins> et al.: <em>The First Myriapod Genome Sequence Reveals Conservative Arthropod Gene Content and Genome Organisation in the Centipede Strigamia maritima</em>. PLoS Biology, 2014. 12(11), e1002005.
+        Thiecke MJ, Wutz G, Muhar M, Tang W, Bevan S, Malysheva V, Stocsits R, Neumann T, Zuber J, Fraser P, Schoenfelder S, Peters J-M, &amp; Spivakov M.: <em>Cohesin-Dependent and -Independent Mechanisms Mediate Chromosomal Contacts between Promoters and Enhancers</em>. Cell Reports, 2020. 32(3), 107929.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/25423365" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
+        <a href="https://doi.org/10.1016/j.celrep.2020.107929" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+      </li>
+      <li class="list-group-item">•
+        Chipman AD, Ferrier DEK, Brena C, Qu J, Hughes DST [...], <ins>Neumann T</ins> et al.: <em>The First Myriapod Genome Sequence Reveals Conservative Arthropod Gene Content and Genome Organisation in the Centipede Strigamia maritima</em>. PLoS Biology, 2014. 12(11), e1002005.
         <a href="https://doi.org/10.1371/journal.pbio.1002005" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
     </ul>

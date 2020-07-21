@@ -74,14 +74,19 @@ order: 2
         <a href="http://doi.org/10.1038/nature20151" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
-        Fitz J, <ins>Neumann T</ins> &amp; Pavri R: <em>Regulation of RNA polymerase II processivity by Spt5 is restricted to a narrow window during elongation</em>. EMBO J, 2018. 37(8), e97965.
-        <a href="https://www.ncbi.nlm.nih.gov/pubmed/29514850" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
-        <a href="https://doi.org/10.15252/embj.201797965" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+        Fitz J, <ins>Neumann T</ins>, Steininger M, Wiedemann EM, Cantoran Garcia A, Athanasiadis A, Schoeberl UE &amp; Pavri R: <em>Spt5-mediated enhancer transcription directly couples enhancer activation with physical promoter interaction</em>. Nature Genetics, 2020. 52(5), 505–515.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/32251373" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
+        <a href="http://doi.org/10.1038/s41588-020-0605-6" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
         Thiecke MJ, Wutz G, Muhar M, Tang W, Bevan S, Malysheva V, Stocsits R, Neumann T, Zuber J, Fraser P, Schoenfelder S, Peters J-M, &amp; Spivakov M.: <em>Cohesin-Dependent and -Independent Mechanisms Mediate Chromosomal Contacts between Promoters and Enhancers</em>. Cell Reports, 2020. 32(3), 107929.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/25423365" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1016/j.celrep.2020.107929" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+      </li>
+      <li class="list-group-item">•
+        Fitz J, <ins>Neumann T</ins> &amp; Pavri R: <em>Regulation of RNA polymerase II processivity by Spt5 is restricted to a narrow window during elongation</em>. EMBO J, 2018. 37(8), e97965.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/29514850" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
+        <a href="https://doi.org/10.15252/embj.201797965" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
         Chipman AD, Ferrier DEK, Brena C, Qu J, Hughes DST [...], <ins>Neumann T</ins> et al.: <em>The First Myriapod Genome Sequence Reveals Conservative Arthropod Gene Content and Genome Organisation in the Centipede Strigamia maritima</em>. PLoS Biology, 2014. 12(11), e1002005.

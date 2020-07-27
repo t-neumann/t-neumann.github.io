@@ -61,7 +61,8 @@ order: 2
         <a href="https://doi.org/10.1038/s41592-020-0850-8" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
-        Umkehrer C, Holstein F, Formenti L, Jude J, Froussios K, <ins>Neumann T</ins>, Cronin SM, Haas L, Lipp JJ, Burkard TR, Fellner M, Wiesner T, Zuber J &amp; Obenauf AC: <em>CaTCH - A barcode-guided CRISPRa-inducible reporter to isolate clones from heterogeneous populations</em>. Nature Biotechnology (accepted), 2020.
+        Umkehrer C, Holstein F, Formenti L, Jude J, Froussios K, <ins>Neumann T</ins>, Cronin SM, Haas L, Lipp JJ, Burkard TR, Fellner M, Wiesner T, Zuber J &amp; Obenauf AC: <em>Isolating live cell clones from barcoded populations using CRISPRa-inducible reporters</em>. Nature Biotechnology, 2020.
+        <a href="https://doi.org/10.1038/s41587-020-0614-0" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
     </ul>
     </div>

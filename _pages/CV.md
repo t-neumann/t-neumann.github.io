@@ -29,6 +29,30 @@ order: 1
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
     <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <i class="fa fa-calendar" aria-hidden="true"></i> 2014-2020
+      </div>
+      <div class="col">
+        Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a>
+        <div style="line-height:100%;">
+          <br>
+        </div>
+        <ul>
+        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead bioinformatics method and algorithm development for the <a href="https://www.nature.com/articles/nmeth.4435">SLAM-seq</a> sequencing technology.</li>
+        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining big data datasets such as <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">The Cancer Genome Atlas</a> (11,000 samples, 100 TB data) in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
+        <li><span><i class="mdi mdi-finance"></i></span>Design of the genome-wide <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-020-0850-8/MediaObjects/41592_2020_850_MOESM3_ESM.xlsx" target="blank">Vienna sgRNA libraries</a> for pooled CRISPR screens.</li>
+        <li><span><i class="mdi mdi-finance"></i></span>Co-development of the <a href="https://www.vbc-score.org" target="blank">VBC score</a> for selection of sgRNAs that effectively produce loss-of-function alleles.</li>
+        <li><span><i class="mdi mdi-finance"></i></span>Project supervision and mentoring of Bioinformatics Master students:          </li>
+        <ul>
+        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>CRISPRepo: database and front-end development for integrating, visualizing and querying CRISPR screening data and metadata.</li>
+        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Characterization of replication origins: Method development for and integration of DNA replication origin mapping (SNS-seq), replication timing sequencing (RepliSeq), genome-wide chromatin contact mapping (HiC) and ChIP-Seq data.</li>
+        </ul>
+        <li><span><i class="mdi mdi-server"></i></span>Establishment of <a href="https://nanoporetech.com">Oxford Nanopore Sequencing (ONT)</a> protocols in the lab (first lab at IMP).</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
       <div class="row">
         <div class="col-md-2">
           <i class="fa fa-calendar" aria-hidden="true"></i> 2017-2019
@@ -44,30 +68,6 @@ order: 1
           <li><span><i class="mdi mdi-finance"></i></span>Containerization of so ware packages using Docker.</li>
           <li><span><i class="mdi mdi-finance"></i></span>Deployment of Docker containers on the <a href="https://www.bluebee.com/">Bluebee</a> private cloud platform <i class="fas fa-cloud" aria-hidden="true"></i>.</li>
           <li><span><i class="mdi mdi-server"></i></span>License assessment and resource benchmarking <i class="fas fa-balance-scale" aria-hidden="true"></i>.</li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> From 2014
-        </div>
-        <div class="col">
-          Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a>
-          <div style="line-height:100%;">
-            <br>
-          </div>
-          <ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead bioinformatics method and algorithm development for the <a href="https://www.nature.com/articles/nmeth.4435">SLAM-seq</a> sequencing technology.</li>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining big data datasets such as <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">The Cancer Genome Atlas</a> (11,000 samples, 100 TB data) in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Design of the genome-wide <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-020-0850-8/MediaObjects/41592_2020_850_MOESM3_ESM.xlsx" target="blank">Vienna sgRNA libraries</a> for pooled CRISPR screens.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Co-development of the <a href="https://www.vbc-score.org" target="blank">VBC score</a> for selection of sgRNAs that effectively produce loss-of-function alleles.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Project supervision and mentoring of Bioinformatics Master students:          </li>
-          <ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>CRISPRepo: database and front-end development for integrating, visualizing and querying CRISPR screening data and metadata.</li>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Characterization of replication origins: Method development for and integration of DNA replication origin mapping (SNS-seq), replication timing sequencing (RepliSeq), genome-wide chromatin contact mapping (HiC) and ChIP-Seq data.</li>
-          </ul>
-          <li><span><i class="mdi mdi-server"></i></span>Establishment of <a href="https://nanoporetech.com">Oxford Nanopore Sequencing (ONT)</a> protocols in the lab (first lab at IMP).</li>
           </ul>
         </div>
       </div>

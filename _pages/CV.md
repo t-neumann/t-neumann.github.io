@@ -31,6 +31,20 @@ order: 1
     <div class="container">
     <div class="row">
       <div class="col-md-2">
+        <i class="fa fa-calendar" aria-hidden="true"></i> From 2020
+      </div>
+      <div class="col">
+        Lead Bioinformatician at <a href="https://quantro-tx.com/" target="blank">Quantro Therapeutics</a>
+        <div style="line-height:100%;">
+          <br>
+        </div>
+        <ul>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-2">
         <i class="fa fa-calendar" aria-hidden="true"></i> 2014-2020
       </div>
       <div class="col">

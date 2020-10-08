@@ -105,7 +105,7 @@ order: 2
       </li>
       <li class="list-group-item">•
       Leiendecker L*, Jung PS*, Krecioch I, <ins>Neumann T</ins>, Schleiffer A, Mechtler K, Wiesner T
- &amp; Obenauf AC: <em>LSD1 inhibition induces differentiation and cell death in Merkel cell carcinoma</em>. EMBO Mol. Med., 2020 (accepted).
+ &amp; Obenauf AC: <em>LSD1 inhibition induces differentiation and cell death in Merkel cell carcinoma</em>. EMBO Mol. Med., 2020. 17, e12525.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/26367798" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.15252/emmm.202012525" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>

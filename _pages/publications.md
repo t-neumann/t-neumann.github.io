@@ -73,6 +73,10 @@ order: 2
     <h4 class="card-title">Genomics</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
+        Peycheva M, <ins>Neumann T</ins>, Malzl D, Nazarova M, Schoeberl UE &amp; Pavri R: <em>DNA replication timing directly regulates the frequency of oncogenic chromosomal translocations</em>. bioRxiv, 2021.
+        <a href="https://doi.org/10.1101/2021.05.29.446276" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+      </li>
+      <li class="list-group-item">•
         Kaiser T, Poehn P, Szkiba D, Preussner M, Sedlazeck F, Zrim A, <ins>Neumann T</ins>, Nguyen LT, Betancourt A, Hummel T, Vogel H, Dorner S, Heyd F, Arndt von Haeseler A &amp; Tessmar-Raible K: <em>The genomic basis of circadian and circalunar timing adaptations in a midge</em>. Nature, 2016. 540(7631), 69–73.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/27871090" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="http://doi.org/10.1038/nature20151" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>

@@ -31,7 +31,8 @@ order: 1
     <div class="container">
     <div class="row">
       <div class="col-md-2">
-        <i class="fa fa-calendar" aria-hidden="true"></i> From 2020
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/QUANTRO_LOGO.png" alt="Quantro Logo">
+        From 2020
       </div>
       <div class="col">
         Lead Bioinformatician at <a href="https://quantro-tx.com/" target="blank">Quantro Therapeutics</a>
@@ -46,7 +47,7 @@ order: 1
     <div class="row">
       <div class="col-md-2">
       <img src="{{ site.url }}{{ site.baseurl }}/assets/images/IMP_Logo.png" alt="IMP Logo">
-        <i class="fa fa-calendar" aria-hidden="true"></i> 2014-2020
+        2014-2020
       </div>
       <div class="col">
         Senior Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a>
@@ -72,7 +73,8 @@ order: 1
     <hr>
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2017-2019
+          <img src="{{ site.url }}{{ site.baseurl }}/assets/images/lexogen_logo.png" alt="Lexogen Logo">
+          2017-2019
         </div>
         <div class="col">
           Contractor for <a href="https://www.lexogen.com/" target="blank">Lexogen GmbH</a>
@@ -91,7 +93,8 @@ order: 1
       <hr>
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2012-2014
+          <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sophia_genetics_logo.png" alt="Sophia Genetics Logo">
+          2012-2014
         </div>
         <div class="col">
           Bioinformatician at <a href="https://www.sophiagenetics.com" target="_blank">Sophia Genetics SA</a>
@@ -109,10 +112,11 @@ order: 1
       <hr>
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2012
+          <img src="{{ site.url }}{{ site.baseurl }}/assets/images/MPL_logo.jpg" alt="MPL Logo">
+          2012
         </div>
         <div class="col">
-          Bioinformatician at the <a href="https://www.mfpl.ac.at" target="_blank">Max F. Perutz Laboratories</a>
+          Bioinformatician at the <a href="https://www.maxperutzlabs.ac.at/" target="_blank">Max Perutz Laboratories</a>
           <div style="line-height:100%;">
             <br>
           </div>
@@ -132,7 +136,8 @@ order: 1
       <hr>
       <div class="row">
         <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2010-2012
+          <img src="{{ site.url }}{{ site.baseurl }}/assets/images/CIBIV_logo.png" alt="CIBIV Logo">
+          2010-2012
         </div>
         <div class="col">
           Project student at the <a href="http://www.cibiv.at/" target="_blank">Center for Integrative Bioinformatics Vienna</a>

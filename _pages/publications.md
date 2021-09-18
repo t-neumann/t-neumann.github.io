@@ -61,6 +61,9 @@ order: 2
         <a href="https://doi.org/10.1038/s41592-020-0850-8" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
+        de Almeida M*, Hinterndorfer M*, Brunner H, Grishkovskaya I, Singh K, Schleiffer A, Jude J, Deswal S, Kalis R, Vunjak M, Lendl T, Imre R, Roitinger E, <ins>Neumann T</ins>, Kandolf S, Schutzbier M, Mechtler K, Versteeg G, Haselbach D &amp; Zuber J: <em>AKIRIN2 controls the nuclear import of proteasomes in vertebrates</em>. Nature, 2021. (accepted)
+      </li>
+      <li class="list-group-item">•
         Umkehrer C, Holstein F, Formenti L, Jude J, Froussios K, <ins>Neumann T</ins>, Cronin SM, Haas L, Lipp JJ, Burkard TR, Fellner M, Wiesner T, Zuber J &amp; Obenauf AC: <em>Isolating live cell clones from barcoded populations using CRISPRa-inducible reporters</em>. Nature Biotechnology, 2020.
         <a href="https://doi.org/10.1038/s41587-020-0614-0" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
@@ -102,6 +105,10 @@ order: 2
         Rathert P*, Roth M*, <ins>Neumann T</ins>, Muerdter F, Roe J-S, Muhar M, Deswal S, Cerny-Reiterer S, Peter B, Jude J, Ho mann T, Boryn LM, Axelsson E, Schweifer N, Tontsch-Grunt U, Dow LE, Gianni D, Pearson M, Valent P, Stark A, Kraut N, Vakoc CR &amp; Zuber J: <em>Transcriptional plasticity promotes primary and acquired resistance to BET inhibition</em>. Nature, 2015. 525(7570), 543–547.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/26367798" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1038/nature14898" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+      </li>
+      <li class="list-group-item">•
+        Haas L, Elewaut A, Gerard CL, Umkehrer C, Leiendecker L, Pedersen M, Krecioch I, Hoffmann D, Novatchkova M, Kuttke M, <ins>Neumann T</ins>, de Silva IP, Witthock H, Cuendet MA, Carotta S, Harrington KJ, Zuber J, Scolyer RA, Long GV, Wilmott JS, Michielin O, Vanharanta S, Wiesner T &amp; Obenauf AC: <em>Acquired resistance to anti-MAPK targeted therapy confers an immune-evasive tumor microenvironment and cross-resistance to immunotherapy in melanoma</em>. Nature Cancer, 2021. 2, 693–708.
+        <a href="https://doi.org/10.1038/s43018-021-00221-9" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
       Leiendecker L*, Jung PS*, Krecioch I, <ins>Neumann T</ins>, Schleiffer A, Mechtler K, Wiesner T

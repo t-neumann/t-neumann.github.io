@@ -57,6 +57,8 @@ order: 1
         <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Data mining big data datasets such as <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">The Cancer Genome Atlas</a> (11,000 samples, 100 TB data) in the cloud <i class="fab fa-aws" aria-hidden="true"></i>.</li>
         <li><span><i class="mdi mdi-finance"></i></span>Design of the genome-wide <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-020-0850-8/MediaObjects/41592_2020_850_MOESM3_ESM.xlsx" target="blank">Vienna sgRNA libraries</a> for pooled CRISPR screens.</li>
         <li><span><i class="mdi mdi-finance"></i></span>Co-development of the <a href="https://www.vbc-score.org" target="blank">VBC score</a> for selection of sgRNAs that effectively produce loss-of-function alleles.</li>
+        <li><span><i class="mdi mdi-finance"></i></span>Member of the
+        <a href="https://www.maxperutzlabs.ac.at/vcdi" target="blank">Vienna Covid-19 Detection Initiative (VCDI)</a> performing comparative genomics of &gt; 5M sequenced SARS-CoV-2 genomes worldwide to identify conserved domains for sensitive primer design to detect COVID-19 infections, de-novo assembly and quantification of viral RNAs for primer target selection for sensitive SARS-CoV-2 detection.</li>
         <li><span><i class="mdi mdi-finance"></i></span>Project supervision and mentoring of Bioinformatics Master students:</li>
         <ul>
         <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>CRISPRepo: database and front-end development for integrating, visualizing and querying CRISPR screening data and metadata.</li>

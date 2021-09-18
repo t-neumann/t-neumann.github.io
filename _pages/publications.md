@@ -102,7 +102,7 @@ order: 2
     <h4 class="card-title">Cancer</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
-        Rathert P*, Roth M*, <ins>Neumann T</ins>, Muerdter F, Roe J-S, Muhar M, Deswal S, Cerny-Reiterer S, Peter B, Jude J, Ho mann T, Boryn LM, Axelsson E, Schweifer N, Tontsch-Grunt U, Dow LE, Gianni D, Pearson M, Valent P, Stark A, Kraut N, Vakoc CR &amp; Zuber J: <em>Transcriptional plasticity promotes primary and acquired resistance to BET inhibition</em>. Nature, 2015. 525(7570), 543–547.
+        Rathert P*, Roth M*, <ins>Neumann T</ins>, Muerdter F, Roe J-S, Muhar M, Deswal S, Cerny-Reiterer S, Peter B, Jude J, Hoffmann T, Boryn LM, Axelsson E, Schweifer N, Tontsch-Grunt U, Dow LE, Gianni D, Pearson M, Valent P, Stark A, Kraut N, Vakoc CR &amp; Zuber J: <em>Transcriptional plasticity promotes primary and acquired resistance to BET inhibition</em>. Nature, 2015. 525(7570), 543–547.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/26367798" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1038/nature14898" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
@@ -118,8 +118,25 @@ order: 2
       </li>
     </ul>
   </div>
+  <div class="card-body">
+  <h4 class="card-title">SARS-CoV-2 (part of the VCDI team)</h4>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">•
+      Yelagandula R, Bykov A, Vogt A, Heinen R, Özkan E, Strobl MM, Baar JC, Uzunova K, Hajdusits B, Kordic D, Suljic E, Kurtovic-Kozaric A, Izetbegovic S, Schaeffer J, Hufnagl P, Zoufaly A, Seitz T, <ins>VCDI</ins>, Födinger M, Allerberger F, Stark A, Cochella L &amp; Elling U: <em>Multiplexed detection of SARS-CoV-2 and other respiratory infections in high throughput by SARSeq</em>. Nature Communications, 2021. 12, 3132.
+      <a href="https://www.ncbi.nlm.nih.gov/pubmed/34035246" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
+      <a href="https://doi.org/10.1038/s41467-021-22664-5" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+    </li>
+    <li class="list-group-item">•
+      Kellner MJ, Ross JJ, Schnabl J, Dekens MPS, Heinen R, Grishkovskaya I, Bauer B, Stadlmann J, Menéndez-Arias L, Fritsche-Polanz R, Traugott M, Seitz T, Zoufaly A, Födinger M, Wenisch C, Zuber J, <ins>VCDI</ins>, Pauli A, &amp; Brennecke J: <em>A rapid, highly sensitive and open-access SARS-CoV-2 detection assay for laboratory and home testing</em>. bioRxiv, 2020.
+      <a href="https://doi.org/10.1101/2020.06.23.166397" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+    </li>
+    <li class="list-group-item">•
+    Kellner MJ, Matl M, Ross JJ, Schnabl J, Handler D, Heinen R, Schaeffer J, Hufnagl P, Indra A, Dekens MPS, Fritsche-Polanz R, Födinger M, Zuber J, <ins>VCDI</ins>, Allerberger F, Pauli A &amp; Brennecke J: <em>Head-to-head comparison of direct-input RT-PCR and RT-LAMP against RT-qPCR on extracted RNA for rapid SARS-CoV-2 diagnostics</em>. medRxiv, 2021.
+      <a href="https://doi.org/10.1101/2021.01.19.21250079" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+    </li>
+  </ul>
   </div>
-
+  </div>
 
   <div class="card">
     <a name="talks"></a>

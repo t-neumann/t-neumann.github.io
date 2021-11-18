@@ -30,7 +30,7 @@ order: 2
       </li>
       <li class="list-group-item">•
         Muhar M, Ebert A, <ins>Neumann T</ins>, Umkehrer C, Jude J, Wieshofer C,  Rescheneder P, Lipp JJ, Herzog VA, Reichholf B, Cisneros DA,
-        Hoffmann T, Schlapansky MF, Bhat P, von Haeseler A, Köcher T, Obenauf AC, Popow J, Ameres SL &amp; Zuber J: <em>SLAM-seq defines
+        Hoffmann T, Schlapansky MF, Bhat P, von Haeseler A, Köcher T, Obenauf AC, Popow J, Ameres SL&dagger; &amp; Zuber J&dagger;: <em>SLAM-seq defines
         direct gene regulatory functions of the BRD4-MYC axis</em>. Science, 2018. 360(6390), 800–805.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/29622725" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1126/science.aao2793" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
@@ -56,12 +56,12 @@ order: 2
     <h4 class="card-title">CRISPR technology</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
-        Michlits G*, Jude J*, Hinterndorfer M, de Almeida M, Vainorius G, Hubmann M, <ins>Neumann T</ins>, Schleiffer A, Burkard T, Fellner M, Gijsbertsen M, Traunbauer A, Zuber J &amp; Elling U: <em>Multilayered VBC-score predicts sgRNAs that efficiently generate loss-of-function alleles</em>. Nature Methods, 2020. 17(7), 708–716.
+        Michlits G*, Jude J*, Hinterndorfer M, de Almeida M, Vainorius G, Hubmann M, <ins>Neumann T</ins>, Schleiffer A, Burkard T, Fellner M, Gijsbertsen M, Traunbauer A, Zuber J&dagger; &amp; Elling U&dagger;: <em>Multilayered VBC-score predicts sgRNAs that efficiently generate loss-of-function alleles</em>. Nature Methods, 2020. 17(7), 708–716.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/32514112" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1038/s41592-020-0850-8" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
-        de Almeida M*, Hinterndorfer M*, Brunner H, Grishkovskaya I, Singh K, Schleiffer A, Jude J, Deswal S, Kalis R, Vunjak M, Lendl T, Imre R, Roitinger E, <ins>Neumann T</ins>, Kandolf S, Schutzbier M, Mechtler K, Versteeg G, Haselbach D &amp; Zuber J: <em>AKIRIN2 controls the nuclear import of proteasomes in vertebrates</em>. Nature, 2021. 599, 491–496.
+        de Almeida M*, Hinterndorfer M*, Brunner H, Grishkovskaya I, Singh K, Schleiffer A, Jude J, Deswal S, Kalis R, Vunjak M, Lendl T, Imre R, Roitinger E, <ins>Neumann T</ins>, Kandolf S, Schutzbier M, Mechtler K, Versteeg G, Haselbach D&dagger; &amp; Zuber J&dagger;: <em>AKIRIN2 controls the nuclear import of proteasomes in vertebrates</em>. Nature, 2021. 599, 491–496.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/34711951" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1038/s41586-021-04035-8" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>

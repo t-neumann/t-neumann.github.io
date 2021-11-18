@@ -129,7 +129,7 @@ order: 2
   <h4 class="card-title">SARS-CoV-2 (part of the VCDI team)</h4>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">•
-      Yelagandula R, Bykov A, Vogt A, Heinen R, Özkan E, Strobl MM, Baar JC, Uzunova K, Hajdusits B, Kordic D, Suljic E, Kurtovic-Kozaric A, Izetbegovic S, Schaeffer J, Hufnagl P, Zoufaly A, Seitz T, <ins>VCDI</ins>, Födinger M, Allerberger F, Stark A, Cochella L &amp; Elling U: <em>Multiplexed detection of SARS-CoV-2 and other respiratory infections in high throughput by SARSeq</em>. Nature Communications, 2021. 12, 3132.
+      Yelagandula R, Bykov A, Vogt A, Heinen R, Özkan E, Strobl MM, Baar JC, Uzunova K, Hajdusits B, Kordic D, Suljic E, Kurtovic-Kozaric A, Izetbegovic S, Schaeffer J, Hufnagl P, Zoufaly A, Seitz T, <ins>VCDI</ins>, Födinger M, Allerberger F, Stark A, Cochella L&dagger; &amp; Elling U&dagger;: <em>Multiplexed detection of SARS-CoV-2 and other respiratory infections in high throughput by SARSeq</em>. Nature Communications, 2021. 12, 3132.
       <a href="https://www.ncbi.nlm.nih.gov/pubmed/34035246" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
       <a href="https://doi.org/10.1038/s41467-021-22664-5" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
     </li>

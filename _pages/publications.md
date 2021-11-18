@@ -61,10 +61,13 @@ order: 2
         <a href="https://doi.org/10.1038/s41592-020-0850-8" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
-        de Almeida M*, Hinterndorfer M*, Brunner H, Grishkovskaya I, Singh K, Schleiffer A, Jude J, Deswal S, Kalis R, Vunjak M, Lendl T, Imre R, Roitinger E, <ins>Neumann T</ins>, Kandolf S, Schutzbier M, Mechtler K, Versteeg G, Haselbach D &amp; Zuber J: <em>AKIRIN2 controls the nuclear import of proteasomes in vertebrates</em>. Nature, 2021. (accepted)
+        de Almeida M*, Hinterndorfer M*, Brunner H, Grishkovskaya I, Singh K, Schleiffer A, Jude J, Deswal S, Kalis R, Vunjak M, Lendl T, Imre R, Roitinger E, <ins>Neumann T</ins>, Kandolf S, Schutzbier M, Mechtler K, Versteeg G, Haselbach D &amp; Zuber J: <em>AKIRIN2 controls the nuclear import of proteasomes in vertebrates</em>. Nature, 2021. 599, 491–496.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/34711951" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
+        <a href="https://doi.org/10.1038/s41586-021-04035-8" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
-        Umkehrer C, Holstein F, Formenti L, Jude J, Froussios K, <ins>Neumann T</ins>, Cronin SM, Haas L, Lipp JJ, Burkard TR, Fellner M, Wiesner T, Zuber J &amp; Obenauf AC: <em>Isolating live cell clones from barcoded populations using CRISPRa-inducible reporters</em>. Nature Biotechnology, 2020.
+        Umkehrer C, Holstein F, Formenti L, Jude J, Froussios K, <ins>Neumann T</ins>, Cronin SM, Haas L, Lipp JJ, Burkard TR, Fellner M, Wiesner T, Zuber J &amp; Obenauf AC: <em>Isolating live cell clones from barcoded populations using CRISPRa-inducible reporters</em>. Nature Biotechnology, 2020. 39, 174–178.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/32719478" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1038/s41587-020-0614-0" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
     </ul>

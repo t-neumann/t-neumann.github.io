@@ -101,6 +101,7 @@ order: 2
       </li>
       <li class="list-group-item">•
         Chipman AD, Ferrier DEK, Brena C, Qu J, Hughes DST [...], <ins>Neumann T</ins> et al.: <em>The First Myriapod Genome Sequence Reveals Conservative Arthropod Gene Content and Genome Organisation in the Centipede Strigamia maritima</em>. PLoS Biology, 2014. 12(11), e1002005.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/25423365" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1371/journal.pbio.1002005" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
     </ul>
@@ -115,6 +116,7 @@ order: 2
       </li>
       <li class="list-group-item">•
         Haas L, Elewaut A, Gerard CL, Umkehrer C, Leiendecker L, Pedersen M, Krecioch I, Hoffmann D, Novatchkova M, Kuttke M, <ins>Neumann T</ins>, de Silva IP, Witthock H, Cuendet MA, Carotta S, Harrington KJ, Zuber J, Scolyer RA, Long GV, Wilmott JS, Michielin O, Vanharanta S, Wiesner T &amp; Obenauf AC: <em>Acquired resistance to anti-MAPK targeted therapy confers an immune-evasive tumor microenvironment and cross-resistance to immunotherapy in melanoma</em>. Nature Cancer, 2021. 2, 693–708.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/35121945" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1038/s43018-021-00221-9" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
@@ -134,8 +136,8 @@ order: 2
       <a href="https://doi.org/10.1038/s41467-021-22664-5" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
     </li>
     <li class="list-group-item">•
-      Kellner MJ, Ross JJ, Schnabl J, Dekens MPS, Heinen R, Grishkovskaya I, Bauer B, Stadlmann J, Menéndez-Arias L, Fritsche-Polanz R, Traugott M, Seitz T, Zoufaly A, Födinger M, Wenisch C, Zuber J, <ins>VCDI</ins>, Pauli A, &amp; Brennecke J: <em>A rapid, highly sensitive and open-access SARS-CoV-2 detection assay for laboratory and home testing</em>. bioRxiv, 2020.
-      <a href="https://doi.org/10.1101/2020.06.23.166397" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+      Kellner MJ*&dagger;, Ross JJ*, Schnabl J*, Dekens MPS, Matl M, Heinen R, Grishkovskaya I, Bauer B, Stadlmann J, Menéndez-Arias L, Straw AD, Fritsche-Polanz R, Traugott M, Seitz T, Zoufaly A, Födinger M, Wenisch C, Zuber J, <ins>VCDI</ins>, Pauli A&dagger;, &amp; Brennecke J&dagger;: <em>A Rapid, Highly Sensitive and Open-Access SARS-CoV-2 Detection Assay for Laboratory and Home Testing</em>. Frontiers in Molecular Biosciences, 2021. 9.
+      <a href="https://doi.org/10.3389/fmolb.2022.801309" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
     </li>
     <li class="list-group-item">•
     Kellner MJ, Matl M, Ross JJ, Schnabl J, Handler D, Heinen R, Schaeffer J, Hufnagl P, Indra A, Dekens MPS, Fritsche-Polanz R, Födinger M, Zuber J, <ins>VCDI</ins>, Allerberger F, Pauli A &amp; Brennecke J: <em>Head-to-head comparison of direct-input RT-PCR and RT-LAMP against RT-qPCR on extracted RNA for rapid SARS-CoV-2 diagnostics</em>. medRxiv, 2021.

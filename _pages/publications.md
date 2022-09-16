@@ -76,7 +76,7 @@ order: 2
     <h4 class="card-title">Genomics</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
-        Peycheva M, <ins>Neumann T</ins>, Malzl D, Nazarova M, Schoeberl UE &amp; Pavri R: <em>DNA replication timing directly regulates the frequency of oncogenic chromosomal translocations</em>. Science, 2022. 377(6612), eabj5502.
+        Peycheva M, <ins>Neumann T</ins>, Malzl D, Nazarova M, Schoeberl UE &amp; Pavri R: <em>DNA replication timing directly regulates the frequency of oncogenic chromosomal translocations</em>. Science, 2022. 377(6612), 1277.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/36108018" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="http://doi.org/10.1126/science.abj5502" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>

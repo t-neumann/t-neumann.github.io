@@ -76,8 +76,9 @@ order: 2
     <h4 class="card-title">Genomics</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
-        Peycheva M, <ins>Neumann T</ins>, Malzl D, Nazarova M, Schoeberl UE &amp; Pavri R: <em>DNA replication timing directly regulates the frequency of oncogenic chromosomal translocations</em>. bioRxiv, 2021.
-        <a href="https://doi.org/10.1101/2021.05.29.446276" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+        Peycheva M, <ins>Neumann T</ins>, Malzl D, Nazarova M, Schoeberl UE &amp; Pavri R: <em>DNA replication timing directly regulates the frequency of oncogenic chromosomal translocations</em>. Science, 2022. 377(6612), eabj5502.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/36108018" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
+        <a href="http://doi.org/10.1126/science.abj5502" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
         Kaiser T, Poehn P, Szkiba D, Preussner M, Sedlazeck F, Zrim A, <ins>Neumann T</ins>, Nguyen LT, Betancourt A, Hummel T, Vogel H, Dorner S, Heyd F, Arndt von Haeseler A &amp; Tessmar-Raible K: <em>The genomic basis of circadian and circalunar timing adaptations in a midge</em>. Nature, 2016. 540(7631), 69–73.
@@ -137,6 +138,7 @@ order: 2
     </li>
     <li class="list-group-item">•
       Kellner MJ*&dagger;, Ross JJ*, Schnabl J*, Dekens MPS, Matl M, Heinen R, Grishkovskaya I, Bauer B, Stadlmann J, Menéndez-Arias L, Straw AD, Fritsche-Polanz R, Traugott M, Seitz T, Zoufaly A, Födinger M, Wenisch C, Zuber J, <ins>VCDI</ins>, Pauli A&dagger;, &amp; Brennecke J&dagger;: <em>A Rapid, Highly Sensitive and Open-Access SARS-CoV-2 Detection Assay for Laboratory and Home Testing</em>. Frontiers in Molecular Biosciences, 2021. 9.
+      <a href="https://www.ncbi.nlm.nih.gov/pubmed/35433827" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
       <a href="https://doi.org/10.3389/fmolb.2022.801309" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
     </li>
     <li class="list-group-item">•

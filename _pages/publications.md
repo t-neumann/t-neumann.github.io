@@ -111,6 +111,11 @@ order: 2
     <h4 class="card-title">Cancer</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
+        Leiendecker L, <ins>Neumann T</ins>, Jung PS, Cronin SM, Steinacker  TL, Schleiffer A, Schutzbier M, Mechtler K, Kervarrec T, Laurent E, Bachiri K, Coyaud E, Murali R, Busam KJ, Itzinger-Monshi B, Kirnbauer R, Cerroni L, Calonje E, Rutten A, Stubenrauch F, Griewank KG, Wiesner T&dagger; &amp; Obenauf AC&dagger;: <em>Human papillomavirus 42 drives digital papillary adenocarcinoma and elicits a germ-cell like program conserved in HPV-positive cancers.</em> Cancer Discovery, 2023. 13(1):70-84.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/36213965" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
+        <a href="https://doi.org/10.1158/2159-8290.CD-22-0489" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+      </li>
+      <li class="list-group-item">•
         Rathert P*, Roth M*, <ins>Neumann T</ins>, Muerdter F, Roe J-S, Muhar M, Deswal S, Cerny-Reiterer S, Peter B, Jude J, Hoffmann T, Boryn LM, Axelsson E, Schweifer N, Tontsch-Grunt U, Dow LE, Gianni D, Pearson M, Valent P, Stark A, Kraut N, Vakoc CR &amp; Zuber J: <em>Transcriptional plasticity promotes primary and acquired resistance to BET inhibition</em>. Nature, 2015. 525(7570), 543–547.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/26367798" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1038/nature14898" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>

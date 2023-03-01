@@ -131,6 +131,11 @@ order: 2
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/26367798" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.15252/emmm.202012525" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
+      <li class="list-group-item">•
+      Schmoellerl J*, Barbosa IAM*, Minnich M, Andersch F, Smeenk L, Havermans M, Eder T, <ins>Neumann T</ins>, Jude J, Fellner M, Ebert A, Steininger M, Delwel R, Grebien F&dagger; &amp; Zuber J&dagger;: <em>EVI1 drives leukemogenesis through aberrant ERG activation</em>. Blood, 2023. 141, 5.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/36095844" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
+        <a href="https://doi.org/10.1182/blood.2022016592" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+      </li>
     </ul>
   </div>
   <div class="card-body">

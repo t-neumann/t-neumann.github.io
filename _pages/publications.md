@@ -81,6 +81,10 @@ order: 2
         <a href="http://doi.org/10.1126/science.abj5502" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
+        Malzl D*, Peycheva M*, Rahjouei A, Gnan S, Klein K, Nazarova M, Schoeberl UE, Gilbert DM, Buonomo S, Di Virgilio M, <ins>Neumann T&dagger;</ins> &amp; Pavri R&dagger;: <em>RIF1 regulates replication origin activity and early replication timing in B cells</em>. bioRxiv, 2023. 377(6612), 1277.
+        <a href="https://doi.org/10.1101/2023.03.31.535086" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+      </li>
+      <li class="list-group-item">•
         Kaiser T, Poehn P, Szkiba D, Preussner M, Sedlazeck F, Zrim A, <ins>Neumann T</ins>, Nguyen LT, Betancourt A, Hummel T, Vogel H, Dorner S, Heyd F, Arndt von Haeseler A &amp; Tessmar-Raible K: <em>The genomic basis of circadian and circalunar timing adaptations in a midge</em>. Nature, 2016. 540(7631), 69–73.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/27871090" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="http://doi.org/10.1038/nature20151" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>

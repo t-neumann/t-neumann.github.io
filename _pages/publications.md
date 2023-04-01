@@ -81,7 +81,7 @@ order: 2
         <a href="http://doi.org/10.1126/science.abj5502" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
-        Malzl D*, Peycheva M*, Rahjouei A, Gnan S, Klein K, Nazarova M, Schoeberl UE, Gilbert DM, Buonomo S, Di Virgilio M, <ins>Neumann T&dagger;</ins> &amp; Pavri R&dagger;: <em>RIF1 regulates replication origin activity and early replication timing in B cells</em>. bioRxiv, 2023. 377(6612), 1277.
+        Malzl D*, Peycheva M*, Rahjouei A, Gnan S, Klein K, Nazarova M, Schoeberl UE, Gilbert DM, Buonomo S, Di Virgilio M, <ins>Neumann T&dagger;</ins> &amp; Pavri R&dagger;: <em>RIF1 regulates replication origin activity and early replication timing in B cells</em>. bioRxiv, 2023.
         <a href="https://doi.org/10.1101/2023.03.31.535086" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•

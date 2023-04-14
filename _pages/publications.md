@@ -21,7 +21,7 @@ order: 2
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
     <div class="card-body">
-    <h4 class="card-title">SLAM-seq technology</h4>
+    <h4 class="card-title">Transcriptomics</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
         <ins>Neumann T</ins>, Herzog VA, Muhar M, von Haeseler A, Zuber J, Ameres SL &amp; Rescheneder P: <em>Quantification of experimentally induced nucleotide conversions in high-throughput sequencing datasets</em>. BMC Bioinformatics, 2019. 20(1), 258.
@@ -53,7 +53,7 @@ order: 2
     </ul>
     </div>
     <div class="card-body">
-    <h4 class="card-title">CRISPR technology</h4>
+    <h4 class="card-title">CRISPR technology development</h4>
     <ul class="list-group list-group-flush">
       <li class="list-group-item">•
         Michlits G*, Jude J*, Hinterndorfer M, de Almeida M, Vainorius G, Hubmann M, <ins>Neumann T</ins>, Schleiffer A, Burkard T, Fellner M, Gijsbertsen M, Traunbauer A, Zuber J&dagger; &amp; Elling U&dagger;: <em>Multilayered VBC-score predicts sgRNAs that efficiently generate loss-of-function alleles</em>. Nature Methods, 2020. 17(7), 708–716.

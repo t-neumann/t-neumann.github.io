@@ -40,6 +40,11 @@ order: 1
           <br>
         </div>
         <ul>
+        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Planning and setup of the cloud-based production-grade computational environment for concurrent processing of &gt;100k targeted SLAM-seq libraries.</li>
+        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Leading the computational development of the innovative time-resolved high-throughput transcriptomics QUANTROseq drug discovery platform.</li>
+        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Machine-learning driven identification of highly-selective transcriptional fingerprints of disease causing transcription factors in our reference compound datasets.</li>
+        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Building and leading QUANTRO's computational team.</li>
+        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Planning and overseeing QUANTRO's IT and computational infrastructure and processes.</li>
         </ul>
       </div>
     </div>
@@ -178,6 +183,15 @@ order: 1
       <div class="float-right"><a href="#top">&uarr;</a></div>
     </div>
     <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <i class="fa fa-calendar" aria-hidden="true"></i> 2020-2023
+        </div>
+        <div class="col">
+          PhD in Molecular Biosciences, <a href="http://www.cibiv.at" target="_blank">Arndt von Haeseler Group</a>, University Vienna
+        </div>
+      </div>
+      <hr>
       <div class="row">
         <div class="col-md-2">
           <i class="fa fa-calendar" aria-hidden="true"></i> 2009-2012

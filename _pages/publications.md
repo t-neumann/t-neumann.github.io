@@ -23,6 +23,11 @@ order: 2
     <div class="card-body">
     <h4 class="card-title">Transcriptomics</h4>
     <ul class="list-group list-group-flush">
+    <li class="list-group-item">•
+        Popitsch N*, <ins>Neumann T*</ins>, von Haeseler A &amp; Ameres SL: <em>Splice_sim: a nucleotide conversion-enabled RNA-seq simulation and evaluation framework</em>. Genome Biology, 2024. 25(1), 166.
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/38918865" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
+        <a href="https://doi.org/10.1186/s13059-024-03313-8" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+      </li>
       <li class="list-group-item">•
         <ins>Neumann T</ins>, Herzog VA, Muhar M, von Haeseler A, Zuber J, Ameres SL &amp; Rescheneder P: <em>Quantification of experimentally induced nucleotide conversions in high-throughput sequencing datasets</em>. BMC Bioinformatics, 2019. 20(1), 258.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/31109287" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
@@ -101,6 +106,10 @@ order: 2
         <a href="http://doi.org/10.1038/nature20151" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
       </li>
       <li class="list-group-item">•
+        Schoeberl UE, Fitz J, Froussios K, Valieris R, Ourailidis I, Makharova M, Bauer B, <ins> Neumann T</ins>, Wiedemann E, Steininger M, Cantoran AG, Mastrovito M, Mouquet H, Da Silva IT &amp; Pavri R: <em>Somatic hypermutation patterns in immunoglobulin variable regions are established independently of the local transcriptional landscape</em>. eLife, 2025. 14, RP106566.
+        <a href="https://doi.org/10.7554/eLife.106566.1" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+      </li>
+      <li class="list-group-item">•
         Thiecke MJ, Wutz G, Muhar M, Tang W, Bevan S, Malysheva V, Stocsits R, <ins>Neumann T</ins>, Zuber J, Fraser P, Schoenfelder S, Peters J-M, &amp; Spivakov M.: <em>Cohesin-Dependent and -Independent Mechanisms Mediate Chromosomal Contacts between Promoters and Enhancers</em>. Cell Reports, 2020. 32(3), 107929.
         <a href="https://www.ncbi.nlm.nih.gov/pubmed/25423365" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
         <a href="https://doi.org/10.1016/j.celrep.2020.107929" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
@@ -157,8 +166,12 @@ order: 2
       <a href="https://doi.org/10.3389/fmolb.2022.801309" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
     </li>
     <li class="list-group-item">•
-    Kellner MJ, Matl M, Ross JJ, Schnabl J, Handler D, Heinen R, Schaeffer J, Hufnagl P, Indra A, Dekens MPS, Fritsche-Polanz R, Födinger M, Zuber J, <ins>VCDI</ins>, Allerberger F, Pauli A &amp; Brennecke J: <em>Head-to-head comparison of direct-input RT-PCR and RT-LAMP against RT-qPCR on extracted RNA for rapid SARS-CoV-2 diagnostics</em>. medRxiv, 2021.
+    Kellner MJ*, Matl M*, Ross JJ, Schnabl J, Handler D, Heinen R, Schaeffer J, Hufnagl P, Indra A, Dekens MPS, Fritsche-Polanz R, Födinger M, Zuber J, <ins>VCDI</ins>, Allerberger F, Pauli A&dagger; &amp; Brennecke J&dagger;: <em>Head-to-head comparison of direct-input RT-PCR and RT-LAMP against RT-qPCR on extracted RNA for rapid SARS-CoV-2 diagnostics</em>. medRxiv, 2021.
       <a href="https://doi.org/10.1101/2021.01.19.21250079" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+    </li>
+    <li class="list-group-item">•
+    Matl M*, Kellner MJ*, Ansah F*, Grishkovskaya I, Handler D, Heinen R, Bauer B, Menéndez-Arias L, Auer TO, Prieto-Godino LL, Penninger JM, <ins>VCDI</ins>, Awandare GA, Brennecke J&dagger; &amp; Pauli A&dagger;: <em>A lyophilized open-source RT-LAMP assay for molecular diagnostics in resource-limited settings</em>. medRxiv, 2024.
+      <a href="https://doi.org/10.1101/2024.11.19.24317525" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
     </li>
   </ul>
   </div>

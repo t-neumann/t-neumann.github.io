@@ -37,7 +37,7 @@ order: 1
       <div class="col">
     <strong>Group Leader Computational Science at <a href="https://quantro-tx.com/" target="blank">Quantro Therapeutics</a></strong><br>
     <em>Vienna, Austria</em><br>
-    <div style="line-height:100%;">
+    <div style="line-height:50%;">
           <br>
     </div>
     <p class="fs-4">

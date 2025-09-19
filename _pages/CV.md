@@ -32,21 +32,46 @@ order: 1
     <div class="row">
       <div class="col-md-2">
         <img src="{{ site.url }}{{ site.baseurl }}/assets/images/QUANTRO_LOGO.png" alt="Quantro Logo">
-        From 2020
+        From April 2024
       </div>
       <div class="col">
-        Lead Bioinformatician at <a href="https://quantro-tx.com/" target="blank">Quantro Therapeutics</a>
-        <div style="line-height:100%;">
-          <br>
-        </div>
+    <strong>Group Leader Computational Science</strong><br>
+    <em>Vienna, Austria</em><br>
+    Building and leading the multidisciplinary Computational Science team with PhDs in Physics and Computer Science. 
+    Focusing on computational platform and infrastructure setup, statistics method development, and AI/ML strategy of the drug discovery R&amp;D and chemistry department.
+    <div style="line-height:100%;"><br></div>
+    <ul>
+      <li><strong>Team Leadership &amp; Agile Working:</strong> Introduced agile principles and SCRUM-inspired workflows to improve delivery and collaboration.
         <ul>
-        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Planning and setup of the cloud-based production-grade computational environment for concurrent processing of &gt;100k targeted SLAM-seq libraries.</li>
-        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Leading the computational development of the innovative time-resolved high-throughput transcriptomics QUANTROseq drug discovery platform.</li>
-        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Machine-learning driven identification of highly-selective transcriptional fingerprints of disease causing transcription factors in our reference compound datasets.</li>
-        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Building and leading QUANTRO's computational team.</li>
-        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Planning and overseeing QUANTRO's IT and computational infrastructure and processes.</li>
+          <li>Built and led a multidisciplinary team of PhDs in Computer Science and Physics.</li>
+          <li>Reorganized workflows into sprint-based iterations, allowing faster adjustment of research directions.</li>
+          <li>Established a blueprint framework with training pipelines, tracking, and deployment templates to standardize development and ensure production-ready code.</li>
         </ul>
-      </div>
+      </li>
+      <li><strong>AI/ML Platform &amp; Strategy:</strong> Shaped and executed the company’s AI/ML strategy, transforming QUANTRO's drug discovery platform.
+        <ul>
+          <li>Conceptualized a hybrid <em>in silico</em> drug discovery platform hosting models that support both the time-resolved HTS platform and MedChem parameters.</li>
+          <li>Enabled the transition from traditional DMTA cycles to DMTL cycles, where predictive computational models accelerate discovery and reduce cost.</li>
+          <li>Prototyped and directed development of deep learning models predicting time-resolved transcriptomic responses from chemical structures, leveraging large-scale proprietary datasets.</li>
+        </ul>
+      </li>
+      <li><strong>Computational Infrastructure &amp; CI/CD:</strong> Built and optimized QUANTRO’s computational ecosystem to ensure reliability, scalability, and automation.
+        <ul>
+          <li>Standardized CI/CD pipelines across all major computational workflows.</li>
+          <li>Enabled 24/7 automated testing and monitoring, reducing risk of downtime and errors.</li>
+          <li>Delivered faster development cycles with frequent code integration, early testing, and rapid rollback capability.</li>
+          <li>Lowered operational costs by freeing data scientists from maintenance through automated deployment.</li>
+        </ul>
+      </li>
+      <li><strong>Data Analysis Life Cycles:</strong> Designed reproducible data analysis frameworks ensuring transparency and rapid insight generation.
+        <ul>
+          <li>Established artifact-tracked life cycles with QR code–based traceability.</li>
+          <li>Integrated version-controlled releases to distinguish pilot (unreviewed) from production (reviewed) results.</li>
+          <li>Reduced turnaround time for R&amp;D insights from weeks to days, improving scientific decision-making speed.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
     </div>
     <hr>
     <div class="row">

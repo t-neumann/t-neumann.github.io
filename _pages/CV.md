@@ -146,7 +146,7 @@ order: 1
       </li>
       <li><strong>HPC &amp; Machine Learning:</strong> Conceived and implemented scalable pipelines for large datasets and applied ML to derive predictive biomarkers.
         <ul>
-          <li>Implemented a cloud-computing <a href="https://github.com/ObenaufLab/virus-detection-nf">virus screening pipeline</a> on <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a> <i class="fab fa-aws" aria-hidden="true">, scaling to the full <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">TCGA</a> cohort (&gt;11,000 patient samples, 100 TB raw data).</li>
+          <li>Implemented a cloud-computing <a href="https://github.com/ObenaufLab/virus-detection-nf">virus screening pipeline</a> on <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a> <i class="fab fa-aws" aria-hidden="true"></i>, scaling to the full <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">TCGA</a> cohort (&gt;11,000 patient samples, 100 TB raw data).</li>
           <li>Identified predictive biomarkers for classifying HPV-positive vs. HPV-negative tumors with high accuracy using machine learning.</li>
         </ul>
       </li>

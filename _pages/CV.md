@@ -37,7 +37,7 @@ order: 1
       <div class="col">
     <strong>Group Leader Computational Science</strong><br>
     <em>Vienna, Austria</em><br>
-    <p class="text-muted" style="font-size: 90%;">
+    <p class="fs-4">
       Building and leading the multidisciplinary Computational Science team with PhDs in Physics and Computer Science. 
       Focusing on computational platform and infrastructure setup, statistics method development, and AI/ML strategy of the drug discovery R&amp;D and chemistry department.
     </p>

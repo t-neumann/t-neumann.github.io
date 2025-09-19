@@ -227,53 +227,46 @@ order: 1
   </div>
 </div>
 <hr>
-    <div class="row">
-      <div class="col-md-2">
-      <img src="{{ site.url }}{{ site.baseurl }}/assets/images/IMP_Logo.png" alt="IMP Logo">
-        2014-2020
-      </div>
-      <div class="col">
-        Senior Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a>
-        <div style="line-height:100%;">
-          <br>
-        </div>
-        <ul>
-        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead bioinformatics method and algorithm development for the <a href="https://www.nature.com/articles/nmeth.4435">SLAM-seq</a> sequencing technology.</li>
-        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Development a cloud-computing <a href="https://github.com/ObenaufLab/virus-detection-nf">virus screening pipeline</a> on <a href="https://aws.amazon.com/">Amazon Web Services (AWS)</a> that scales to big data, analysing the entire 11,000 patient samples (100 TB raw data) of <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">The Cancer Genome Atlas</a> <i class="fab fa-aws" aria-hidden="true"></i>.</li>
-        <li><span><i class="mdi mdi-finance"></i></span>Design of the genome-wide <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-020-0850-8/MediaObjects/41592_2020_850_MOESM3_ESM.xlsx" target="blank">Vienna sgRNA libraries</a> for pooled CRISPR screens.</li>
-        <li><span><i class="mdi mdi-finance"></i></span>Co-development of the <a href="https://www.vbc-score.org" target="blank">VBC score</a> for selection of sgRNAs that effectively produce loss-of-function alleles.</li>
-        <li><span><i class="mdi mdi-server"></i></span>Technology development on the <a href="https://nanoporetech.com">Oxford Nanopore Sequencing</a> platform to detect translocations at single-base pair resolution genome-wide.</li>
-        <li><span><i class="mdi mdi-finance"></i></span>Member of the
-        <a href="https://www.maxperutzlabs.ac.at/vcdi" target="blank">Vienna Covid-19 Detection Initiative (VCDI)</a> performing comparative genomics of &gt; 5M sequenced SARS-CoV-2 genomes worldwide to identify conserved domains for sensitive primer design to detect COVID-19 infections, de-novo assembly and quantification of viral RNAs for primer target selection for sensitive SARS-CoV-2 detection.</li>
-        <li><span><i class="mdi mdi-finance"></i></span>Project supervision and mentoring of Bioinformatics Master students:</li>
-        <ul>
-        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>CRISPRepo: database and front-end development for integrating, visualizing and querying CRISPR screening data and metadata.</li>
-        <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Characterization of replication origins: Method development for and integration of DNA replication origin mapping (SNS-seq), replication timing sequencing (RepliSeq), genome-wide chromatin contact mapping (HiC) and ChIP-Seq data.</li>
-        </ul>
-        </ul>
-      </div>
+<div class="row">
+  <div class="col-md-2">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sophia_genetics_logo.png" alt="Sophia Genetics Logo">
+    2012 – 2014
+  </div>
+  <div class="col">
+    <strong>Bioinformatician at <a href="https://www.sophiagenetics.com" target="_blank">Sophia Genetics SA</a></strong><br>
+    <em>Lausanne, Switzerland</em><br>
+    <div style="line-height:50%;">
+      <br>
     </div>
-    <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <img src="{{ site.url }}{{ site.baseurl }}/assets/images/lexogen_logo.png" alt="Lexogen Logo">
-          2017-2019
-        </div>
-        <div class="col">
-          Contractor for <a href="https://www.lexogen.com/" target="blank">Lexogen GmbH</a>
-          <div style="line-height:100%;">
-            <br>
-          </div>
-          <ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead development of the <a href="https://www.lexogen.com/store/slamdunk-data-analysis-pipeline">SLAMdunk</a> product backend.</li>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Optimizing and porting established variant-callers for nucleotide-conversion detection.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Containerization of so ware packages using Docker.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Deployment of Docker containers on the <a href="https://www.bluebee.com/">Bluebee</a> private cloud platform <i class="fas fa-cloud" aria-hidden="true"></i>.</li>
-          <li><span><i class="mdi mdi-server"></i></span>License assessment and resource benchmarking <i class="fas fa-balance-scale" aria-hidden="true"></i>.</li>
-          </ul>
-        </div>
-      </div>
-      <hr>
+    <p class="fs-4">
+      Developed and maintained the computational backbone of Sophia Genetics’ diagnostic SaaS platform, 
+      building modular and scalable sequencing analysis pipelines. Supported hospitals and labs across Europe 
+      with their validated gene panel test activities and contributed to product presentations for customers 
+      and scientific audiences.
+    </p>
+    <ul>
+      <li><strong>Product Development &amp; Optimization:</strong> Designed and engineered a modular pipeline system enabling flexible integration of analysis tools for targeted gene and exome sequencing.
+        <ul>
+          <li>Led development, maintenance, and optimization of a targeted sequencing pipeline forming the bioinformatics backend of the <a href="http://www.sophiagenetics.com/hospitals/sophia-ddm/sophia-ddmr-details.html" target="_blank">Sophia DDM&reg;</a> SaaS platform <i class="fas fa-diagnoses" aria-hidden="true"></i>.</li>
+          <li>Delivered high-performance, adaptable pipelines for amplicon and exome sequencing workflows.</li>
+        </ul>
+      </li>
+      <li><strong>Clinical &amp; Diagnostic Applications:</strong> Tailored sequencing workflows to clinical requirements, supporting genetic diagnostics across Europe <i class="fas fa-globe" aria-hidden="true"></i>.
+        <ul>
+          <li>Customized pipelines for diagnostic gene panel kits on Roche 454, IonTorrent PGM, and Illumina MiSeq platforms.</li>
+          <li>Co-developed novel genetic tests with Swiss hospitals and performed exploratory analyses on prospective datasets <i class="fas fa-hospital" aria-hidden="true"></i>.</li>
+        </ul>
+      </li>
+      <li><strong>Customer &amp; Scientific Engagements:</strong> Represented Sophia Genetics in interactions with clients and at scientific events.
+        <ul>
+          <li>Delivered product and technical presentations for prospective and established customers <i class="fab fa-slideshare" aria-hidden="true"></i>.</li>
+          <li>Presented research and platform capabilities internally to Board and SAB, and at conferences to scientific and clinical audiences.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<hr>
       <div class="row">
         <div class="col-md-2">
           <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sophia_genetics_logo.png" alt="Sophia Genetics Logo">

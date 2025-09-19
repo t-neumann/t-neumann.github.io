@@ -32,7 +32,7 @@ order: 1
     <div class="row">
       <div class="col-md-2">
         <img src="{{ site.url }}{{ site.baseurl }}/assets/images/QUANTRO_LOGO.png" alt="Quantro Logo">
-        From April 2024
+        From 2024
       </div>
       <div class="col">
     <strong>Group Leader Computational Science at <a href="https://quantro-tx.com/" target="blank">Quantro Therapeutics</a></strong><br>
@@ -81,7 +81,7 @@ order: 1
     <div class="row">
   <div class="col-md-2">
     <img src="{{ site.url }}{{ site.baseurl }}/assets/images/QUANTRO_LOGO.png" alt="Quantro Logo">
-    August 2020 – March 2024
+    2020 – 2024
   </div>
   <div class="col">
     <strong>Lead Bioinformatician at <a href="https://quantro-tx.com/" target="blank">Quantro Therapeutics</a></strong><br>
@@ -121,45 +121,41 @@ order: 1
   </div>
 </div>
 <hr>
-    <div class="row">
+<div class="row">
   <div class="col-md-2">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/QUANTRO_LOGO.png" alt="Quantro Logo">
-    August 2020 – March 2024
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/IMP_Logo.png" alt="IMP Logo">
+    2018 – 2021<br>(part time from 2020)
   </div>
   <div class="col">
-    <strong>Lead Bioinformatician at <a href="https://quantro-tx.com/" target="blank">Quantro Therapeutics</a></strong><br>
+    <strong>Senior Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a></strong><br>
     <em>Vienna, Austria</em><br>
     <div style="line-height:50%;">
       <br>
     </div>
     <p class="fs-4">
-      Built QUANTRO's computational department, establishing production-grade cloud infrastructure, algorithmic innovations, 
-      and machine-learning–driven bioinformatics strategies to industrialize QUANTRO's drug discovery platform.
+      Pioneered advances in bioinformatics across genomics, high performance computing (HPC), and machine learning, 
+      advancing cancer and infectious disease research. Contributed to international initiatives, publications, and mentoring of junior researchers.
     </p>
     <ul>
-      <li><strong>Cloud Infrastructure:</strong> Planned and deployed an elastic, cloud-based environment for large-scale transcriptomics, 
-      enabling concurrent processing of &gt;100,000 targeted SLAM-seq libraries.
+      <li><strong>Omics Technology Development:</strong> Bootstrapped novel sequencing technologies and applied comparative genomics to advance cancer research and pandemic response.
         <ul>
-          <li>Built scalable pipelines that supported cost-effective high-throughput campaigns.</li>
-          <li>Reduced compute costs for high-throughput screening to &lt;1k EUR per campaign.</li>
+          <li>Developed a method detecting translocations at single-base pair resolution genome-wide on the <a href="https://nanoporetech.com/" target="_blank">Oxford Nanopore Sequencing</a> platform.</li>
+          <li>Developed <code><a href="https://github.com/popitsch/splice_sim" target="blank">splice_sim</a></code>, a nucleotide conversion–enabled RNA-seq simulation and evaluation framework, to benchmark spliced-read mappers and optimize mapping/quantification setups for epitranscriptomics across species.</li>
+          <li>As a member of the <a href="https://www.viennabiocenter.org/research/covid-19/vienna-covid-19-detection-initiative/" target="_blank">Vienna Covid-19 Detection Initiative</a>: analyzed &gt;5M SARS-CoV-2 genomes to identify conserved domains for primer design, and performed de novo assembly and quantification of viral RNAs for diagnostic assay development.</li>
         </ul>
       </li>
-      <li><strong>Algorithmic Innovation:</strong> Introduced heuristic, hardware-optimized bit-shift alignment algorithms and optimized 
-      dataflow strategies to industrialize QUANTRO’s drug discovery platform.
+      <li><strong>HPC &amp; Machine Learning:</strong> Conceived and implemented scalable pipelines for large datasets and applied ML to derive predictive biomarkers.
         <ul>
-          <li>Achieved 10,000-fold speedups over conventional alignment algorithms with a peak memory footprint &lt;2 GB.</li>
-          <li>Enabled full high-throughput screening campaigns to be completed in &lt;16 hours.</li>
+          <li>Implemented a cloud-computing <a href="https://github.com/ObenaufLab/virus-detection-nf">virus screening pipeline</a> on <a href="https://aws.amazon.com/" target="_blank">Amazon Web Services</a> <i class="fab fa-aws" aria-hidden="true">, scaling to the full <a href="https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga">TCGA</a> cohort (&gt;11,000 patient samples, 100 TB raw data).</li>
+          <li>Identified predictive biomarkers for classifying HPV-positive vs. HPV-negative tumors with high accuracy using machine learning.</li>
         </ul>
       </li>
-      <li><strong>Computational Platform &amp; AI/ML:</strong> Directed computational efforts to establish QUANTROseq, 
-      QUANTRO’s time-resolved high-throughput transcriptomics platform, and integrated ML approaches to extract biological insights.
+      <li><strong>Scientific Leadership &amp; Mentoring:</strong> Provided leadership across projects and guided junior researchers.
         <ul>
-          <li>Led computational efforts for the setup of QUANTROseq, the company’s time-resolved HT transcriptomics drug discovery platform.</li>
-          <li>Applied machine learning to identify highly selective transcriptional fingerprints of disease-causing transcription factors from reference datasets.</li>
+          <li>Led projects as corresponding author, resulting in publications in high-impact journals (<em>Nature Communications</em>).</li>
+          <li>Supervised and mentored undergraduate students, supporting their academic development and co-authorships.</li>
         </ul>
       </li>
-      <li><strong>IT &amp; Infrastructure Oversight:</strong> Planned and supervised QUANTRO’s IT and computational infrastructure, 
-      ensuring scalable, reliable, and secure processes across teams.</li>
     </ul>
   </div>
 </div>

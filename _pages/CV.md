@@ -195,6 +195,38 @@ order: 1
   </div>
 </div>
 <hr>
+<div class="row">
+  <div class="col-md-2">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/lexogen_logo.png" alt="Lexogen Logo">
+    2017 – 2019
+  </div>
+  <div class="col">
+    <strong>Technical Consultant for <a href="https://www.lexogen.com/" target="blank">Lexogen GmbH</a></strong><br>
+    <em>Vienna, Austria</em><br>
+    <div style="line-height:50%;">
+      <br>
+    </div>
+    <p class="fs-4">
+      Developed and deployed bioinformatics solutions complementing Lexogen’s transcriptomics product portfolio. 
+      Focused on backend design, software optimization, and scalable cloud deployment of analysis pipelines.
+    </p>
+    <ul>
+      <li><strong>Product &amp; Backend Development:</strong> Designed optimized and compliant computational tools to analyze data produced by Lexogen’s sequencing technology portfolio.
+        <ul>
+          <li>Led development of the <a href="https://www.lexogen.com/store/slamdunk-data-analysis-pipeline" target="_blank">SLAMdunk</a> product backend.</li>
+          <li>Optimized and ported established variant callers for nucleotide-conversion detection.</li>
+        </ul>
+      </li>
+      <li><strong>Software Engineering &amp; Cloud Deployment:</strong> Ensured scalability, portability, performance, and compliance of bioinformatics workflows.
+        <ul>
+          <li>Containerized core software packages using Docker and deployed them on the <a href="http://www.bluebee.com" target="_blank">Bluebee</a> private cloud platform <i class="fas fa-cloud" aria-hidden="true"></i>.</li>
+          <li>Assessed licenses <i class="fas fa-balance-scale" aria-hidden="true"></i> and benchmarked resource consumption to support cost-effective and compliant deployment.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<hr>
     <div class="row">
       <div class="col-md-2">
       <img src="{{ site.url }}{{ site.baseurl }}/assets/images/IMP_Logo.png" alt="IMP Logo">

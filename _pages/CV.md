@@ -301,30 +301,31 @@ order: 1
   </div>
 </div>
 <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <img src="{{ site.url }}{{ site.baseurl }}/assets/images/MPL_logo.jpg" alt="MPL Logo">
-          2012
-        </div>
-        <div class="col">
-          Bioinformatician at the <a href="https://www.maxperutzlabs.ac.at/" target="_blank">Max Perutz Laboratories</a>
-          <div style="line-height:100%;">
-            <br>
-          </div>
-          <ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>De-novo genome assembly of <i>Clunio marinus</i>:</li>
-          <ul>
-            <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Contig assembly, filtering and completeness assessment</li>
-            <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Setup of the de-novo gene annotation pipeline and genome browser (<a href="http://www.yandell-lab.org/software/maker.html">MAKER</a>,<a href="http://gmod.org/wiki/Main_Page">GMOD</a>)</li>
-          </ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Scaffold N50 of 1.9Mb, 98 &percnt; completeness.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Better assembly quality than honeybee, <i>Tribolium</i> or the monarch butterly.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Served as basis to unravel the genomic basis of circadian and circalunar timing adaptations.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Hosted at <a href="http://cluniobase.cibiv.univie.ac.at/">ClunioBase</a> and published in <i>Nature</i>.</li>
-          </ul>
-        </div>
-      </div>
-      <hr>
+<div class="row">
+  <div class="col-md-2">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/CIBIV_logo.png" alt="CIBIV Logo">
+    2010-2012
+  </div>
+  <div class="col">
+    <strong>Project student at the <a href="http://www.cibiv.at/" target="_blank">Center for Integrative Bioinformatics Vienna</a></strong><br>
+    <em>Vienna, Austria</em><br>
+    <div style="line-height:50%;">
+      <br>
+    </div>
+    <ul>
+      <li>
+      Massive parallelization of sequence  alignments on the CPU and cluster <i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/t-neumann/versalignLib">https://github.com/t-neumann/versalignLib</a>.
+      </li>
+      <li>
+      Software development of an evaluation framework for reference-mapping software.
+      </li>
+      <li>
+      De-novo transcriptome assembly of RNA-seq data for <i>Idiosepius pygmaeus</i>.
+      </li>
+    </ul>
+  </div>
+</div>
+<hr>
       <div class="row">
         <div class="col-md-2">
           <img src="{{ site.url }}{{ site.baseurl }}/assets/images/CIBIV_logo.png" alt="CIBIV Logo">

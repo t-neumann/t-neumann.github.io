@@ -37,9 +37,10 @@ order: 1
       <div class="col">
     <strong>Group Leader Computational Science</strong><br>
     <em>Vienna, Austria</em><br>
-    Building and leading the multidisciplinary Computational Science team with PhDs in Physics and Computer Science. 
-    Focusing on computational platform and infrastructure setup, statistics method development, and AI/ML strategy of the drug discovery R&amp;D and chemistry department.
-    <div style="line-height:100%;"><br></div>
+    <p class="text-muted" style="font-size: 90%;">
+      Building and leading the multidisciplinary Computational Science team with PhDs in Physics and Computer Science. 
+      Focusing on computational platform and infrastructure setup, statistics method development, and AI/ML strategy of the drug discovery R&amp;D and chemistry department.
+    </p>
     <ul>
       <li><strong>Team Leadership &amp; Agile Working:</strong> Introduced agile principles and SCRUM-inspired workflows to improve delivery and collaboration.
         <ul>

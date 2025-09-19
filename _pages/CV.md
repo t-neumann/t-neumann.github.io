@@ -35,8 +35,11 @@ order: 1
         From April 2024
       </div>
       <div class="col">
-    <strong>Group Leader Computational Science</strong><br>
+    <strong>Group Leader Computational Science at <a href="https://quantro-tx.com/" target="blank">Quantro Therapeutics</a></strong><br>
     <em>Vienna, Austria</em><br>
+    <div style="line-height:100%;">
+          <br>
+    </div>
     <p class="fs-4">
       Building and leading the multidisciplinary Computational Science team with PhDs in Physics and Computer Science. 
       Focusing on computational platform and infrastructure setup, statistics method development, and AI/ML strategy of the drug discovery R&amp;D and chemistry department.

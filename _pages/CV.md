@@ -79,6 +79,92 @@ order: 1
     </div>
     <hr>
     <div class="row">
+  <div class="col-md-2">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/QUANTRO_LOGO.png" alt="Quantro Logo">
+    August 2020 – March 2024
+  </div>
+  <div class="col">
+    <strong>Lead Bioinformatician at <a href="https://quantro-tx.com/" target="blank">Quantro Therapeutics</a></strong><br>
+    <em>Vienna, Austria</em><br>
+    <div style="line-height:50%;">
+      <br>
+    </div>
+    <p class="fs-4">
+      Built QUANTRO's computational department, establishing production-grade cloud infrastructure, algorithmic innovations, 
+      and machine-learning–driven bioinformatics strategies to industrialize QUANTRO's drug discovery platform.
+    </p>
+    <ul>
+      <li><strong>Cloud Infrastructure:</strong> Planned and deployed an elastic, cloud-based environment for large-scale transcriptomics, 
+      enabling concurrent processing of &gt;100,000 targeted SLAM-seq libraries.
+        <ul>
+          <li>Built scalable pipelines that supported cost-effective high-throughput campaigns.</li>
+          <li>Reduced compute costs for high-throughput screening to &lt;1k EUR per campaign.</li>
+        </ul>
+      </li>
+      <li><strong>Algorithmic Innovation:</strong> Introduced heuristic, hardware-optimized bit-shift alignment algorithms and optimized 
+      dataflow strategies to industrialize QUANTRO’s drug discovery platform.
+        <ul>
+          <li>Achieved 10,000-fold speedups over conventional alignment algorithms with a peak memory footprint &lt;2 GB.</li>
+          <li>Enabled full high-throughput screening campaigns to be completed in &lt;16 hours.</li>
+        </ul>
+      </li>
+      <li><strong>Computational Platform &amp; AI/ML:</strong> Directed computational efforts to establish QUANTROseq, 
+      QUANTRO’s time-resolved high-throughput transcriptomics platform, and integrated ML approaches to extract biological insights.
+        <ul>
+          <li>Led computational efforts for the setup of QUANTROseq, the company’s time-resolved HT transcriptomics drug discovery platform.</li>
+          <li>Applied machine learning to identify highly selective transcriptional fingerprints of disease-causing transcription factors from reference datasets.</li>
+        </ul>
+      </li>
+      <li><strong>IT &amp; Infrastructure Oversight:</strong> Planned and supervised QUANTRO’s IT and computational infrastructure, 
+      ensuring scalable, reliable, and secure processes across teams.</li>
+    </ul>
+  </div>
+</div>
+<hr>
+    <div class="row">
+  <div class="col-md-2">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/QUANTRO_LOGO.png" alt="Quantro Logo">
+    August 2020 – March 2024
+  </div>
+  <div class="col">
+    <strong>Lead Bioinformatician at <a href="https://quantro-tx.com/" target="blank">Quantro Therapeutics</a></strong><br>
+    <em>Vienna, Austria</em><br>
+    <div style="line-height:50%;">
+      <br>
+    </div>
+    <p class="fs-4">
+      Built QUANTRO's computational department, establishing production-grade cloud infrastructure, algorithmic innovations, 
+      and machine-learning–driven bioinformatics strategies to industrialize QUANTRO's drug discovery platform.
+    </p>
+    <ul>
+      <li><strong>Cloud Infrastructure:</strong> Planned and deployed an elastic, cloud-based environment for large-scale transcriptomics, 
+      enabling concurrent processing of &gt;100,000 targeted SLAM-seq libraries.
+        <ul>
+          <li>Built scalable pipelines that supported cost-effective high-throughput campaigns.</li>
+          <li>Reduced compute costs for high-throughput screening to &lt;1k EUR per campaign.</li>
+        </ul>
+      </li>
+      <li><strong>Algorithmic Innovation:</strong> Introduced heuristic, hardware-optimized bit-shift alignment algorithms and optimized 
+      dataflow strategies to industrialize QUANTRO’s drug discovery platform.
+        <ul>
+          <li>Achieved 10,000-fold speedups over conventional alignment algorithms with a peak memory footprint &lt;2 GB.</li>
+          <li>Enabled full high-throughput screening campaigns to be completed in &lt;16 hours.</li>
+        </ul>
+      </li>
+      <li><strong>Computational Platform &amp; AI/ML:</strong> Directed computational efforts to establish QUANTROseq, 
+      QUANTRO’s time-resolved high-throughput transcriptomics platform, and integrated ML approaches to extract biological insights.
+        <ul>
+          <li>Led computational efforts for the setup of QUANTROseq, the company’s time-resolved HT transcriptomics drug discovery platform.</li>
+          <li>Applied machine learning to identify highly selective transcriptional fingerprints of disease-causing transcription factors from reference datasets.</li>
+        </ul>
+      </li>
+      <li><strong>IT &amp; Infrastructure Oversight:</strong> Planned and supervised QUANTRO’s IT and computational infrastructure, 
+      ensuring scalable, reliable, and secure processes across teams.</li>
+    </ul>
+  </div>
+</div>
+<hr>
+    <div class="row">
       <div class="col-md-2">
       <img src="{{ site.url }}{{ site.baseurl }}/assets/images/IMP_Logo.png" alt="IMP Logo">
         2014-2020

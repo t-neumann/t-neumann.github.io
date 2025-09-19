@@ -267,25 +267,40 @@ order: 1
   </div>
 </div>
 <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <img src="{{ site.url }}{{ site.baseurl }}/assets/images/sophia_genetics_logo.png" alt="Sophia Genetics Logo">
-          2012-2014
-        </div>
-        <div class="col">
-          Bioinformatician at <a href="https://www.sophiagenetics.com" target="_blank">Sophia Genetics SA</a>
-          <div style="line-height:100%;">
-            <br>
-          </div>
-          <ul>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Lead development, maintenance and optimization of a targeted gene sequencing and exome-sequencing pipeline building system forming the bioinformatics backend of the Sophia DDM &reg; SaaS platform <i class="fas fa-diagnoses" aria-hidden="true"></i>.</li>
-          <li><span><i class="mdi mdi-clipboard-check-outline"></i></span>Tailoring pipelines for diagnostic gene panel kits on various sequencing platforms (Roche 454 / ionTorrentPGM / Illumina MiSeq) for major hospitals and labs in Switzerland and across Europe <i class="fas fa-hospital" aria-hidden="true"></i>.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Conducting genetic test kit validation studies with key diagnostic kit developer sat European level <i class="fas fa-globe" aria-hidden="true"></i>.</li>
-          <li><span><i class="mdi mdi-finance"></i></span>Product presentations for prospective and established customers and on conferences <i class="fab fa-slideshare" aria-hidden="true"></i>.</li>
-          </ul>
-        </div>
-      </div>
-      <hr>
+<div class="row">
+  <div class="col-md-2">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/MPL_logo.jpg" alt="MPL Logo">
+    2012
+  </div>
+  <div class="col">
+    <strong>Bioinformatician at the <a href="https://www.maxperutzlabs.ac.at/" target="_blank">Max Perutz Laboratories</a></strong><br>
+    <em>Vienna, Austria</em><br>
+    <div style="line-height:50%;">
+      <br>
+    </div>
+    <ul>
+      <li>De-novo genome assembly of <i>Clunio marinus</i>:
+        <ul>
+          <li>Contig assembly, filtering and completeness assessment.</li>
+          <li>Setup of the de-novo gene annotation pipeline and genome browser (<a href="http://www.yandell-lab.org/software/maker.html">MAKER</a>,<a href="http://gmod.org/wiki/Main_Page">GMOD</a>).</li>
+        </ul>
+      </li>
+      <li>
+      Scaffold N50 of 1.9Mb, 98 &percnt; completeness.
+      </li>
+      <li>
+      Better assembly quality than honeybee, <i>Tribolium</i> or the monarch butterly.
+      </li>
+      <li>
+      Served as basis to unravel the genomic basis of circadian and circalunar timing adaptations.
+      </li>
+      <li>
+      Hosted at <a href="http://cluniobase.cibiv.univie.ac.at/">ClunioBase</a> and published in <i>Nature</i>.
+      </li>
+    </ul>
+  </div>
+</div>
+<hr>
       <div class="row">
         <div class="col-md-2">
           <img src="{{ site.url }}{{ site.baseurl }}/assets/images/MPL_logo.jpg" alt="MPL Logo">

@@ -314,13 +314,32 @@ order: 1
     </div>
     <ul>
       <li>
-      Massive parallelization of sequence  alignments on the CPU and cluster <i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/t-neumann/versalignLib">https://github.com/t-neumann/versalignLib</a>.
+      Massive parallelization of sequence  alignments on the CPU and cluster <br/>
+          <i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/t-neumann/versalignLib">https://github.com/t-neumann/versalignLib</a>.
       </li>
       <li>
       Software development of an evaluation framework for reference-mapping software.
       </li>
       <li>
       De-novo transcriptome assembly of RNA-seq data for <i>Idiosepius pygmaeus</i>.
+      </li>
+    </ul>
+  </div>
+</div>
+<hr>
+<div class="row">
+   <div class="col-md-2">
+      <i class="fa fa-calendar" aria-hidden="true"></i> 2009
+    </div>
+  <div class="col">
+    <strong>Research intern at the <a href="http://www.sbc.su.se/" target="_blank">SBC Stockholm Bioinformatics Center</a></strong><br>
+    <em>Stockholm, Sweden</em><br>
+    <div style="line-height:50%;">
+      <br>
+    </div>
+    <ul>
+      <li>
+      Network analysis of the gene interaction database <a href="http://funcoup.sbc.su.se/search">FunCoup</a> to in-silico identify and evaluate novel neurodegenerative disease candidate genes.
       </li>
     </ul>
   </div>

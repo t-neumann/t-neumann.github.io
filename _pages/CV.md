@@ -160,6 +160,41 @@ order: 1
   </div>
 </div>
 <hr>
+<div class="row">
+  <div class="col-md-2">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/IMP_Logo.png" alt="IMP Logo">
+    2014 – 2018
+  </div>
+  <div class="col">
+    <strong>Bioinformatician at the <a href="https://www.imp.ac.at/" target="blank">IMP Research Institute for Molecular Pathology</a></strong><br>
+    <em>Vienna, Austria</em><br>
+    <div style="line-height:50%;">
+      <br>
+    </div>
+    <p class="fs-4">
+      Drove development of novel bioinformatics methods and tools to support next-generation sequencing technologies 
+      and genome-scale functional genomics. Designed algorithms, libraries, and analysis frameworks to support innovative experimental platforms, 
+      while mentoring students and supervising projects.
+    </p>
+    <ul>
+      <li><strong>Method &amp; Algorithm Development:</strong> Developed computational methods for emerging sequencing technologies and functional genomics.
+        <ul>
+          <li>Led bioinformatics method and algorithm development for the <a href="https://www.nature.com/articles/nmeth.4435">SLAM-seq</a> sequencing technology.</li>
+          <li>Co-developed the <a href="https://www.vbc-score.org" target="_blank">VBC score</a>, enabling effective selection of sgRNAs that reliably produce loss-of-function alleles.</li>
+        </ul>
+      </li>
+      <li><strong>Functional Genetics Toolbox &amp; Resources:</strong> Designed and integrated large-scale libraries for genome-wide screening efforts.
+        <ul>
+          <li>Designed the genome-wide <a href="https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-020-0850-8/MediaObjects/41592_2020_850_MOESM3_ESM.xlsx" target="_blank">Vienna sgRNA libraries</a> for pooled CRISPR screens.</li>
+          <li>Supervised development of CRISPRepo, a database and front-end for integrating, visualizing, and querying CRISPR screening data and metadata.</li>
+        </ul>
+      </li>
+      <li><strong>Mentorship &amp; Supervision:</strong> Supported early-career scientists through supervision of master’s student projects, 
+      resulting in new bioinformatics resources and methods established on campus.</li>
+    </ul>
+  </div>
+</div>
+<hr>
     <div class="row">
       <div class="col-md-2">
       <img src="{{ site.url }}{{ site.baseurl }}/assets/images/IMP_Logo.png" alt="IMP Logo">

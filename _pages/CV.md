@@ -356,21 +356,21 @@ order: 1
     <!-- PhD -->
     <div class="row mb-3">
       <div class="col-md-2 text-center">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/univie_logo.png" alt="University of Vienna Logo" style="max-height:60px;">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/univie_logo.svg" alt="University of Vienna Logo" style="max-height:60px;">
         <div><i class="fa fa-calendar"></i> 2020 – 2023</div>
       </div>
       <div class="col">
         <strong>PhD in Molecular Biosciences <small>(summa cum laude)</small></strong><br>
-        <em>Center for Integrative Bioinformatics Vienna (CIBIV)</em>, 
-        <a href="http://www.cibiv.at" target="_blank">University of Vienna</a>
-        <p class="text-muted mb-0"><strong>Thesis:</strong> Recovery, quantification and error correction of nucleotide conversions in epitranscriptomics sequencing datasets</p>
+        <em><a href="http://www.cibiv.at/" target="_blank">Center for Integrative Bioinformatics Vienna (CIBIV)</a></em>, 
+        <a href="https://www.univie.ac.at/" target="_blank">University of Vienna</a>
+        <p class="text-muted mb-0"><strong>Thesis:</strong> <a href="https://utheses.univie.ac.at/detail/66620" target="_blank">Recovery, quantification and error correction of nucleotide conversions in epitranscriptomics sequencing datasets</a></p>
       </div>
     </div>
     <hr>
     <!-- MSc -->
     <div class="row mb-3">
       <div class="col-md-2 text-center">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/meduni_logo.png" alt="Medical University Vienna Logo" style="max-height:60px;">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/medunivie_logo.svg" alt="Medical University Vienna Logo" style="max-height:60px;">
         <div><i class="fa fa-calendar"></i> 2009 – 2012</div>
       </div>
       <div class="col">
@@ -383,7 +383,7 @@ order: 1
     <!-- BSc -->
     <div class="row mb-3">
       <div class="col-md-2 text-center">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/fhooe_logo.png" alt="FH Hagenberg Logo" style="max-height:60px;">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/fhhagenberg.png" alt="FH Hagenberg Logo" style="max-height:60px;">
         <div><i class="fa fa-calendar"></i> 2006 – 2009</div>
       </div>
       <div class="col">
@@ -396,7 +396,7 @@ order: 1
     <!-- A-levels -->
     <div class="row mb-1">
       <div class="col-md-2 text-center">
-        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/school_logo.png" alt="High School Logo" style="max-height:60px;">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/gym_logo.svg" alt="High School Logo" style="max-height:60px;">
         <div><i class="fa fa-calendar"></i> 2005</div>
       </div>
       <div class="col">

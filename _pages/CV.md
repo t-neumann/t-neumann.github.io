@@ -10,7 +10,7 @@ order: 1
     <div class="card-text text-muted alert alert-dark">
       <a href="#experience">Experience</a> •
       <a href="#education">Education</a> •
-      <a href="#skills">Computer skills</a> •
+      <a href="#skills">Skills</a> •
       <a href="#languages">Languages</a> •
       <a href="#interests">Interests</a>
     </div>
@@ -347,49 +347,66 @@ order: 1
 <hr>
   </div>
   <div class="card">
-    <a name="education"></a>
-    <div class="card-header h4">
-      <i class="fa fa-university" aria-hidden="true"></i> Education
-      <div class="float-right"><a href="#top">&uarr;</a></div>
+  <a name="education"></a>
+  <div class="card-header h4">
+    <i class="fa fa-university" aria-hidden="true"></i> Education
+    <div class="float-right"><a href="#top">&uarr;</a></div>
+  </div>
+  <div class="container">
+    <!-- PhD -->
+    <div class="row mb-3">
+      <div class="col-md-2 text-center">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/univie_logo.png" alt="University of Vienna Logo" style="max-height:60px;">
+        <div><i class="fa fa-calendar"></i> 2020 – 2023</div>
+      </div>
+      <div class="col">
+        <strong>PhD in Molecular Biosciences <small>(summa cum laude)</small></strong><br>
+        <em>Center for Integrative Bioinformatics Vienna (CIBIV)</em>, 
+        <a href="http://www.cibiv.at" target="_blank">University of Vienna</a>
+        <p class="text-muted mb-0"><strong>Thesis:</strong> Recovery, quantification and error correction of nucleotide conversions in epitranscriptomics sequencing datasets</p>
+      </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2020-2023
-        </div>
-        <div class="col">
-          PhD in Molecular Biosciences, <a href="http://www.cibiv.at" target="_blank">Arndt von Haeseler Group</a>, University Vienna
-        </div>
+    <hr>
+    <!-- MSc -->
+    <div class="row mb-3">
+      <div class="col-md-2 text-center">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/meduni_logo.png" alt="Medical University Vienna Logo" style="max-height:60px;">
+        <div><i class="fa fa-calendar"></i> 2009 – 2012</div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2009-2012
-        </div>
-        <div class="col">
-          Master’s Degree in Bioinformatics, <a href="https://www.meduniwien.ac.at" target="_blank">Medical University Vienna</a>
-        </div>
+      <div class="col">
+        <strong>Diplom-Ingenieur (M.Sc.Eng.) in Medical Informatics</strong><br>
+        <a href="https://www.meduniwien.ac.at" target="_blank">Medical University of Vienna</a>
+        <p class="text-muted mb-0"><strong>Thesis:</strong> Challenges of de-novo assembling the transcriptome of <em>Idiosepius pygmaeus</em> for novel gene identification</p>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2009
-        </div>
-        <div class="col">
-          Erasmus Semester at the <a href="http://www.sbc.su.se" target="_blank">Stockholm Bioinformatics Center</a>, Stockholm, Sweden
-        </div>
+    </div>
+    <hr>
+    <!-- BSc -->
+    <div class="row mb-3">
+      <div class="col-md-2 text-center">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/fhooe_logo.png" alt="FH Hagenberg Logo" style="max-height:60px;">
+        <div><i class="fa fa-calendar"></i> 2006 – 2009</div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-2">
-          <i class="fa fa-calendar" aria-hidden="true"></i> 2006-2009
-        </div>
-        <div class="col">
-          Bachelor’s Degree in Bioinformatics, <a href="https://www.fh-ooe.at/campus-hagenberg" target="_blank">University for Applied Sciences Hagenberg</a>
-        </div>
+      <div class="col">
+        <strong>Bachelor of Science in Engineering <small>(honors)</small></strong><br>
+        <a href="https://www.fh-ooe.at/campus-hagenberg" target="_blank">University of Applied Sciences Hagenberg</a>
+        <p class="text-muted mb-0">Bachelor’s program Bioinformatics</p>
+      </div>
+    </div>
+    <hr>
+    <!-- A-levels -->
+    <div class="row mb-1">
+      <div class="col-md-2 text-center">
+        <img src="{{ site.url }}{{ site.baseurl }}/assets/images/school_logo.png" alt="High School Logo" style="max-height:60px;">
+        <div><i class="fa fa-calendar"></i> 2005</div>
+      </div>
+      <div class="col">
+        <strong>A-levels <small>(distinction)</small></strong><br>
+        High School, Bad Ischl, Austria
       </div>
     </div>
   </div>
+</div>
+
 
   <div class="card">
   <a name="skills"></a>

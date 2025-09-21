@@ -392,73 +392,68 @@ order: 1
   </div>
 
   <div class="card">
-    <a name="skills"></a>
-    <div class="card-header h4">
-      <i class="fa fa-laptop" aria-hidden="true"></i> Computers skills
-      <div class="float-right"><a href="#top">&uarr;</a></div>
+  <a name="skills"></a>
+  <div class="card-header h4">
+    <i class="fa fa-laptop" aria-hidden="true"></i> Skills
+    <div class="float-right"><a href="#top">&uarr;</a></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"><strong>Programming & Databases</strong></div>
+      <div class="col-md-9">
+        <ul>
+          <li>Python (pandas, NumPy, scikit-learn, PyTorch, TensorFlow), R / Bioconductor, C/C++, Bash, Java, Perl, LaTeX, SQL</li>
+          <li>MySQL, PostgreSQL, Oracle, MongoDB, NoSQL, PL/SQL, XML/JSON</li>
+          <li>High-performance computing: OpenCL, CUDA, OpenMP, MPI, SSE/AVX</li>
+          <li>Data wrangling & visualization: Tidyverse, Plotly, Shiny, MatPlotLib, Seaborn</li>
+        </ul>
+      </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          • Programming
-        </div>
-        <div class="col-md-3">
-          C/C++, Java
-        </div>
-        <div class="col-md-3">
-          • Scripting
-        </div>
-        <div class="col-md-3">
-          Python, R/Bioconductor, Bash, Perl
-        </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-3"><strong>Data Exposure</strong></div>
+      <div class="col-md-9">
+        <ul>
+          <li>Expert experience in sequencing-based data (genomics, transcriptomics, epigenomics, single-cell, time-resolved modalities) across major sequencing platforms</li>
+          <li>Familiarity with proteomics, high-content microscopy, and phenotypic screening</li>
+          <li>Experience with chemoinformatics (SMILES, RDKit) and predictive modeling for MedChem parameters</li>
+        </ul>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-3">
-          • Versioning
-        </div>
-        <div class="col-md-3">
-          Git, SVN
-        </div>
-        <div class="col-md-3">
-          • Containers
-        </div>
-        <div class="col-md-3">
-          Docker, Singularity
-        </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-3"><strong>AI/ML Exposure</strong></div>
+      <div class="col-md-9">
+        <ul>
+          <li>Familiarity with foundational AI/ML concepts, LLMs, embeddings, and prompt engineering</li>
+          <li>Fine-tuning foundational models with in-house and public datasets for computational biology & chemistry (Chemformer, STATE)</li>
+          <li>Model evaluation, interpretability (SHAP), uncertainty quantification</li>
+        </ul>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-3">
-          • Platforms
-        </div>
-        <div class="col-md-3">
-          Linux, Mac OS X, AWS, Windows
-        </div>
-        <div class="col-md-3">
-          • Building
-        </div>
-        <div class="col-md-3">
-          CMake, Maven
-        </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-3"><strong>DevOps & Build Tools</strong></div>
+      <div class="col-md-9">
+        <ul>
+          <li>Git / GitLab / GitHub, CI/CD pipelines, Jenkins, Docker, Singularity</li>
+          <li>CMake, Maven, pip, Conda</li>
+          <li>Monday.com, Jira / Confluence</li>
+        </ul>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-3">
-          • Frameworks
-        </div>
-        <div class="col-md-3">
-          EJB / CDI, Hibernate / JPA, JSF + PrimeFaces
-        </div>
-        <div class="col-md-3">
-          • Parallelization
-        </div>
-        <div class="col-md-3">
-          SSE/AVX, OpenCL, OpenMP, MPI
-        </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-3"><strong>Platforms & Workflow Management</strong></div>
+      <div class="col-md-9">
+        <ul>
+          <li>AWS (Batch, EC2, S3), Azure, GCP, Linux (Ubuntu, CentOS, SUSE), Mac OS X</li>
+          <li>Nextflow, Snakemake</li>
+        </ul>
       </div>
     </div>
   </div>
+</div>
 
   <div class="card">
     <a name="languages"></a>

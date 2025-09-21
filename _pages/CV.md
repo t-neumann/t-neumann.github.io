@@ -363,7 +363,7 @@ order: 1
         <strong>PhD in Molecular Biosciences <small>(summa cum laude)</small></strong><br>
         <em><a href="http://www.cibiv.at/" target="_blank">Center for Integrative Bioinformatics Vienna (CIBIV)</a></em>, 
         <a href="https://www.univie.ac.at/" target="_blank">University of Vienna</a>
-        <p class="text-muted mb-0"><strong>Thesis:</strong> <a href="https://utheses.univie.ac.at/detail/66620" target="_blank">Recovery, quantification and error correction of nucleotide conversions in epitranscriptomics sequencing datasets</a></p>
+        <strong>Thesis:</strong> <a href="https://utheses.univie.ac.at/detail/66620" target="_blank">Recovery, quantification and error correction of nucleotide conversions in epitranscriptomics sequencing datasets</a>
       </div>
     </div>
     <hr>
@@ -376,7 +376,7 @@ order: 1
       <div class="col">
         <strong>Diplom-Ingenieur (M.Sc.Eng.) in Medical Informatics</strong><br>
         <a href="https://www.meduniwien.ac.at" target="_blank">Medical University of Vienna</a>
-        <p class="text-muted mb-0"><strong>Thesis:</strong> Challenges of de-novo assembling the transcriptome of <em>Idiosepius pygmaeus</em> for novel gene identification</p>
+        <strong>Thesis:</strong> Challenges of de-novo assembling the transcriptome of <em>Idiosepius pygmaeus</em> for novel gene identification
       </div>
     </div>
     <hr>
@@ -389,8 +389,7 @@ order: 1
       <div class="col">
         <strong>Bachelor of Science in Engineering <small>(honors)</small></strong><br>
         <a href="https://www.fh-ooe.at/campus-hagenberg" target="_blank">University of Applied Sciences Hagenberg</a>
-        <p class="text-muted mb-0">Bachelor’s program Bioinformatics</p>
-      </div>
+        Bachelor’s program Bioinformatics
     </div>
     <hr>
     <!-- A-levels -->
@@ -472,35 +471,44 @@ order: 1
   </div>
 </div>
 
-  <div class="card">
-    <a name="languages"></a>
-    <div class="card-header h4">
-      <i class="fa fa-comment" aria-hidden="true"></i> Languages
-      <div class="float-right"><a href="#top">&uarr;</a></div>
+<div class="card">
+  <a name="languages"></a>
+  <div class="card-header h4">
+    <i class="fa fa-comment" aria-hidden="true"></i> Languages
+    <div class="float-right"><a href="#top">&uarr;</a></div>
+  </div>
+  <div class="container py-2">
+    <!-- German -->
+    <div class="row mb-2 align-items-center">
+      <div class="col-md-3 d-flex align-items-center">
+        🇩🇪 <span class="ml-2"><strong>German</strong></span>
+      </div>
+      <div class="col">
+        Native
+      </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          • German
-        </div>
-        <div class="col-md-2">
-          Native
-        </div>
-        <div class="col-md-2">
-          • English
-        </div>
-        <div class="col-md-2">
-          Full professional proficiency
-        </div>
-        <div class="col-md-2">
-          • Spanish
-        </div>
-        <div class="col-md-2">
-          Elementary proficiency
-        </div>
+    <hr>
+    <!-- English -->
+    <div class="row mb-2 align-items-center">
+      <div class="col-md-3 d-flex align-items-center">
+        🇬🇧 <span class="ml-2"><strong>English</strong></span>
+      </div>
+      <div class="col">
+        Full professional proficiency
+      </div>
+    </div>
+    <hr>
+    <!-- Spanish -->
+    <div class="row mb-2 align-items-center">
+      <div class="col-md-3 d-flex align-items-center">
+        🇪🇸 <span class="ml-2"><strong>Spanish</strong></span>
+      </div>
+      <div class="col">
+        Elementary proficiency
       </div>
     </div>
   </div>
+</div>
 
   <div class="card">
     <a name="interests"></a>

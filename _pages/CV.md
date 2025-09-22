@@ -346,6 +346,7 @@ order: 1
 </div>
 <hr>
   </div>
+  </div>
   <div class="card">
   <a name="education"></a>
   <div class="card-header h4">

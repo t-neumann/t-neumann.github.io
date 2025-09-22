@@ -509,41 +509,45 @@ order: 1
     </div>
   </div>
 </div>
-
-  <div class="card">
-    <a name="interests"></a>
-    <div class="card-header h4">
-      <i class="fa fa-info-circle" aria-hidden="true"></i> Interests
-      <div class="float-right"><a href="#top">&uarr;</a></div>
-    </div>
-    <div class="container">
-    <div class="row">
-      <div class="col-md-2">
-        Sports
+ <div class="card">
+  <a name="interests"></a>
+  <div class="card-header h4">
+    <i class="fa fa-info-circle" aria-hidden="true"></i> Interests
+    <div class="float-right"><a href="#top">&uarr;</a></div>
+  </div>
+  <div class="container py-2">
+    <!-- Sports -->
+    <div class="row mb-3 align-items-center">
+      <div class="col-md-3 d-flex align-items-center">
+        <i class="fa fa-futbol-o fa-lg mr-2" aria-hidden="true"></i>
+        <strong>Sports</strong>
       </div>
       <div class="col">
-        Beachvolleyball, Cycling, Bouldering, Slacklining, Badminton
+        Hand balancing, Acrobatics, Bouldering, Badminton
       </div>
     </div>
     <hr>
-    <div class="row">
-      <div class="col-md-2">
-        Music
+    <!-- Music -->
+    <div class="row mb-3 align-items-center">
+      <div class="col-md-3 d-flex align-items-center">
+        <i class="fa fa-music fa-lg mr-2" aria-hidden="true"></i>
+        <strong>Music</strong>
       </div>
       <div class="col">
         Piano, Guitar, Drums
       </div>
     </div>
     <hr>
-    <div class="row">
-      <div class="col-md-2">
-        Other
+    <!-- Others -->
+    <div class="row mb-3 align-items-center">
+      <div class="col-md-3 d-flex align-items-center">
+        <i class="fa fa-globe fa-lg mr-2" aria-hidden="true"></i>
+        <strong>Others</strong>
       </div>
       <div class="col">
-        Reading news, languages, travelling
+        Reading, Travelling
       </div>
     </div>
-    </div>
   </div>
-
+</div>
 </div>

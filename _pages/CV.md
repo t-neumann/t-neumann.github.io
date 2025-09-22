@@ -391,6 +391,7 @@ order: 1
         <a href="https://www.fh-ooe.at/campus-hagenberg" target="_blank">University of Applied Sciences Hagenberg</a>
         Bachelor’s program Bioinformatics
     </div>
+    </div>
     <hr>
     <!-- A-levels -->
     <div class="row mb-1">
@@ -405,8 +406,6 @@ order: 1
     </div>
   </div>
 </div>
-
-
   <div class="card">
   <a name="skills"></a>
   <div class="card-header h4">
@@ -470,7 +469,6 @@ order: 1
     </div>
   </div>
 </div>
-
 <div class="card">
   <a name="languages"></a>
   <div class="card-header h4">
@@ -519,7 +517,7 @@ order: 1
     <!-- Sports -->
     <div class="row mb-3 align-items-center">
       <div class="col-md-3 d-flex align-items-center">
-        <i class="fa fa-futbol-o fa-lg mr-2" aria-hidden="true"></i>
+        <i class="fas fa-futbol fa-lg mr-2" aria-hidden="true"></i>
         <strong>Sports</strong>
       </div>
       <div class="col">

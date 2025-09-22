@@ -344,7 +344,6 @@ order: 1
     </ul>
   </div>
 </div>
-<hr>
   </div>
   </div>
   <div class="card">

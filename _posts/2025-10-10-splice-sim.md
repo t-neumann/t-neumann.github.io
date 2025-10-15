@@ -48,8 +48,10 @@ Consider a metabolic labeling pulse-chase experiment where you're measuring RNA 
 
 Splice_sim is a Python-based simulation and evaluation pipeline that evaluates this problem head-on. It's built around the core capabilities:
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/splice_sim-graphical_abstract.png" alt="Splice_sim workflow" width="80%">
-*Figure 2: The splice_sim analysis workflow. The pipeline simulates reads with realistic sequencing errors for premature and mature isoforms, injects nucleotide conversions at configured rates, maps reads with evaluated mappers, and compares results to ground truth to calculate TP/FP/FN counts per genomic annotation. (Figure 1A from the paper)*
+<div style="text-align: center;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/splice_sim-graphical_abstract.png" alt="Splice_sim workflow" style="width: 80%; max-width: 100%;">
+</div>
+*Figure 1: The splice_sim analysis workflow. The pipeline simulates reads with realistic sequencing errors for premature and mature isoforms, injects nucleotide conversions at configured rates, maps reads with evaluated mappers, and compares results to ground truth to calculate TP/FP/FN counts per genomic annotation. (Figure 1A from the paper)*
 
 #### Realistic RNA-seq simulation
 
@@ -78,29 +80,28 @@ The entire pipeline is wrapped in [Nextflow](https://www.nextflow.io/) workflows
 
 We used splice_sim to generate deep simulated datasets for mouse and human transcriptomes, evaluating popular splice-aware mappers (STAR and HISAT-3N) under various conversion rates. Here are the headline findings:
 
-> **Key Statistics**
-> 
+> **Notable metrics**
 > 📊 **High mappability regions**: F1 > 0.98 for both mappers
-> 
 > ⚠️ **Low mappability regions**: F1 < 0.55 - substantial accuracy drop
-> 
 > 🧬 **Impact on biology**: >120 protein-coding genes showed >10% error in half-life estimates
-> 
 > 🎯 **Mosaic improvement**: Reduced outliers from 239 to 95 in half-life analysis
-> 
 > 🔬 **Methylation sites**: 99.2% recall but considerable FP calls in low mappability regions
 
 ### Mappability dominates, But conversions matter
 
 Mapping accuracies with and without nucleotide conversions were high (F1 > 0.98) for annotations with high or medium genome mappability, but substantially lower (F1 < 0.55) for low mappability regions. This isn't surprising - repetitive sequences are inherently difficult to map.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/mappability_distribution.png" alt="Mappability distribution" width="60%">
-*Figure 3: Distribution of analyzed annotations across high (>0.9), medium, and low (<0.2) mean genome mappability categories. Low mappability regions, while smaller in number, are critical for understanding mapping biases. (Figure 1B from the paper)*
+<div style="text-align: center;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/mappability_distribution.png" alt="Mappability distribution" style="width: 60%; max-width: 100%;">
+</div>
+*Figure 2: Distribution of analyzed annotations across high (>0.9), medium, and low (<0.2) mean genome mappability categories. Low mappability regions, while smaller in number, are critical for understanding mapping biases. (Figure 1B from the paper)*
 
 What does also not come as too big of a surprise is that nucleotide conversion and sequencing errors increased false discovery and false negative rates for both mappers, as read alignment becomes more difficult with increased numbers of mismatches to the originating genomic sequence.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fdr_fnr_by_mismatches.png" alt="FDR and FNR by number of mismatches" width="90%">
-*Figure 4: Changes in false discovery (FDR) and false negative rates (FNR) by number of mismatches compared to reads without mismatches, stratified by mappability. Note how HISAT-3N (orange) is largely unaffected by T-to-C conversions due to its 3N mapping approach, while STAR (green) shows increasing error rates with more mismatches. (Figure 1C from the paper)*
+<div style="text-align: center;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fdr_fnr_by_mismatches.png" alt="FDR and FNR by number of mismatches" style="width: 90%; max-width: 100%;">
+</div>
+*Figure 3: Changes in false discovery (FDR) and false negative rates (FNR) by number of mismatches compared to reads without mismatches, stratified by mappability. Note how HISAT-3N (orange) is largely unaffected by T-to-C conversions due to its 3N mapping approach, while STAR (green) shows increasing error rates with more mismatches. (Figure 1C from the paper)*
 
 What is more notable, but somewhat expected is that for STAR, performance degraded with increasing conversion rates. HISAT-3N (a 3-nucleotide mapper that treats T and C as equivalent) was largely unaffected by T-to-C conversions but showed its own quirks, including ~2% of reads mapping to the wrong strand.
 
@@ -114,20 +115,26 @@ The mosaic approach works like this:
 2. For each genomic interval, select the result from the mapper with the best accuracy
 3. Optionally filter intervals where no mapper performs adequately
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/mosaic_diagram.png" alt="Mosaic flow diagram">
+<div style="text-align: center;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/mosaic_diagram.png" alt="Mosaic flow diagram" style="width: 100%; max-width: 100%;">
+</div>
 
 When combining a mosaic approach with a filtering strategy that removed transcripts for which none of the mappers returned results close to the simulation, the overall mean FCR approached the simulated true value.
 
 This strategy improved FCR reconstruction, reduced half-life outliers, and recovered more accurate FMAT values. It does require running multiple alignments, but the accuracy gains can be substantial for critical analyses.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fcr_mosaic.png" alt="FCR reconstruction with mosaic approach" width="70%">
-*Figure 8: Mean difference to simulated exonic FCR per mapper. The mosaic approach (selecting the best mapper per interval) reduces differences to simulated values, and when combined with filtering, reconstruction is nearly perfect. (Figure 1E from the paper)*
+<div style="text-align: center;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fcr_mosaic.png" alt="FCR reconstruction with mosaic approach" style="width: 70%; max-width: 100%;">
+</div>
+*Figure 4: Mean difference to simulated exonic FCR per mapper. The mosaic approach (selecting the best mapper per interval) reduces differences to simulated values, and when combined with filtering, reconstruction is nearly perfect. (Figure 1E from the paper)*
 
 ### Biological consequences: Half-life estimation
 
 We simulated realistic pulse-chase experiments to measure RNA decay rates. Although half-life estimation was robust for most transcripts, a considerable number of outliers showed more than 10% difference to simulated half-lives for both mappers in the medium and low mappability segments. These outliers affected over 120 protein-coding genes - genes that researchers might be studying for their biological relevance.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/halflife_reconstruction.png" alt="Half-life reconstruction">
+<div style="text-align: center;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/halflife_reconstruction.png" alt="Half-life reconstruction" style="width: 100%; max-width: 100%;">
+</div>
 *Figure 5: Effect of NC on transcript half-life reconstruction. Top left: Normalized FCR per time point showing increasing noise with decreasing mappability. Top right: Reconstructed half-lives per decay rate.
 The box plots show a considerable number of outliers for both mappers; numbers of considered transcripts
 are plotted below the boxes. Bottom: Reconstructed half-lives showing outliers (red triangles) that deviate >10% from simulated values. The mosaic approach (bottom) combining both mappers reduces outliers considerably. (Figure 2 from the paper)*
@@ -138,19 +145,23 @@ Alignment of spliced reads is particularly difficult as it needs to take the pos
 
 We found that transcripts often contain a mosaic of high, medium, and low mappability introns. By implementing an intron filtering strategy that removes problematic introns, we improved the accuracy of mature isoform fraction (FMAT) estimates considerably.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fmat_reconstruction.png" alt="FMAT reconstruction">
+<div style="text-align: center;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fmat_reconstruction.png" alt="FMAT reconstruction" style="width: 100%; max-width: 100%;">
+</div>
 *Figure 6: FMAT (fraction of mature isoform) reconstruction improves with intron filtering. Left: Median difference to simulated FMAT showing improvement with filtering (solid vs dashed lines). Right: Distribution of FMAT values for low mappability transcripts shows that both filtering and the mosaic approach recover more accurate estimates closer to the theoretical value of 1/3. (Figure 3A and 3D from the paper)*
 
 ### Methylation site calling hotspots
 
 For RNA bisulfite sequencing analysis, low mappability regions are hotspots of false cytosine methylation calls. All mappers produced considerable amounts of false positive and a few false negative m5C calls, mainly in low mappability regions of protein coding genes.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/m5c_calling.png" alt="Methylation site calling accuracy">
+<div style="text-align: center;">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/m5c_calling.png" alt="Methylation site calling accuracy" style="width: 100%; max-width: 100%;">
+</div>
 *Figure 7: Effect of mappability on methylation site reconstruction. Most m5C sites were recovered correctly, but false positives (FP) and false negatives (FN) were predominantly located in low mappability regions. The correlation plots show methylation rates for HISAT-3N, meRanGs, and Segemehl with TP calls in green and false calls in red. (Figure 4 from the paper)*
 
 This has important implications for establishing accurate m5C site catalogs, which have varied wildly in the literature (from <100 to >10,000 sites reported).
 
-### Pre-Computed mapping accuracy tables: Ready-to-use resources
+### Pre-computed mapping accuracy tables: Ready-to-use resources
 
 One of the most immediately useful outputs from our study is a comprehensive set of pre-computed mapping accuracy tables for mouse (mm10) and human (GRCh38) transcriptomes, covering over 50,000 transcripts each. These tables are freely available on [Zenodo](https://doi.org/10.5281/zenodo.11196570) and provide detailed performance metrics for every annotated transcript, exon, intron, and splice junction.
 

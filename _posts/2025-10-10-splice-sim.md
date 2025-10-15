@@ -1,5 +1,5 @@
 ---
-title: Splice_sim - Benchmarking RNA-seq Mapping in the Age of Nucleotide Conversions
+title: Splice_sim - Benchmarking RNA-seq mapping in the age of nucleotide Ccnversions
 description: A comprehensive simulation framework for evaluating mapping accuracies in nucleotide conversion RNA-seq experiments
 date: 2024-06-27 22:47
 image:
@@ -19,18 +19,18 @@ toc_sticky: true
 author_profile: false
 ---
 
-Nucleotide conversion RNA sequencing techniques have revolutionized how we study RNA modifications, stability, and dynamics. From metabolic labeling experiments that track RNA synthesis and decay, to bisulfite sequencing that maps methylation sites - these approaches provide unprecedented insights into post-transcriptional regulation. However, they come with a hidden challenge: the very nucleotide conversions that make these experiments powerful can introduce biases in how reads map to reference genomes.
+Nucleotide conversion RNA sequencing techniques have revolutionized how we study RNA modifications, stability, and dynamics. From metabolic labeling experiments that track RNA synthesis and decay, to bisulfite sequencing that maps methylation sites - these approaches provide unprecedented insights into post-transcriptional regulation. However, they come with a substantial challenge: the very nucleotide conversions that make these experiments powerful can introduce biases in how reads map to reference genomes.
 
 Our recent paper published in [Genome Biology](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-024-03313-8) introduces **splice_sim**, a comprehensive simulation and evaluation framework designed to systematically measure and address these mapping biases. This post will walk you through what the tool does, why it matters, and how you can use it for your own projects.
 
-## The Problem: When Conversions Confuse Mappers
+## The Problem: When conversions confuse mappers
 
-Nucleotide conversion (NC) RNA-seq encompasses a broad range of techniques, each introducing specific types of base changes:
+Nucleotide conversion (NC) RNA-seq encompasses a broad range of techniques, each introducing specific types of base changes, for instance:
 
 * **Metabolic labeling** (e.g., SLAM-seq with 4-thiouridine): Introduces T-to-C conversions at low rates (1-5%) to distinguish newly synthesized RNA from pre-existing transcripts
 * **RNA bisulfite sequencing**: Creates C-to-T conversions at very high rates (>98%) to identify methylated cytosines that resist conversion
 
-These mismatches to the reference genome make read mapping more challenging. The question is: how much does this affect our downstream biological interpretations?
+These mismatches to the reference genome make read mapping more challenging. The question we wanted to address is: how much does this affect our downstream biological interpretations?
 
 **Table 1: Overview of Nucleotide Conversion RNA-seq Techniques**
 
@@ -42,16 +42,16 @@ These mismatches to the reference genome make read mapping more challenging. The
 
 *Table 1: Different NC RNA-seq approaches introduce specific types and rates of nucleotide conversions, each with distinct metrics and biological applications. The challenge: all of them introduce mismatches that can bias read mapping.*
 
-Consider a metabolic labeling pulse-chase experiment where you're measuring RNA half-lives. If converted reads (labeled RNA) map with lower accuracy than unconverted reads (unlabeled RNA), your fraction of converted reads (FCR) will be biased, leading to incorrect half-life estimates. For genes involved in critical regulatory pathways, this isn't just a technical nuisance - it could lead to wrong biological conclusions.
+Consider a metabolic labeling pulse-chase experiment where you're measuring RNA half-lives. If converted reads (labeled RNA) map with lower accuracy than unconverted reads (unlabeled RNA), your fraction of converted reads (FCR) will be biased, leading to incorrect half-life estimates. For genes involved in critical regulatory pathways, this isn't just a technical nuisance - it leads to wrong biological conclusions.
 
 ## Enter splice_sim
 
-Splice_sim is a Python-based simulation and evaluation pipeline that addresses this problem head-on. It's built around three core capabilities:
+Splice_sim is a Python-based simulation and evaluation pipeline that evaluates this problem head-on. It's built around the core capabilities:
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/splice_sim-graphical_abstract.png" alt="Splice_sim workflow">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/splice_sim-graphical_abstract.png" alt="Splice_sim workflow" width="80%">
 *Figure 2: The splice_sim analysis workflow. The pipeline simulates reads with realistic sequencing errors for premature and mature isoforms, injects nucleotide conversions at configured rates, maps reads with evaluated mappers, and compares results to ground truth to calculate TP/FP/FN counts per genomic annotation. (Figure 1A from the paper)*
 
-#### 1. Realistic RNA-seq Simulation
+#### Realistic RNA-seq simulation
 
 The framework simulates RNA-seq reads that mirror real experimental conditions:
 
@@ -60,7 +60,7 @@ The framework simulates RNA-seq reads that mirror real experimental conditions:
 * Introduces nucleotide conversions at user-defined rates
 * Supports arbitrary single nucleotide variations (SNVs)
 
-#### 2. Comprehensive Evaluation
+#### Comprehensive Evaluation
 
 Unlike generic mappability scores that operate at the genome-wide level, splice_sim evaluates mapping accuracy for biologically meaningful units:
 
@@ -70,11 +70,11 @@ Unlike generic mappability scores that operate at the genome-wide level, splice_
 
 For each annotation, it calculates true positives (TP), false positives (FP), and false negatives (FN), deriving precision, recall, and F1 scores.
 
-#### 3. Nextflow-Powered Workflow
+#### Nextflow workflow
 
 The entire pipeline is wrapped in [Nextflow](https://www.nextflow.io/) workflows with Docker containerization, making it reproducible and easy to deploy across different computing environments - from your laptop to HPC clusters to the cloud.
 
-## Key Findings from Our Study
+## Key contributions of our study
 
 We used splice_sim to generate deep simulated datasets for mouse and human transcriptomes, evaluating popular splice-aware mappers (STAR and HISAT-3N) under various conversion rates. Here are the headline findings:
 
@@ -90,50 +90,23 @@ We used splice_sim to generate deep simulated datasets for mouse and human trans
 > 
 > 🔬 **Methylation sites**: 99.2% recall but considerable FP calls in low mappability regions
 
-### Mappability Dominates, But Conversions Matter
+### Mappability dominates, But conversions matter
 
 Mapping accuracies with and without nucleotide conversions were high (F1 > 0.98) for annotations with high or medium genome mappability, but substantially lower (F1 < 0.55) for low mappability regions. This isn't surprising - repetitive sequences are inherently difficult to map.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/mappability_distribution.png" alt="Mappability distribution">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/mappability_distribution.png" alt="Mappability distribution" width="60%">
 *Figure 3: Distribution of analyzed annotations across high (>0.9), medium, and low (<0.2) mean genome mappability categories. Low mappability regions, while smaller in number, are critical for understanding mapping biases. (Figure 1B from the paper)*
 
 What does also not come as too big of a surprise is that nucleotide conversion and sequencing errors increased false discovery and false negative rates for both mappers, as read alignment becomes more difficult with increased numbers of mismatches to the originating genomic sequence.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fdr_fnr_by_mismatches.png" alt="FDR and FNR by number of mismatches">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fdr_fnr_by_mismatches.png" alt="FDR and FNR by number of mismatches" width="90%">
 *Figure 4: Changes in false discovery (FDR) and false negative rates (FNR) by number of mismatches compared to reads without mismatches, stratified by mappability. Note how HISAT-3N (orange) is largely unaffected by T-to-C conversions due to its 3N mapping approach, while STAR (green) shows increasing error rates with more mismatches. (Figure 1C from the paper)*
 
 What is more notable, but somewhat expected is that for STAR, performance degraded with increasing conversion rates. HISAT-3N (a 3-nucleotide mapper that treats T and C as equivalent) was largely unaffected by T-to-C conversions but showed its own quirks, including ~2% of reads mapping to the wrong strand.
 
-### Biological Consequences: Half-Life Estimation
+## The Mosaic approach: Leveraging mapper strengths
 
-We simulated realistic pulse-chase experiments to measure RNA decay rates. Although half-life estimation was robust for most transcripts, a considerable number of outliers showed more than 10% difference to simulated half-lives for both mappers in the medium and low mappability segments. These outliers affected over 120 protein-coding genes - genes that researchers might be studying for their biological relevance.
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/halflife_reconstruction.png" alt="Half-life reconstruction">
-*Figure 5: Effect of NC on transcript half-life reconstruction. Top left: Normalized FCR per time point showing increasing noise with decreasing mappability. Top right: Reconstructed half-lives per decay rate.
-The box plots show a considerable number of outliers for both mappers; numbers of considered transcripts
-are plotted below the boxes. Bottom: Reconstructed half-lives showing outliers (red triangles) that deviate >10% from simulated values. The mosaic approach (bottom) combining both mappers reduces outliers considerably. (Figure 2 from the paper)*
-
-### Isoform Quantification Challenges
-
-Alignment of spliced reads is particularly difficult as it needs to take the possibility of large gaps due to spliced out introns into account and requires accurate placement of short sub-sequences of reads (anchors) that span over these gaps.
-
-We found that transcripts often contain a mosaic of high, medium, and low mappability introns. By implementing an intron filtering strategy that removes problematic introns, we improved the accuracy of mature isoform fraction (FMAT) estimates considerably.
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fmat_reconstruction.png" alt="FMAT reconstruction">
-*Figure 6: FMAT (fraction of mature isoform) reconstruction improves with intron filtering. Left: Median difference to simulated FMAT showing improvement with filtering (solid vs dashed lines). Right: Distribution of FMAT values for low mappability transcripts shows that both filtering and the mosaic approach recover more accurate estimates closer to the theoretical value of 1/3. (Figure 3A and 3D from the paper)*
-
-### Methylation Site Calling Hotspots
-
-For RNA bisulfite sequencing analysis, low mappability regions are hotspots of false cytosine methylation calls. All mappers produced considerable amounts of false positive and a few false negative m5C calls, mainly in low mappability regions of protein coding genes.
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/m5c_calling.png" alt="Methylation site calling accuracy">
-*Figure 7: Effect of mappability on methylation site reconstruction. Most m5C sites were recovered correctly, but false positives (FP) and false negatives (FN) were predominantly located in low mappability regions. The correlation plots show methylation rates for HISAT-3N, meRanGs, and Segemehl with TP calls in green and false calls in red. (Figure 4 from the paper)*
-
-This has important implications for establishing accurate m5C site catalogs, which have varied wildly in the literature (from <100 to >10,000 sites reported).
-
-## The Mosaic Approach: Leveraging Mapper Strengths
-
-One of the most practical contributions of our study is the "mosaic" analysis strategy. Rather than declaring one mapper superior, we found that different mappers excel in different genomic contexts.
+One of the most practical contributions of our study based on the observation that different mappers have different strengths is the "mosaic" analysis strategy. Rather than declaring one mapper superior, we found that different mappers excel in different genomic contexts.
 
 The mosaic approach works like this:
 
@@ -147,12 +120,87 @@ When combining a mosaic approach with a filtering strategy that removed transcri
 
 This strategy improved FCR reconstruction, reduced half-life outliers, and recovered more accurate FMAT values. It does require running multiple alignments, but the accuracy gains can be substantial for critical analyses.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fcr_mosaic.png" alt="FCR reconstruction with mosaic approach">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fcr_mosaic.png" alt="FCR reconstruction with mosaic approach" width="70%">
 *Figure 8: Mean difference to simulated exonic FCR per mapper. The mosaic approach (selecting the best mapper per interval) reduces differences to simulated values, and when combined with filtering, reconstruction is nearly perfect. (Figure 1E from the paper)*
 
-## Practical Applications: What Can You Do With splice_sim?
+### Biological consequences: Half-life estimation
 
-### 1. Pre-Experiment Planning
+We simulated realistic pulse-chase experiments to measure RNA decay rates. Although half-life estimation was robust for most transcripts, a considerable number of outliers showed more than 10% difference to simulated half-lives for both mappers in the medium and low mappability segments. These outliers affected over 120 protein-coding genes - genes that researchers might be studying for their biological relevance.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/halflife_reconstruction.png" alt="Half-life reconstruction">
+*Figure 5: Effect of NC on transcript half-life reconstruction. Top left: Normalized FCR per time point showing increasing noise with decreasing mappability. Top right: Reconstructed half-lives per decay rate.
+The box plots show a considerable number of outliers for both mappers; numbers of considered transcripts
+are plotted below the boxes. Bottom: Reconstructed half-lives showing outliers (red triangles) that deviate >10% from simulated values. The mosaic approach (bottom) combining both mappers reduces outliers considerably. (Figure 2 from the paper)*
+
+### Isoform quantification challenges
+
+Alignment of spliced reads is particularly difficult as it needs to take the possibility of large gaps due to spliced out introns into account and requires accurate placement of short sub-sequences of reads (anchors) that span over these gaps.
+
+We found that transcripts often contain a mosaic of high, medium, and low mappability introns. By implementing an intron filtering strategy that removes problematic introns, we improved the accuracy of mature isoform fraction (FMAT) estimates considerably.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/fmat_reconstruction.png" alt="FMAT reconstruction">
+*Figure 6: FMAT (fraction of mature isoform) reconstruction improves with intron filtering. Left: Median difference to simulated FMAT showing improvement with filtering (solid vs dashed lines). Right: Distribution of FMAT values for low mappability transcripts shows that both filtering and the mosaic approach recover more accurate estimates closer to the theoretical value of 1/3. (Figure 3A and 3D from the paper)*
+
+### Methylation site calling hotspots
+
+For RNA bisulfite sequencing analysis, low mappability regions are hotspots of false cytosine methylation calls. All mappers produced considerable amounts of false positive and a few false negative m5C calls, mainly in low mappability regions of protein coding genes.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/splice_sim/m5c_calling.png" alt="Methylation site calling accuracy">
+*Figure 7: Effect of mappability on methylation site reconstruction. Most m5C sites were recovered correctly, but false positives (FP) and false negatives (FN) were predominantly located in low mappability regions. The correlation plots show methylation rates for HISAT-3N, meRanGs, and Segemehl with TP calls in green and false calls in red. (Figure 4 from the paper)*
+
+This has important implications for establishing accurate m5C site catalogs, which have varied wildly in the literature (from <100 to >10,000 sites reported).
+
+### Pre-Computed mapping accuracy tables: Ready-to-use resources
+
+One of the most immediately useful outputs from our study is a comprehensive set of pre-computed mapping accuracy tables for mouse (mm10) and human (GRCh38) transcriptomes, covering over 50,000 transcripts each. These tables are freely available on [Zenodo](https://doi.org/10.5281/zenodo.11196570) and provide detailed performance metrics for every annotated transcript, exon, intron, and splice junction.
+
+**What's included in these tables:**
+
+- **Mapping accuracy scores** (F1, precision, recall) for STAR and HISAT-3N across different conversion rates (0%, 1%, 3%, 5%, 10%)
+- **Mappability classifications** (high, medium, low) for each genomic feature
+- **FCR and FMAT reconstruction accuracy** per feature
+- **Recommendations** for which mapper performs best for each transcript
+
+**How to use them:**
+
+1. **Before starting an experiment**: Look up your genes of interest to assess whether they have sufficient mappability for reliable NC RNA-seq analysis
+2. **During data analysis**: Filter out problematic transcripts/introns with known mapping issues
+3. **Choosing a mapper**: Select the optimal mapper (or apply the mosaic strategy) based on pre-computed performance for your specific genes
+4. **Quality control**: Flag results from low-accuracy regions for additional validation
+
+> **📊 Ready-to-Use Data**
+> 
+> - **Mouse (mm10)**: >50,000 GENCODE transcripts evaluated
+> - **Human (GRCh38)**: >50,000 Ensembl canonical transcripts evaluated
+> - **Conditions tested**: 0%, 1%, 3%, 5%, 10% T-to-C conversion rates
+> - **Mappers evaluated**: STAR, HISAT-3N (metabolic labeling) + meRanGs, Segemehl (BS-seq)
+> - **Format**: TSV.gz tables ready to import into R or Python
+> 
+> **Available at**: [https://doi.org/10.5281/zenodo.11196570](https://doi.org/10.5281/zenodo.11196570)
+
+**Beyond mouse and human:**
+
+The beauty of splice_sim is that it's not limited to these two species. The framework is designed to work with any genome and annotation set. Want to evaluate NC mapping accuracy for:
+
+- **Zebrafish** developmental studies?
+- **Drosophila** genetics experiments?
+- **Arabidopsis** plant biology?
+- **Yeast** time-course experiments?
+- **Non-model organisms** with custom annotations?
+
+Simply provide your reference genome FASTA, gene annotation GFF3, and run splice_sim with your experimental parameters. The pipeline will generate the same comprehensive mapping accuracy tables tailored to your organism and genes of interest.
+
+This is particularly valuable for researchers working on:
+- Organisms with less well-characterized repetitive elements
+- Custom or alternative gene annotations
+- Novel transcripts or isoforms not in standard databases
+- Organisms with different genome complexity and mappability landscapes
+
+The paper provides detailed protocols and configuration examples for running splice_sim on arbitrary species, making it a truly universal tool for the NC RNA-seq community.
+
+## Practical applications: What can you do with splice_sim?
+
+### 1. Pre-experiment planning
 
 Before committing to expensive sequencing, simulate your experimental design:
 
@@ -174,7 +222,7 @@ nextflow run splice_sim.nf -profile docker -c my_config.json
 
 This tells you whether your genes of interest have sufficient mappability for reliable analysis, or if you need to adjust your approach (longer reads, different protocol, etc.).
 
-### 2. Benchmark Your Pipeline
+### 2. Benchmark your pipeline
 
 Evaluating a new mapper or tweaking parameters? Run it against splice_sim-generated ground truth data:
 
@@ -191,7 +239,7 @@ Evaluating a new mapper or tweaking parameters? Run it against splice_sim-genera
 
 The evaluation module will give you detailed per-feature accuracy metrics.
 
-### 3. Data Quality Control
+### 3. Data quality control
 
 Use our pre-computed mapping accuracy tables for mouse and human transcriptomes (available on [Zenodo](https://doi.org/10.5281/zenodo.11196570)) to:
 
@@ -199,13 +247,13 @@ Use our pre-computed mapping accuracy tables for mouse and human transcriptomes 
 * Identify which mapper works best for your genes of interest
 * Apply targeted filtering strategies to improve downstream analyses
 
-### 4. Comparing Sequencing Strategies
+### 4. Comparing sequencing strategies
 
 We used splice_sim to compare full-transcript sequencing versus 3' end sequencing. While simulated 3' end sequencing data showed higher mapping accuracies across all conversion rates and mappability classes due to higher mappability, full-length sequencing showed the smallest deviation from the simulated FCR, implying that the larger mapping space of the full transcript allows for more robust FCR estimates.
 
 You can set up similar comparisons for your specific use case.
 
-## Getting Started with splice_sim
+## Getting started with splice_sim
 
 The tool is available on [GitHub](https://github.com/popitsch/splice_sim) with comprehensive documentation. Here's a quick-start guide:
 
@@ -228,7 +276,7 @@ conda env create -f environment.yml
 conda activate splice_sim
 ```
 
-### Running a Simple Simulation
+### Running a simple simulation
 
 The framework uses a central JSON configuration file to define all parameters. Here's a minimal example for a small test:
 
@@ -269,19 +317,19 @@ nextflow run splice_sim.nf -c my_config.json -profile docker
 nextflow run splice_sim_eva.nf -c my_config.json -profile docker
 ```
 
-### Understanding the Output
+### Understanding the output
 
 Splice_sim generates several types of output:
 
-**Count Tables** (`count/*.counts.tsv.gz`): Raw TP/FP/FN counts per mapper, conversion rate, and genomic feature
+**Count tables** (`count/*.counts.tsv.gz`): Raw TP/FP/FN counts per mapper, conversion rate, and genomic feature
 
-**Metadata Tables** (`meta/*.metadata.tsv.gz`): Feature characteristics including mappability, GC content, convertibility
+**Metadata tables** (`meta/*.metadata.tsv.gz`): Feature characteristics including mappability, GC content, convertibility
 
-**Performance Metrics**: Precision, recall, and F1 scores calculated from count tables
+**Performance metrics**: Precision, recall, and F1 scores calculated from count tables
 
-**Visual Tracks**: Optional TDF files for viewing in IGV, highlighting misaligned reads
+**Visual tracks**: Optional TDF files for viewing in IGV, highlighting misaligned reads
 
-#### Output Directory Structure
+#### Output directory structure
 
 ```
 results/
@@ -358,9 +406,9 @@ Rscript splice_sim/src/main/R/splice_sim/preprocess_results.R \
   my_config.json output_dir/
 ```
 
-## Advanced Use Cases
+## Advanced use cases
 
-### Custom Nucleotide Conversion Models
+### Custom nucleotide conversion models
 
 While splice_sim uses Bernoulli processes for NC simulation (appropriate for BS-seq and SLAM-seq), you might need more sophisticated models. For example, A-to-I RNA editing by ADAR enzymes shows sequence-context dependencies.
 
@@ -375,7 +423,7 @@ The NC simulation is implemented as a Python method with access to:
 
 Simply modify the `splice_sim.simulator.modify_bases` method to implement your custom conversion logic.
 
-### Paired-End Support
+### Paired-end support
 
 The current version focuses on single-end reads, which are cost-effective for many experiments. However, paired-end data offers advantages:
 
@@ -384,7 +432,7 @@ The current version focuses on single-end reads, which are cost-effective for ma
 
 Paired-end support is on the TODO list.
 
-### Integrating with AWS Batch
+### Integrating with AWS batch
 
 Since splice_sim uses Nextflow, you can easily scale to cloud computing. Here's a basic AWS Batch configuration:
 
@@ -401,32 +449,32 @@ profiles {
 
 This is particularly useful when simulating large datasets (full transcriptomes) or evaluating multiple mappers across many parameter combinations.
 
-## Recommended Best Practices
+## Recommended best practices
 
 Based on our findings, here are practical recommendations for NC RNA-seq analysis:
 
-### For Metabolic Labeling Experiments
+### For metabolic labeling experiments
 
 1. **Always check mappability**: Use our pre-computed tables or run splice_sim on your genes of interest
 2. **Consider a mosaic approach**: If computationally feasible, map with both STAR and HISAT-3N and combine results
 3. **Filter carefully**: Remove low-mappability transcripts or apply targeted filtering strategies
 4. **Validate biological findings**: If a half-life estimate seems suspicious, check the mappability and conversion rate dependency
 
-### For RNA Bisulfite Sequencing
+### For RNA bisulfite sequencing
 
 1. **Use specialized mappers**: HISAT-3N, meRanGs, or Segemehl perform better than standard mappers
 2. **Be extra cautious with low mappability regions**: These are hotspots for false m5C calls
 3. **Cross-validate calls**: Don't rely solely on methylation rates for filtering - consider mappability and structural context
 4. **Expect protocol artifacts**: Incomplete conversion and missing reads in low mappability regions are inherent to the protocol
 
-### For Isoform Analysis
+### For isoform analysis
 
 1. **Provide known splice sites**: This dramatically improves spliced read mapping accuracy
 2. **Filter problematic introns**: Use splice_sim's approach to remove introns with poor FMAT reconstruction
 3. **Check for intron mappability mosaics**: Transcripts often mix high and low mappability introns
 4. **Validate novel splice junctions carefully**: False-positive SJ calls increase with conversion rates
 
-## Limitations and Future Directions
+## Limitations and future directions
 
 While splice_sim is powerful, it has some limitations worth noting:
 

@@ -155,6 +155,10 @@ order: 2
   <div class="card-body">
   <h4 class="card-title">SARS-CoV-2 (part of the VCDI team)</h4>
   <ul class="list-group list-group-flush">
+  <li class="list-group-item">•
+      Dekens MPS, <ins>Neumann T</ins>, Micheler T, Gandhi V, Kellner MJ, Rocha-Hasler M, Weißenböck M, Fellner M, Al-Rawi M, Beer N, Rieser S, Umkehrer C, Hoffmann D, Mátl M, Künstner K, VCDI, Cular Z, Walch S, Trupke J, Steinlein P, Scheuch H, Wochele-Thoma T, Heinen R &amp; Zuber J: <em>Early response model for containing newly emerging infectious diseases</em>. medRxiv, 2025.
+      <a href="https://doi.org/10.1101/2025.10.14.25337721" target="_blank"><i class="ai ai-doi ai-1x" aria-hidden="true"></i></a>
+    </li>
     <li class="list-group-item">•
       Yelagandula R, Bykov A, Vogt A, Heinen R, Özkan E, Strobl MM, Baar JC, Uzunova K, Hajdusits B, Kordic D, Suljic E, Kurtovic-Kozaric A, Izetbegovic S, Schaeffer J, Hufnagl P, Zoufaly A, Seitz T, <ins>VCDI</ins>, Födinger M, Allerberger F, Stark A, Cochella L&dagger; &amp; Elling U&dagger;: <em>Multiplexed detection of SARS-CoV-2 and other respiratory infections in high throughput by SARSeq</em>. Nature Communications, 2021. 12, 3132.
       <a href="https://www.ncbi.nlm.nih.gov/pubmed/34035246" target="_blank"><i class="ai ai-pubmed ai-1x" aria-hidden="true"></i></a>
